@@ -1,7 +1,4 @@
-import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 interface ContactFormData {
   name: string;
@@ -29,6 +26,19 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    // If Resend API key is not configured, just return success (demo mode)
+    if (!process.env.RESEND_API_KEY) {
+      console.log('Form submission received (email disabled - no API key configured):', body);
+      return NextResponse.json(
+        { success: true, message: 'Submission received successfully' },
+        { status: 200 }
+      );
+    }
+
+    // Import Resend only when needed
+    const { Resend } = await import('resend');
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Format the email content
     const emailContent = `
