@@ -146,7 +146,7 @@ export default function Research() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300 text-lg"
+            className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition duration-300 text-lg"
           >
             Request Custom Research
           </Link>

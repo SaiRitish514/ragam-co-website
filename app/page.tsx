@@ -87,7 +87,7 @@ export default function Page() {
             return (
               <ScrollReveal key={index} delay={index * 0.05}>
                 <motion.div
-                  className={`bg-gradient-to-br ${item.color} p-8 rounded-xl border border-border hover:border-primary/20 transition-all group cursor-pointer`}
+                  className="bg-card/40 backdrop-blur-xl p-8 rounded-2xl border border-border/50 hover:border-primary/40 transition-all group cursor-pointer hover:shadow-lg hover:shadow-primary/10"
                   whileHover={{ y: -8, scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -130,15 +130,15 @@ export default function Page() {
           {researchCards.map((card, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
               <motion.div
-                className="bg-card border border-border rounded-xl p-8 hover:border-primary/50 transition-all group cursor-pointer"
+                className="bg-card/40 backdrop-blur-xl border border-border/50 rounded-2xl p-8 hover:border-primary/40 transition-all group cursor-pointer hover:shadow-lg hover:shadow-primary/10"
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-xs font-medium text-primary/60 mb-3">{card.date}</p>
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <p className="text-xs font-medium text-primary/70 mb-3 uppercase tracking-wider">{card.date}</p>
+                <h3 className="text-xl font-serif font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {card.title}
                 </h3>
-                <p className="text-foreground/70 text-sm leading-relaxed">
+                <p className="text-foreground/60 text-sm leading-relaxed">
                   {card.description}
                 </p>
               </motion.div>
@@ -177,13 +177,13 @@ export default function Page() {
           {opportunityCards.map((card, index) => (
             <ScrollReveal key={index} delay={index * 0.08}>
               <motion.div
-                className="bg-gradient-to-br from-primary/10 to-accent/10 border border-border rounded-xl p-6 hover:border-primary/50 transition-all group cursor-pointer"
+                className="bg-card/40 backdrop-blur-xl border border-border/50 rounded-2xl p-6 hover:border-primary/40 transition-all group cursor-pointer hover:shadow-lg hover:shadow-primary/10"
                 whileHover={{ y: -6 }}
               >
-                <p className="text-xs font-medium text-primary/70 mb-2 uppercase tracking-wide">
+                <p className="text-xs font-medium text-primary/70 mb-2 uppercase tracking-widest">
                   {card.category}
                 </p>
-                <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-serif font-semibold text-foreground group-hover:text-primary transition-colors">
                   {card.title}
                 </h3>
               </motion.div>
@@ -249,7 +249,7 @@ export default function Page() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300 text-lg"
+            className="inline-block px-10 py-3.5 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-all duration-300 text-lg shadow-lg hover:shadow-xl hover:shadow-primary/20"
           >
             Get My Music Analysis
           </Link>
@@ -257,44 +257,44 @@ export default function Page() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border bg-card/50">
+      <footer className="py-16 px-6 border-t border-border/50 bg-card/20 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <p className="font-bold text-foreground mb-4">Platform</p>
-              <ul className="space-y-2 text-foreground/70">
-                <li><Link href="/what-we-do" className="hover:text-foreground transition">What We Do</Link></li>
-                <li><Link href="/research" className="hover:text-foreground transition">Research</Link></li>
-                <li><Link href="/opportunities" className="hover:text-foreground transition">Opportunities</Link></li>
+              <p className="font-serif font-semibold text-foreground mb-4 text-lg">Platform</p>
+              <ul className="space-y-2 text-foreground/60">
+                <li><Link href="/what-we-do" className="hover:text-primary transition">What We Do</Link></li>
+                <li><Link href="/research" className="hover:text-primary transition">Research</Link></li>
+                <li><Link href="/opportunities" className="hover:text-primary transition">Opportunities</Link></li>
               </ul>
             </div>
             <div>
-              <p className="font-bold text-foreground mb-4">Company</p>
-              <ul className="space-y-2 text-foreground/70">
-                <li><Link href="/about" className="hover:text-foreground transition">About</Link></li>
-                <li><Link href="/contact" className="hover:text-foreground transition">Contact</Link></li>
+              <p className="font-serif font-semibold text-foreground mb-4 text-lg">Company</p>
+              <ul className="space-y-2 text-foreground/60">
+                <li><Link href="/about" className="hover:text-primary transition">About</Link></li>
+                <li><Link href="/contact" className="hover:text-primary transition">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <p className="font-bold text-foreground mb-4">Resources</p>
-              <ul className="space-y-2 text-foreground/70">
-                <li><a href="#" className="hover:text-foreground transition">Blog</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Guides</a></li>
+              <p className="font-serif font-semibold text-foreground mb-4 text-lg">Resources</p>
+              <ul className="space-y-2 text-foreground/60">
+                <li><a href="#" className="hover:text-primary transition">Blog</a></li>
+                <li><a href="#" className="hover:text-primary transition">Guides</a></li>
               </ul>
             </div>
             <div>
-              <p className="font-bold text-foreground mb-4">Connect</p>
-              <ul className="space-y-2 text-foreground/70">
-                <li><a href="#" className="hover:text-foreground transition">Twitter</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Instagram</a></li>
+              <p className="font-serif font-semibold text-foreground mb-4 text-lg">Connect</p>
+              <ul className="space-y-2 text-foreground/60">
+                <li><a href="#" className="hover:text-primary transition">Twitter</a></li>
+                <li><a href="#" className="hover:text-primary transition">Instagram</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-foreground/60 text-sm">
+          <div className="border-t border-border/30 pt-8 flex flex-col md:flex-row justify-between items-center text-foreground/50 text-sm">
             <p>&copy; 2024 Ragam & Co. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-foreground transition">Privacy</a>
-              <a href="#" className="hover:text-foreground transition">Terms</a>
+              <a href="#" className="hover:text-foreground/70 transition">Privacy</a>
+              <a href="#" className="hover:text-foreground/70 transition">Terms</a>
             </div>
           </div>
         </div>

@@ -103,7 +103,7 @@ export default function Contact() {
               </p>
               <Link
                 href="/"
-                className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300 text-lg"
+                className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition duration-300 text-lg"
               >
                 Back to Home
               </Link>
@@ -280,7 +280,7 @@ export default function Contact() {
               disabled={isSubmitting}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition duration-300 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Submit Request'}
             </motion.button>

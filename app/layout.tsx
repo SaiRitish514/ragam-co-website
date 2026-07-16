@@ -1,10 +1,15 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import { Navigation } from '@/components/navigation'
 
-const geistSans = Geist({ subsets: ['latin'], variable: '--font-sans' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const cormorant = Cormorant_Garamond({ 
+  subsets: ['latin'], 
+  variable: '--font-serif',
+  weight: ['400', '500', '600', '700']
+})
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
@@ -31,9 +36,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
+  colorScheme: 'dark',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f8f7f5' },
     { media: '(prefers-color-scheme: dark)', color: '#0f0e0c' },
   ],
   userScalable: true,
@@ -45,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-background`}>
+    <html lang="en" className={`${inter.variable} ${cormorant.variable} ${geistMono.variable} dark bg-background`}>
       <body className="antialiased font-sans">
         <Navigation />
         {children}

@@ -199,7 +199,7 @@ export default function Opportunities() {
               placeholder="Enter your email"
               className="px-6 py-3 rounded-lg border border-border bg-card text-foreground placeholder-foreground/50 flex-grow sm:flex-grow-0 sm:w-64"
             />
-            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300">
+            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition duration-300">
               Subscribe
             </button>
           </div>

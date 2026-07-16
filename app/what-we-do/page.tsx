@@ -80,12 +80,12 @@ export default function WhatWeDo() {
           {services.map((service, index) => (
             <ScrollReveal key={index} delay={index * 0.08}>
               <motion.div
-                className="bg-card border border-border rounded-xl p-8 hover:border-primary/50 transition-all group"
+                className="bg-card/40 backdrop-blur-xl border border-border/50 rounded-2xl p-8 hover:border-primary/40 transition-all group hover:shadow-lg hover:shadow-primary/10"
                 whileHover={{ y: -4 }}
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg mb-6 flex items-center justify-center group-hover:bg-primary/20 transition-colors" />
-                <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
-                <p className="text-foreground/70 leading-relaxed">{service.description}</p>
+                <div className="w-12 h-12 bg-primary/20 rounded-xl mb-6 flex items-center justify-center group-hover:bg-primary/30 transition-colors" />
+                <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">{service.title}</h3>
+                <p className="text-foreground/60 leading-relaxed">{service.description}</p>
               </motion.div>
             </ScrollReveal>
           ))}
@@ -109,13 +109,13 @@ export default function WhatWeDo() {
             <ScrollReveal key={index} delay={index * 0.1}>
               <div className="relative">
                 <motion.div
-                  className="bg-gradient-to-br from-primary/10 to-accent/10 border border-border rounded-xl p-8 h-full flex flex-col justify-between"
+                  className="bg-card/40 backdrop-blur-xl border border-border/50 rounded-2xl p-8 h-full flex flex-col justify-between hover:border-primary/40 transition-all hover:shadow-lg hover:shadow-primary/10"
                   whileHover={{ y: -4 }}
                 >
                   <div>
-                    <p className="text-5xl font-bold text-primary/20 mb-4">{p.step}</p>
-                    <h3 className="text-2xl font-bold text-foreground mb-3">{p.title}</h3>
-                    <p className="text-foreground/70">{p.description}</p>
+                    <p className="text-5xl font-bold text-primary/15 mb-4">{p.step}</p>
+                    <h3 className="text-2xl font-serif font-semibold text-foreground mb-3">{p.title}</h3>
+                    <p className="text-foreground/60">{p.description}</p>
                   </div>
                 </motion.div>
                 {index < process.length - 1 && (
@@ -138,7 +138,7 @@ export default function WhatWeDo() {
             <div className="pt-8">
               <Link
                 href="/contact"
-                className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition duration-300 text-lg"
+                className="inline-block px-10 py-3.5 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-all duration-300 text-lg shadow-lg hover:shadow-xl hover:shadow-primary/20"
               >
                 Request Analysis
               </Link>
@@ -148,8 +148,8 @@ export default function WhatWeDo() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border bg-card/50 mt-20">
-        <div className="max-w-7xl mx-auto text-center text-foreground/60 text-sm">
+      <footer className="py-12 px-6 border-t border-border/50 bg-card/20 backdrop-blur-xl mt-20">
+        <div className="max-w-7xl mx-auto text-center text-foreground/50 text-sm">
           <p>&copy; 2024 Ragam & Co. All rights reserved.</p>
         </div>
       </footer>
