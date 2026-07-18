@@ -35,21 +35,26 @@ export function Navigation() {
         transition={{ duration: 0.3 }}
         className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border"
       >
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <div className="w-full px-8 lg:px-16 xl:px-20 py-5 flex items-center">
           {/* Premium Logo */}
-          <Link href="/" className="flex items-center gap-1 group">
-            <span className="text-2xl font-serif font-bold text-foreground tracking-wide">Ragam</span>
-            <span className="text-lg font-serif font-light text-primary/80 group-hover:text-primary transition">& Co.</span>
-          </Link>
+          
+  <span className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight text-foreground">
+    Ragam
+  </span>
+
+  <span className="text-2xl lg:text-3xl font-serif text-primary">
+    & Co.
+  </span>
+
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-12">
-            <nav className="flex gap-10">
+          <div className="hidden lg:flex flex-1 justify-center">
+            <nav className="flex items-center gap-12 xl:gap-16">
+               <NavLink href="/">Home</NavLink>
               <NavLink href="/what-we-do">What We Do</NavLink>
               <NavLink href="/who-we-help">Who We Help</NavLink>
               <NavLink href="/research">Research</NavLink>
-              <NavLink href="/opportunities">Opportunities</NavLink>
-              <NavLink href="/experiences">Experiences</NavLink>
+              <NavLink href="/experiences">Events</NavLink>
               <NavLink href="/about">About</NavLink>
             </nav>
           </div>
@@ -57,7 +62,7 @@ export function Navigation() {
           {/* Right CTA */}
           <div className="hidden md:flex">
             <Link
-              href="/contact"
+              href="/#request-analysis"
               className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
             >
               Get My Music Analysis
@@ -86,6 +91,9 @@ export function Navigation() {
             className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl"
           >
             <div className="px-6 py-8 space-y-6 flex flex-col min-h-[calc(100vh-80px)]">
+              <MobileNavLink href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                Home
+              </MobileNavLink>
               <MobileNavLink href="/what-we-do" onClick={() => setIsMobileMenuOpen(false)}>
                 What We Do
               </MobileNavLink>
@@ -95,11 +103,9 @@ export function Navigation() {
               <MobileNavLink href="/research" onClick={() => setIsMobileMenuOpen(false)}>
                 Research
               </MobileNavLink>
-              <MobileNavLink href="/opportunities" onClick={() => setIsMobileMenuOpen(false)}>
-                Opportunities
-              </MobileNavLink>
+              
               <MobileNavLink href="/experiences" onClick={() => setIsMobileMenuOpen(false)}>
-                Experiences
+                Events
               </MobileNavLink>
               <MobileNavLink href="/about" onClick={() => setIsMobileMenuOpen(false)}>
                 About

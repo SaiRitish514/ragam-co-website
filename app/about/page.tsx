@@ -1,193 +1,316 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { HeroSection } from '@/components/hero-section';
-import { ScrollReveal } from '@/components/motion/scroll-reveal';
 
-const values = [
+const people = [
   {
-    title: 'Integrity',
-    description: 'We believe in honest, research-driven insights grounded in data and cultural understanding.',
+    image: "/images/srija.jpeg",
+    name: "Vikruti Srija",
+    role: "Founder & Music Strategy Lead",
+    imageClass: "object-top",
+    description:
+      "Leads Ragam's vision, research and long-term strategy for the Telugu music ecosystem. Focused on audience intelligence, artist growth, industry innovation and building sustainable opportunities for creators.",
   },
   {
-    title: 'Excellence',
-    description: 'We pursue mastery in everything we do, from analysis to strategic guidance.',
+    image: "/images/person2.jpg",
+    name: "Sai Ritish Tirunagari",
+    role: "Product Design & Digital Experience Lead",
+    description:
+      "Oversees Ragam's website, digital products and user experience. Leads interface design, creative direction and product development to create intuitive, engaging experiences that help artists, organisers, labels and music lovers connect with the Telugu music ecosystem.",
   },
   {
-    title: 'Inclusivity',
-    description: 'We celebrate diverse voices and support music creators from all backgrounds and perspectives.',
+    image: "/images/abhi.jpeg",
+    name: "Abigna Yalakala",
+    role: "Research & Community Lead",
+    description:
+      "Leads ecosystem research, artist discovery and community engagement. Works closely with musicians, organisers and audiences to understand emerging trends and opportunities across Telugu music.",
   },
   {
-    title: 'Impact',
-    description: 'We measure success not by metrics alone, but by the real cultural and artistic change we help create.',
+    image: "/images/siddhu.jpeg",
+    name: "Siddharth",
+    role: "Product & Technology Lead",
+    description:
+      "Builds the digital experiences behind Ragam. Focuses on product development, technology, data systems and creating tools that make music intelligence accessible and actionable.",
   },
 ];
 
-const team = [
-  {
-    name: 'Aria Patel',
-    role: 'Founder & CEO',
-    bio: 'Music industry strategist with 15+ years experience across labels, festivals, and cultural institutions.',
-  },
-  {
-    name: 'Marcus Chen',
-    role: 'Head of Research',
-    bio: 'Data scientist specializing in cultural analytics and trend forecasting across global music markets.',
-  },
-  {
-    name: 'Sofia Russo',
-    role: 'Director of Experiences',
-    bio: 'Concert designer and festival curator with a track record of creating immersive cultural events.',
-  },
-  {
-    name: 'James Thompson',
-    role: 'Advisory Board',
-    bio: 'Renowned music journalist and cultural commentator with international reputation.',
-  },
-];
-
-export default function About() {
+export default function AboutPage() {
   return (
-    <main className="w-full">
-      <HeroSection
-        title="About Ragam"
-        subtitle="Our Story"
-        description="Building the intelligence layer for the global music industry."
-      />
+    <main className="bg-[#11100f] min-h-screen">
 
-      {/* Mission & Vision */}
-      <section className="py-20 md:py-32 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          <ScrollReveal>
-            <div className="space-y-6">
-              <div>
-                <p className="text-sm font-medium text-primary uppercase tracking-widest mb-2">Mission</p>
-                <h2 className="text-4xl font-bold text-foreground mb-4">Why We Exist</h2>
+      <section className="max-w-[1700px] mx-auto px-8 lg:px-20 py-28">
+
+        <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold">
+          ABOUT RAGAM
+        </p>
+
+        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white mt-8">
+          Meet the people
+          <br />
+          behind Ragam.
+        </h1>
+
+        <p className="text-white/60 text-[22px] leading-9 max-w-[700px] mt-10">
+          Strategy, research and culture brought together by people who
+          understand the music industry.
+        </p>
+
+        {/* Cards */}
+
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-24">
+
+          {people.map((person) => (
+
+            <div
+              key={person.name}
+              className="bg-[#1A1715] rounded-[28px] overflow-hidden border border-white/10 hover:border-primary/30 transition duration-300 group"
+            >
+
+              <div className="overflow-hidden">
+
+                <img
+  src={person.image}
+  alt={person.name}
+  className={`w-full h-[340px] object-cover ${person.imageClass || "object-center"} group-hover:scale-105 transition duration-500`}
+/>
+
               </div>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                Ragam exists to transform music industry intelligence into strategic advantage. We believe that artists, organizers, and cultural institutions deserve access to world-class research, market insights, and strategic guidance to thrive in an increasingly complex global music ecosystem.
-              </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                We&apos;re not just another consulting firm or analytics platform. We&apos;re a cultural intelligence hub built by music professionals who understand the nuances of artistic excellence, market dynamics, and human connection.
-              </p>
-            </div>
-          </ScrollReveal>
 
-          <ScrollReveal direction="right">
-            <div className="space-y-6">
-              <div>
-                <p className="text-sm font-medium text-primary uppercase tracking-widest mb-2">Vision</p>
-                <h2 className="text-4xl font-bold text-foreground mb-4">Where We&apos;re Going</h2>
+              <div className="p-8">
+
+                <h3 className="font-semibold text-[30px] text-white leading-tight">
+                  {person.name}
+                </h3>
+
+                <p className="text-primary mt-3 text-lg">
+                  {person.role}
+                </p>
+
+                <p className="text-white/60 leading-8 mt-6 text-[17px]">
+                  {person.description}
+                </p>
+
               </div>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                We envision a world where music creators and institutions have direct access to the intelligence, connections, and opportunities they need to create transformative work. Where data serves culture, not the other way around.
-              </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                By 2030, Ragam will be the trusted intelligence partner for music professionals globally, operating across continents and supporting the next generation of artistic excellence and cultural impact.
-              </p>
+
             </div>
-          </ScrollReveal>
-        </div>
-      </section>
 
-      {/* Values */}
-      <section className="py-20 md:py-32 px-6 max-w-7xl mx-auto bg-card/30 rounded-2xl border border-border">
-        <ScrollReveal>
-          <div className="text-center space-y-4 mb-16">
-            <p className="text-sm font-medium text-primary uppercase tracking-widest">Our Principles</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Core Values</h2>
-          </div>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {values.map((value, index) => (
-            <ScrollReveal key={index} delay={index * 0.1}>
-              <motion.div
-                className="bg-background border border-border rounded-xl p-8"
-                whileHover={{ y: -4 }}
-              >
-                <h3 className="text-2xl font-bold text-foreground mb-4">{value.title}</h3>
-                <p className="text-foreground/70 leading-relaxed">{value.description}</p>
-              </motion.div>
-            </ScrollReveal>
           ))}
+
         </div>
+
       </section>
+      <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
 
-      {/* Team */}
-      <section className="py-20 md:py-32 px-6 max-w-7xl mx-auto">
-        <ScrollReveal>
-          <div className="text-center space-y-4 mb-16">
-            <p className="text-sm font-medium text-primary uppercase tracking-widest">Leadership</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Our Team</h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Built by music industry veterans and cultural strategists from around the world.
-            </p>
-          </div>
-        </ScrollReveal>
+  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {team.map((member, index) => (
-            <ScrollReveal key={index} delay={index * 0.08}>
-              <motion.div
-                className="bg-card border border-border rounded-xl p-8 text-center hover:border-primary/50 transition-all"
-                whileHover={{ y: -4 }}
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">{member.name[0]}</span>
-                </div>
-                <h3 className="text-lg font-bold text-foreground mb-1">{member.name}</h3>
-                <p className="text-sm font-medium text-primary mb-4">{member.role}</p>
-                <p className="text-sm text-foreground/70 leading-relaxed">{member.bio}</p>
-              </motion.div>
-            </ScrollReveal>
-          ))}
-        </div>
-      </section>
+    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
 
-      {/* Philosophy */}
-      <section className="py-20 md:py-32 px-6 max-w-4xl mx-auto text-center">
-        <ScrollReveal>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Our Philosophy</h2>
-          <div className="space-y-6 text-lg text-foreground/70 leading-relaxed">
-            <p>
-              We believe that music is one of humanity&apos;s most powerful cultural forces. It connects people across borders, generations, and experiences. It drives innovation, celebrates identity, and creates moments of profound human connection.
-            </p>
-            <p>
-              Yet the music industry often operates on outdated models, fragmented data, and disconnected information. We&apos;re here to change that. By bringing together research, technology, and cultural intelligence, we&apos;re building the infrastructure for a more transparent, fair, and thriving music ecosystem.
-            </p>
-            <p>
-              Our work is guided by a simple principle: <span className="text-primary font-semibold">Intelligence in service of culture.</span> Everything we do is designed to support artists, empower organizers, advance cultural institutions, and create spaces where music can flourish.
-            </p>
-          </div>
-        </ScrollReveal>
-      </section>
+      {/* Left */}
+      <div>
 
-      {/* CTA */}
-      <section className="py-20 md:py-32 px-6 max-w-4xl mx-auto text-center">
-        <ScrollReveal>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Join the Ragam Community
-          </h2>
-          <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-            Whether you&apos;re an artist, organizer, institution, or music lover, there&apos;s a place for you here.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block px-10 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition duration-300 text-lg"
-          >
-            Get Started
-          </Link>
-        </ScrollReveal>
-      </section>
+        <h2 className="font-serif text-5xl text-white">
+          Ragam
+          <span className="text-primary text-3xl"> &amp; co.</span>
+        </h2>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border bg-card/50">
-        <div className="max-w-7xl mx-auto text-center text-foreground/60 text-sm">
-          <p>&copy; 2024 Ragam & Co. All rights reserved.</p>
-        </div>
-      </footer>
+        <p className="mt-8 text-white/65 text-xl leading-10 max-w-lg">
+          Growth intelligence for Telugu music —
+          for the artists, organizers and labels
+          carrying the sound forward.
+        </p>
+
+        <Link
+          href="/#request-analysis"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+        >
+          Get My Music Analysis
+          <span>↗</span>
+        </Link>
+
+      </div>
+
+      {/* FOR */}
+
+      <div>
+
+        <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          FOR
+        </p>
+
+        <ul className="space-y-5 text-white/70">
+
+          <li>
+            <Link href="/artists" className="hover:text-primary">
+              Artists
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/organizers" className="hover:text-primary">
+              Organizers
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/labels" className="hover:text-primary">
+              Labels
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/venues" className="hover:text-primary">
+              Venues
+            </Link>
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* WORK */}
+
+      <div>
+
+        <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          WORK
+        </p>
+
+        <ul className="space-y-5 text-white/70">
+
+          <li>
+            <Link href="/how-it-works" className="hover:text-primary">
+              How it works
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/what-you-receive" className="hover:text-primary">
+              What you receive
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/sample-report" className="hover:text-primary">
+              Sample report
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/experiences" className="hover:text-primary">
+              Experiences
+            </Link>
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* Ragam */}
+
+      <div>
+
+        <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          RAGAM
+        </p>
+
+        <ul className="space-y-5 text-white/70">
+
+          <li>
+            <Link href="/about" className="hover:text-primary">
+              About
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/journal" className="hover:text-primary">
+              Journal
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/press" className="hover:text-primary">
+              Press
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/careers" className="hover:text-primary">
+              Careers
+            </Link>
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* Contact */}
+
+      <div>
+
+        <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          CONTACT
+        </p>
+
+        <ul className="space-y-5 text-white/70">
+
+          <li>
+            <a
+              href="mailto:hello@ragam.co"
+              className="hover:text-primary"
+            >
+              hello@ragam.co
+            </a>
+          </li>
+
+          <li>Hyderabad, India</li>
+
+          <li>
+            <a href="#" className="hover:text-primary">
+              Instagram
+            </a>
+          </li>
+
+          <li>
+            <a href="#" className="hover:text-primary">
+              LinkedIn
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    {/* Bottom */}
+
+    <div className="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center">
+
+      <p className="text-white/40">
+        © 2026 Ragam &amp; Co. All rights reserved.
+      </p>
+
+      <div className="flex gap-10 mt-6 md:mt-0 text-white/40">
+
+        <Link href="/privacy" className="hover:text-primary">
+          Privacy
+        </Link>
+
+        <Link href="/terms" className="hover:text-primary">
+          Terms
+        </Link>
+
+        <Link href="/colophon" className="hover:text-primary">
+          Colophon
+        </Link>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
     </main>
   );
 }

@@ -1,9 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
-
 @custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --font-serif: var(--font-serif);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -45,10 +43,9 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 }
-
 :root {
   color-scheme: dark;
-  --background: #0F0E0C;
+  --background: #171412;
   --foreground: #F7F3E9;
   --card: #181613;
   --card-foreground: #F7F3E9;
@@ -81,10 +78,9 @@
   --sidebar-border: #2a2824;
   --sidebar-ring: #C8A96A;
 }
-
 .dark {
   color-scheme: dark;
-  --background: #0F0E0C;
+  --background: #171412C;
   --foreground: #F7F3E9;
   --card: #181613;
   --card-foreground: #F7F3E9;
@@ -116,11 +112,10 @@
   --sidebar-border: #2a2824;
   --sidebar-ring: #C8A96A;
 }
-
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     color-scheme: dark;
-    --background: #0F0E0C;
+    --background: #171412;
     --foreground: #F7F3E9;
     --card: #181613;
     --card-foreground: #F7F3E9;
@@ -153,7 +148,6 @@
     --sidebar-ring: #C8A96A;
   }
 }
-
 @layer base {
   * {
     @apply border-border outline-ring/50;

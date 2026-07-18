@@ -1,171 +1,125 @@
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import Link from "next/link";
-import { HeroSection } from '@/components/hero-section';
+import Link from 'next/link';
+import { ScrollReveal } from '@/components/motion/scroll-reveal';
 
-const audienceData = [
-  {
-    title: 'Artist',
-    href: "/who-we-help/artist",
-    description:
-      'Find collaborators, briefs and rooms shaped for your practice — and price your work honestly.',
-  },
-  {
-    title: 'Organizer',
-    href: "/who-we-help/organizers",
-    description:
-      'Curate stronger festivals with artist intelligence, audience insights and strategic planning.',
-  },
-  {
-    title: 'Label',
-    href: "/who-we-help/labels",
-    description:
-      'Discover talent earlier, understand markets deeper and build sustainable artist careers.',
-  },
-  {
-    title: 'Producer',
-    href: "/who-we-help/producers",
-    description:
-      'Find collaborators, briefs and rooms shaped for your practice — and price your work honestly.',
-  },
-  {
-    title: 'Venue',
-    href: "/who-we-help/venues",
-    description:
-      'Book smarter artists and create unforgettable live experiences backed by research.',
-  },
-  {
-    title: 'Music Lover',
-    href: "/who-we-help/music",
-    description:
-      'Discover meaningful artists, concerts and communities that truly match your taste.',
-  },
-];
-
-export default function WhoWeHelp() {
-  const [active, setActive] = useState(3);
-
+export default function ArtistPage() {
   return (
     <main className="bg-[#11100f] min-h-screen">
 
-      <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-32">
+      {/* Top spacing */}
+      <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
 
-        <div className="grid lg:grid-cols-[0.72fr_1.28fr] gap-20">
+        <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-28 items-center">
 
-          {/* LEFT */}
+          {/* LEFT IMAGE */}
 
-          <div>
+          <ScrollReveal direction="left">
 
-            <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold">
-              BUILT FOR THE ECOSYSTEM
-            </p>
+            <div className="relative">
 
-            <h2 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white mt-8">
+              <img
+                src="/images/music (2).jpeg"
+                alt="Artist"
+                className="w-full h-[880px] object-cover rounded-[18px]"
+              />
 
-              We work with
-              <br />
-
-              everyone who
-              <br />
-
-              moves the music.
-
-            </h2>
-
-            <p className="text-white/60 text-2xl leading-10 mt-10 max-w-md">
-
-              One methodology,
-              shaped to your seat
-              in the industry.
-
-            </p>
-
-          </div>
-
-          {/* RIGHT */}
-
-          <div>
-
-            
-                          
+              <div className="absolute top-6 left-6 flex justify-between w-[92%] text-white text-xs uppercase tracking-[0.35em]">
 
                 
 
-  <div className="grid grid-cols-3 gap-6">
+                <span>MUSIC LOVERS</span>
 
-  {audienceData.map((item, index) => (
+              </div>
 
-    <Link href={item.href} key={item.title} className="block">
+            </div>
 
-      <motion.div
-        whileHover={{ y: -6 }}
-        transition={{ duration: 0.25 }}
-        onMouseEnter={() => setActive(index)}
-        className={`rounded-[34px] border cursor-pointer transition-all duration-300 p-8 h-[180px] flex flex-col justify-between ${
-          active === index
-            ? 'bg-[#181614] border-[#181614] text-white shadow-2xl'
-            : 'bg-[#F6F1E7] border-[#E7DDCF] text-[#1a1816] hover:bg-white'
-        }`}
-      >
-        <div>
-          <p
-            className={`uppercase tracking-[0.3em] text-xs ${
-              active === index
-                ? 'text-primary'
-                : 'text-[#9a8f82]'
-            }`}
-          >
-            FOR THE
-          </p>
+          </ScrollReveal>
 
-          <h3 className="font-serif text-[48px] mt-5">
-            {item.title}
-          </h3>
-        </div>
+          {/* RIGHT */}
 
-        <div
-          className={`text-3xl ${
-            active === index
-              ? 'text-primary'
-              : 'text-[#8f8578]'
-          }`}
-        >
+          <ScrollReveal direction="right">
+
+            <div className="max-w-[620px]">
+
+  <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+    MUSIC LOVERS
+  </p>
+
+  <h1 className="font-serif text-[76px] leading-[0.95] tracking-[-0.05em] text-white">
+
+    Discover Telugu music the
+    <br />
+
+    way it was meant to be heard.
+
+  </h1>
+
+  <p className="mt-12 text-[23px] leading-[1.8] text-white/70">
+
+    Curated listening journeys, essays,
+    and experiences for the people
+    who love this sound — and want to go deeper.
+
+  </p>
+
+  <div className="mt-16">
+
+    <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+      COMMON CHALLENGES
+    </p>
+
+    <div className="space-y-5">
+
+      <div className="flex gap-3 text-white/80">
+        <span>•</span>
+        <span>A wall of new releases with no map</span>
+      </div>
+
+      <div className="flex gap-3 text-white/80">
+        <span>•</span>
+        <span>Missing the artists two streets over</span>
+      </div>
+
+      <div className="flex gap-3 text-white/80">
+        <span>•</span>
+        <span>Nowhere to talk about the music</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div className="mt-16 flex gap-5">
+
+    <Link
+      href="/#request-analysis"
+      className="group border border-white/20 rounded-full px-8 py-4 text-white hover:bg-primary hover:text-black transition duration-300"
+    >
+      <span className="flex items-center gap-3">
+
+        Request analysis
+
+        <span className="group-hover:translate-x-1 transition">
           ↗
-        </div>
+        </span>
 
-      </motion.div>
-
+      </span>
     </Link>
 
-  ))}
+  </div>
 
 </div>
 
-            {/* Bottom Description */}
+            
 
-            <motion.div
-              key={active}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35 }}
-              className="mt-8 rounded-[36px] bg-[#F6F1E7] border border-[#E7DDCF] p-12"
-            >
-
-              <p className="font-serif text-[52px] leading-[1.2] tracking-[-0.03em] text-[#211d19]">
-
-                {audienceData[active].description}
-
-              </p>
-
-            </motion.div>
-
-          </div>
+          </ScrollReveal>
 
         </div>
 
       </section>
+
+      {/* Footer */}
       <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
 
   <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
