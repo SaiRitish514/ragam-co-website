@@ -1073,7 +1073,7 @@ const reportSections = [
           carrying the sound forward.
         </p>
         <Link
-          href="#request-analysis"
+          href="/#request-analysis"
           className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
         >
           Get My Music Analysis

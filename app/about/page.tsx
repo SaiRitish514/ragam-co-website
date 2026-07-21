@@ -114,7 +114,6 @@ export default function AboutPage() {
           for the artists, organizers and labels
           carrying the sound forward.
         </p>
-
         <Link
           href="/#request-analysis"
           className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
@@ -136,25 +135,23 @@ export default function AboutPage() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artist" className="hover:text-primary">
-              Artists
-            </Link>
+            <Link href="/who-we-help/artist">Artists</Link>
+              
+            
           </li>
 
           <li>
-            <Link href="/organizers" className="hover:text-primary">
-              Organizers
-            </Link>
+            <Link href="/who-we-help/organizers">Organizers</Link>
           </li>
 
           <li>
-            <Link href="/labels" className="hover:text-primary">
+            <Link href="/who-we-help/labels" className="hover:text-primary">
               Labels
             </Link>
           </li>
 
           <li>
-            <Link href="/venues" className="hover:text-primary">
+            <Link href="/who-we-help/venues" className="hover:text-primary">
               Venues
             </Link>
           </li>
@@ -174,13 +171,13 @@ export default function AboutPage() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/how-it-works" className="hover:text-primary">
+            <Link href="/what-we-do" className="hover:text-primary">
               How it works
             </Link>
           </li>
 
           <li>
-            <Link href="/what-you-receive" className="hover:text-primary">
+            <Link href="/who-we-help" className="hover:text-primary">
               What you receive
             </Link>
           </li>
@@ -193,7 +190,7 @@ export default function AboutPage() {
 
           <li>
             <Link href="/experiences" className="hover:text-primary">
-              Events
+              Experiences
             </Link>
           </li>
 
@@ -251,23 +248,38 @@ export default function AboutPage() {
 
           <li>
             <a
-              href="mailto:hello@ragam.co"
+              href="mailto:sairitishthirunagari@gmail.com"
               className="hover:text-primary"
             >
-              hello@ragam.co
+              ragam@gmail.com
             </a>
           </li>
 
           <li>Hyderabad, India</li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-          </li>
+          
+  <li>
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://www.instagram.com/telugumusic.strategy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "_blank"
+      );
+    }}
+    className="hover:text-primary"
+  >
+    Instagram
+  </button>
+</li>
+<li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
+            <a
+    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-primary"
+  >
               LinkedIn
             </a>
           </li>
@@ -303,8 +315,7 @@ export default function AboutPage() {
       </div>
 
     </div>
-
-  </div>
+    </div>
 
 </footer>
     </main>

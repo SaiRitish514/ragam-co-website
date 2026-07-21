@@ -57,10 +57,10 @@ export default function ExperiencesPage() {
 const [tab, setTab] = useState<"past" | "upcoming" | null>(null);
 return(
 
-<main className="bg-[#11100f] min-h-screen overflow-x-hidden">
-  <section className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 lg:px-20 pt-20 sm:pt-24 lg:pt-32 pb-16 sm:pb-20">
+<main className="bg-[#11100f] min-h-screen">
+  <section className="max-w-[1700px] mx-auto px-10 lg:px-20 pt-32 pb-20">
 
-  <div className="grid gap-10 md:gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:gap-28 items-center">
+  <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-28 items-center">
 
     {/* LEFT */}
 
@@ -68,11 +68,11 @@ return(
 
       <div>
 
-        <p className="uppercase tracking-[0.35em] sm:tracking-[0.5em] text-primary text-xs sm:text-sm font-semibold">
+        <p className="uppercase tracking-[0.5em] text-primary text-sm font-semibold">
           RAGAM EXPERIENCES
         </p>
 
-        <h1 className="font-serif text-[40px] sm:text-[56px] md:text-[64px] lg:text-[90px] xl:text-[96px] leading-[0.92] tracking-[-0.05em] text-white mt-6 sm:mt-8">
+        <h1 className="font-serif text-[72px] lg:text-[90px] xl:text-[96px] leading-[0.92] tracking-[-0.05em] text-white mt-8">
 
           Events that bring
           <br />
@@ -82,7 +82,7 @@ return(
 
         </h1>
 
-        <p className="mt-6 sm:mt-8 lg:mt-10 text-[16px] sm:text-[18px] lg:text-[22px] leading-[1.7] sm:leading-[1.8] text-white/60 max-w-2xl">
+        <p className="mt-10 text-[22px] leading-[1.8] text-white/60 max-w-2xl">
 
           Discover our past gatherings, ongoing initiatives,
           and upcoming experiences designed to strengthen
@@ -92,7 +92,7 @@ return(
 
         {/* Buttons */}
 
-        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 lg:gap-10 mt-8 sm:mt-10 lg:mt-14">
+        <div className="flex gap-10 mt-14">
 
 
 
@@ -100,7 +100,7 @@ return(
 
 onClick={()=>setTab("upcoming")}
 
-className={`w-full sm:w-auto justify-center px-6 py-4 sm:px-10 sm:py-5 rounded-full transition-all duration-300 text-base sm:text-lg
+className={`px-10 py-5 rounded-full transition-all duration-300 text-lg
 
 ${tab==="upcoming"
 
@@ -121,7 +121,7 @@ What's Coming Next
 
 onClick={()=>setTab("past")}
 
-className={`w-full sm:w-auto justify-center px-6 py-4 sm:px-10 sm:py-5 rounded-full transition-all duration-300 text-base sm:text-lg
+className={`px-10 py-5 rounded-full transition-all duration-300 text-lg
 
 ${tab==="past"
 
@@ -147,21 +147,21 @@ Past Events
 
     <ScrollReveal direction="right">
 
-      <div className="border border-[#8b6b2e] rounded-[28px] p-6 sm:p-8 lg:p-10 bg-[#141210]">
+      <div className="border border-[#8b6b2e] rounded-[28px] p-10 bg-[#141210]">
 
         <p className="uppercase tracking-[0.35em] text-primary text-xs font-semibold">
           FOR ORGANISERS
         </p>
 
-        <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[54px] leading-[1.05] text-white mt-6">
+        <h2 className="font-serif text-[54px] leading-[1.05] text-white mt-6">
           Bring your next
           <br />
           event to life.
         </h2>
 
-        <div className="w-16 h-px bg-primary mt-6 sm:mt-8 mb-6 sm:mb-8" />
+        <div className="w-16 h-px bg-primary mt-8 mb-8" />
 
-        <p className="text-white/65 text-[16px] sm:text-[18px] lg:text-[20px] leading-8 sm:leading-9">
+        <p className="text-white/65 text-[20px] leading-9">
           Every great event starts with a clear idea.
           Ragam works with organisers to shape
           experiences that connect artists,
@@ -177,13 +177,13 @@ Past Events
             "Experience design & promotion",
           ].map((item) => (
 
-            <div key={item} className="flex items-start gap-4">
+            <div key={item} className="flex items-center gap-4">
 
-              <div className="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary shrink-0">
+              <div className="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary">
                 ✓
               </div>
 
-              <p className="text-white/80 text-base sm:text-lg">
+              <p className="text-white/80 text-lg">
                 {item}
               </p>
 
@@ -195,12 +195,12 @@ Past Events
 
         <Link
           href="/#request-analysis"
-          className="mt-10 sm:mt-12 flex justify-center items-center rounded-full bg-primary text-black py-4 sm:py-5 font-semibold text-base sm:text-lg"
+          className="mt-12 flex justify-center items-center rounded-full bg-primary text-black py-5 font-semibold text-lg"
         >
           Plan Your Event →
         </Link>
 
-        <p className="text-white/40 text-center mt-6 text-sm sm:text-base">
+        <p className="text-white/40 text-center mt-6">
           Let's create meaningful experiences together.
         </p>
 
@@ -214,7 +214,7 @@ Past Events
 
 
 
-<section className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 lg:px-20 pb-16 sm:pb-24 lg:pb-32">
+<section className="max-w-[1700px] mx-auto px-10 lg:px-20 pb-32">
 
 <AnimatePresence mode="wait">
 
@@ -222,17 +222,17 @@ Past Events
 
 tab === null ? (
 
-  <div className="py-16 sm:py-24 lg:py-36 flex flex-col items-center justify-center px-2">
+  <div className="py-36 flex flex-col items-center justify-center">
 
-    <p className="uppercase tracking-[0.3em] sm:tracking-[0.4em] text-primary text-xs sm:text-sm">
+    <p className="uppercase tracking-[0.4em] text-primary text-sm">
       EXPLORE EVENTS
     </p>
 
-    <h2 className="mt-6 font-serif text-3xl sm:text-4xl lg:text-5xl text-white text-center">
+    <h2 className="mt-6 font-serif text-5xl text-white">
       Choose a timeline
     </h2>
 
-    <p className="mt-6 text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl text-center px-2">
+    <p className="mt-6 text-white/60 text-xl max-w-2xl text-center">
       Select whether you'd like to explore our past events
       or discover upcoming experiences.
     </p>
@@ -246,14 +246,14 @@ tab === null ? (
   animate={{ opacity: 1, y: 0 }}
   exit={{ opacity: 0, y: -30 }}
   transition={{ duration: 0.5 }}
-  className="space-y-16 sm:space-y-24 lg:space-y-40"
+  className="space-y-40"
 >
 
   {pastEvents.map((event, index) => (
 
     <div
       key={event.title}
-      className={`grid gap-8 md:gap-12 lg:grid-cols-[1fr_1fr] lg:gap-24 items-center ${
+      className={`grid lg:grid-cols-[1fr_1fr] gap-24 items-center ${
         index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
@@ -267,10 +267,10 @@ tab === null ? (
           <img
             src={event.image}
             alt={event.title}
-            className="w-full max-w-full lg:max-w-[720px] aspect-square object-cover rounded-[24px] sm:rounded-[34px] shadow-2xl"
+            className="w-full max-w-[720px] aspect-square object-cover rounded-[34px] shadow-2xl"
           />
 
-          <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 bg-black/70 backdrop-blur-xl px-4 sm:px-6 py-3 sm:py-4 rounded-2xl">
+          <div className="absolute bottom-8 left-8 bg-black/70 backdrop-blur-xl px-6 py-4 rounded-2xl">
 
             <p className="text-primary text-sm uppercase tracking-[0.3em]">
               Past Event
@@ -286,25 +286,25 @@ tab === null ? (
 
       <ScrollReveal direction={index % 2 === 0 ? "right" : "left"}>
 
-        <div className="max-w-full lg:max-w-[650px]">
+        <div className="max-w-[650px]">
 
           <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
             EVENT
           </p>
 
-          <h2 className="font-serif text-[32px] sm:text-[44px] lg:text-[72px] leading-[0.92] tracking-[-0.05em] text-white">
+          <h2 className="font-serif text-[72px] leading-[0.92] tracking-[-0.05em] text-white">
             {event.title}
           </h2>
 
-          <p className="mt-6 sm:mt-8 lg:mt-12 text-[16px] sm:text-[18px] lg:text-[24px] leading-[1.7] sm:leading-[1.8] text-white/65">
+          <p className="mt-12 text-[24px] leading-[1.8] text-white/65">
             {event.description}
           </p>
 
-          <div className="mt-8 sm:mt-10 lg:mt-14 space-y-6 sm:space-y-8">
+          <div className="mt-14 space-y-8">
 
-            <div className="flex items-center gap-4 sm:gap-6">
+            <div className="flex items-center gap-6">
 
-              <span className="text-primary text-lg sm:text-xl">
+              <span className="text-primary text-xl">
                 📍
               </span>
 
@@ -314,7 +314,7 @@ tab === null ? (
                   Venue
                 </p>
 
-                <p className="text-white text-base sm:text-xl">
+                <p className="text-white text-xl">
                   {event.venue}
                 </p>
 
@@ -322,9 +322,9 @@ tab === null ? (
 
             </div>
 
-            <div className="flex items-center gap-4 sm:gap-6">
+            <div className="flex items-center gap-6">
 
-              <span className="text-primary text-lg sm:text-xl">
+              <span className="text-primary text-xl">
                 📅
               </span>
 
@@ -334,7 +334,7 @@ tab === null ? (
                   Date
                 </p>
 
-                <p className="text-white text-base sm:text-xl">
+                <p className="text-white text-xl">
                   {event.date}
                 </p>
 
@@ -346,7 +346,7 @@ tab === null ? (
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-4 mt-10 sm:mt-12 lg:mt-16 text-primary text-[18px] sm:text-[20px] lg:text-[22px] font-medium group"
+            className="inline-flex items-center gap-4 mt-16 text-primary text-[22px] font-medium group"
           >
 
             View Event
@@ -379,20 +379,20 @@ tab === null ? (
   animate={{ opacity: 1, y: 0 }}
   exit={{ opacity: 0, y: -30 }}
   transition={{ duration: 0.5 }}
-  className="max-w-[900px] mx-auto text-center py-16 sm:py-24 lg:py-32 px-2"
+  className="max-w-[900px] mx-auto text-center py-32"
 >
 
   <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold">
     UPCOMING EXPERIENCES
   </p>
 
-  <h2 className="font-serif text-[34px] sm:text-[48px] lg:text-[60px] leading-[1.05] text-white mt-8">
+  <h2 className="font-serif text-[60px] leading-[1.05] text-white mt-8">
     We're creating something
     <br />
     worth waiting for.
   </h2>
 
-  <p className="mt-6 sm:mt-8 text-[16px] sm:text-[18px] lg:text-[22px] leading-8 sm:leading-9 lg:leading-10 text-white/65 max-w-3xl mx-auto">
+  <p className="mt-8 text-[22px] leading-10 text-white/65 max-w-3xl mx-auto">
     Every Ragam experience begins with research,
     collaboration and thoughtful planning.
     Our first public experiences will be announced soon.
@@ -417,29 +417,28 @@ tab === null ? (
 
 </section>
 {/* Footer */}
-      <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-16 bg-[#12100F]">
+      <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-5 sm:px-6 md:px-10 lg:px-16 bg-[#12100F]">
 
-  <div className="w-full max-w-[1700px] mx-auto px-2 sm:px-4 lg:px-24">
+  <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
 
-    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] lg:gap-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-10 md:gap-16 lg:gap-24">
 
       {/* Left */}
       <div>
 
-        <h2 className="font-serif text-4xl sm:text-5xl text-white">
+        <h2 className="font-serif text-5xl text-white">
           Ragam
           <span className="text-primary text-3xl"> &amp; co.</span>
         </h2>
 
-        <p className="mt-8 text-white/65 text-base sm:text-lg lg:text-xl leading-8 sm:leading-10 max-w-lg">
+        <p className="mt-8 text-white/65 text-xl leading-10 max-w-lg">
           Growth intelligence for Telugu music —
           for the artists, organizers and labels
           carrying the sound forward.
         </p>
-
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-6 sm:px-10 py-4 sm:py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
         >
           Get My Music Analysis
           <span>↗</span>
@@ -458,25 +457,23 @@ tab === null ? (
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artists" className="hover:text-primary">
-              Artists
-            </Link>
+            <Link href="/who-we-help/artist">Artists</Link>
+              
+            
           </li>
 
           <li>
-            <Link href="/organizers" className="hover:text-primary">
-              Organizers
-            </Link>
+            <Link href="/who-we-help/organizers">Organizers</Link>
           </li>
 
           <li>
-            <Link href="/labels" className="hover:text-primary">
+            <Link href="/who-we-help/labels" className="hover:text-primary">
               Labels
             </Link>
           </li>
 
           <li>
-            <Link href="/venues" className="hover:text-primary">
+            <Link href="/who-we-help/venues" className="hover:text-primary">
               Venues
             </Link>
           </li>
@@ -496,13 +493,13 @@ tab === null ? (
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/how-it-works" className="hover:text-primary">
+            <Link href="/what-we-do" className="hover:text-primary">
               How it works
             </Link>
           </li>
 
           <li>
-            <Link href="/what-you-receive" className="hover:text-primary">
+            <Link href="/who-we-help" className="hover:text-primary">
               What you receive
             </Link>
           </li>
@@ -573,23 +570,38 @@ tab === null ? (
 
           <li>
             <a
-              href="mailto:hello@ragam.co"
+              href="mailto:sairitishthirunagari@gmail.com"
               className="hover:text-primary"
             >
-              hello@ragam.co
+              ragam@gmail.com
             </a>
           </li>
 
           <li>Hyderabad, India</li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-          </li>
+          
+  <li>
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://www.instagram.com/telugumusic.strategy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "_blank"
+      );
+    }}
+    className="hover:text-primary"
+  >
+    Instagram
+  </button>
+</li>
+<li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
+            <a
+    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-primary"
+  >
               LinkedIn
             </a>
           </li>
@@ -602,13 +614,13 @@ tab === null ? (
 
     {/* Bottom */}
 
-    <div className="border-t border-white/10 mt-16 sm:mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+    <div className="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center">
 
-      <p className="text-white/40 text-center md:text-left text-sm sm:text-base">
+      <p className="text-white/40">
         © 2026 Ragam &amp; Co. All rights reserved.
       </p>
 
-      <div className="flex flex-wrap justify-center md:justify-end gap-6 sm:gap-10 mt-0 text-white/40 text-sm sm:text-base">
+      <div className="flex gap-10 mt-6 md:mt-0 text-white/40">
 
         <Link href="/privacy" className="hover:text-primary">
           Privacy
@@ -625,8 +637,7 @@ tab === null ? (
       </div>
 
     </div>
-
-  </div>
+    </div>
 
 </footer>
 </main>
