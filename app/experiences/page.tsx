@@ -54,51 +54,74 @@ const upcomingEvents = [
 ];
 export default function ExperiencesPage() {
 
-const [tab,setTab]=useState("past");
-
+const [tab, setTab] = useState<"past" | "upcoming" | null>(null);
 return(
 
-<main className="bg-[#11100f] min-h-screen">
-  <section className="max-w-[1700px] mx-auto px-10 lg:px-20 pt-32 pb-20">
+<main className="bg-[#11100f] min-h-screen overflow-x-hidden">
+  <section className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 lg:px-20 pt-20 sm:pt-24 lg:pt-32 pb-16 sm:pb-20">
 
-<ScrollReveal>
+  <div className="grid gap-10 md:gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:gap-28 items-center">
 
-<p className="uppercase tracking-[0.5em] text-primary text-sm font-semibold">
-RAGAM EXPERIENCES
-</p>
+    {/* LEFT */}
 
-<h1 className="font-serif text-[110px] leading-[0.9] tracking-[-0.06em] text-white mt-8">
+    <ScrollReveal>
 
-Events that bring
-<br/>
+      <div>
 
-music closer
-<br/>
+        <p className="uppercase tracking-[0.35em] sm:tracking-[0.5em] text-primary text-xs sm:text-sm font-semibold">
+          RAGAM EXPERIENCES
+        </p>
 
-to people.
+        <h1 className="font-serif text-[40px] sm:text-[56px] md:text-[64px] lg:text-[90px] xl:text-[96px] leading-[0.92] tracking-[-0.05em] text-white mt-6 sm:mt-8">
 
-</h1>
+          Events that bring
+          <br />
+          music closer
+          <br />
+          to people.
 
-<p className="mt-10 text-[24px] leading-[1.9] text-white/60 max-w-3xl">
+        </h1>
 
-Discover our past gatherings, ongoing initiatives,
-and upcoming experiences designed to strengthen
-the Telugu music ecosystem.
+        <p className="mt-6 sm:mt-8 lg:mt-10 text-[16px] sm:text-[18px] lg:text-[22px] leading-[1.7] sm:leading-[1.8] text-white/60 max-w-2xl">
 
-</p>
+          Discover our past gatherings, ongoing initiatives,
+          and upcoming experiences designed to strengthen
+          the Telugu music ecosystem.
 
-</ScrollReveal>
+        </p>
 
-</section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 pb-24">
+        {/* Buttons */}
 
-<div className="flex gap-8">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 lg:gap-10 mt-8 sm:mt-10 lg:mt-14">
+
+
+
+<button
+
+onClick={()=>setTab("upcoming")}
+
+className={`w-full sm:w-auto justify-center px-6 py-4 sm:px-10 sm:py-5 rounded-full transition-all duration-300 text-base sm:text-lg
+
+${tab==="upcoming"
+
+?"bg-primary text-black"
+
+:"border border-white/10 text-white hover:border-primary"
+
+}`}
+
+>
+
+What's Coming Next
+
+</button>
+
 
 <button
 
 onClick={()=>setTab("past")}
 
-className={`px-10 py-5 rounded-full transition-all duration-300 text-lg
+className={`w-full sm:w-auto justify-center px-6 py-4 sm:px-10 sm:py-5 rounded-full transition-all duration-300 text-base sm:text-lg
 
 ${tab==="past"
 
@@ -114,40 +137,108 @@ Past Events
 
 </button>
 
-<button
-
-onClick={()=>setTab("upcoming")}
-
-className={`px-10 py-5 rounded-full transition-all duration-300 text-lg
-
-${tab==="upcoming"
-
-?"bg-primary text-black"
-
-:"border border-white/10 text-white hover:border-primary"
-
-}`}
-
->
-
-Upcoming Events
-
-</button>
-
 </div>
 
+      </div>
+
+    </ScrollReveal>
+
+    {/* RIGHT */}
+
+    <ScrollReveal direction="right">
+
+      <div className="border border-[#8b6b2e] rounded-[28px] p-6 sm:p-8 lg:p-10 bg-[#141210]">
+
+        <p className="uppercase tracking-[0.35em] text-primary text-xs font-semibold">
+          FOR ORGANISERS
+        </p>
+
+        <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[54px] leading-[1.05] text-white mt-6">
+          Bring your next
+          <br />
+          event to life.
+        </h2>
+
+        <div className="w-16 h-px bg-primary mt-6 sm:mt-8 mb-6 sm:mb-8" />
+
+        <p className="text-white/65 text-[16px] sm:text-[18px] lg:text-[20px] leading-8 sm:leading-9">
+          Every great event starts with a clear idea.
+          Ragam works with organisers to shape
+          experiences that connect artists,
+          audiences and culture.
+        </p>
+
+        <div className="space-y-6 mt-10">
+
+          {[
+            "Artist discovery & curation",
+            "Budget-based event planning",
+            "Audience engagement strategy",
+            "Experience design & promotion",
+          ].map((item) => (
+
+            <div key={item} className="flex items-start gap-4">
+
+              <div className="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary shrink-0">
+                ✓
+              </div>
+
+              <p className="text-white/80 text-base sm:text-lg">
+                {item}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+        <Link
+          href="/#request-analysis"
+          className="mt-10 sm:mt-12 flex justify-center items-center rounded-full bg-primary text-black py-4 sm:py-5 font-semibold text-base sm:text-lg"
+        >
+          Plan Your Event →
+        </Link>
+
+        <p className="text-white/40 text-center mt-6 text-sm sm:text-base">
+          Let's create meaningful experiences together.
+        </p>
+
+      </div>
+
+    </ScrollReveal>
+
+  </div>
+
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 pb-32">
+
+
+
+<section className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 lg:px-20 pb-16 sm:pb-24 lg:pb-32">
 
 <AnimatePresence mode="wait">
 
 {
 
-tab==="past"
+tab === null ? (
 
-?
+  <div className="py-16 sm:py-24 lg:py-36 flex flex-col items-center justify-center px-2">
 
-<div>
+    <p className="uppercase tracking-[0.3em] sm:tracking-[0.4em] text-primary text-xs sm:text-sm">
+      EXPLORE EVENTS
+    </p>
+
+    <h2 className="mt-6 font-serif text-3xl sm:text-4xl lg:text-5xl text-white text-center">
+      Choose a timeline
+    </h2>
+
+    <p className="mt-6 text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl text-center px-2">
+      Select whether you'd like to explore our past events
+      or discover upcoming experiences.
+    </p>
+
+  </div>
+  ) : tab === "past" ? (
 
 <motion.div
   key="past"
@@ -155,14 +246,14 @@ tab==="past"
   animate={{ opacity: 1, y: 0 }}
   exit={{ opacity: 0, y: -30 }}
   transition={{ duration: 0.5 }}
-  className="space-y-40"
+  className="space-y-16 sm:space-y-24 lg:space-y-40"
 >
 
   {pastEvents.map((event, index) => (
 
     <div
       key={event.title}
-      className={`grid lg:grid-cols-[1fr_1fr] gap-24 items-center ${
+      className={`grid gap-8 md:gap-12 lg:grid-cols-[1fr_1fr] lg:gap-24 items-center ${
         index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
@@ -176,10 +267,10 @@ tab==="past"
           <img
             src={event.image}
             alt={event.title}
-            className="w-full max-w-[720px] aspect-square object-cover rounded-[34px] shadow-2xl"
+            className="w-full max-w-full lg:max-w-[720px] aspect-square object-cover rounded-[24px] sm:rounded-[34px] shadow-2xl"
           />
 
-          <div className="absolute bottom-8 left-8 bg-black/70 backdrop-blur-xl px-6 py-4 rounded-2xl">
+          <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 bg-black/70 backdrop-blur-xl px-4 sm:px-6 py-3 sm:py-4 rounded-2xl">
 
             <p className="text-primary text-sm uppercase tracking-[0.3em]">
               Past Event
@@ -195,25 +286,25 @@ tab==="past"
 
       <ScrollReveal direction={index % 2 === 0 ? "right" : "left"}>
 
-        <div className="max-w-[650px]">
+        <div className="max-w-full lg:max-w-[650px]">
 
           <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
             EVENT
           </p>
 
-          <h2 className="font-serif text-[72px] leading-[0.92] tracking-[-0.05em] text-white">
+          <h2 className="font-serif text-[32px] sm:text-[44px] lg:text-[72px] leading-[0.92] tracking-[-0.05em] text-white">
             {event.title}
           </h2>
 
-          <p className="mt-12 text-[24px] leading-[1.8] text-white/65">
+          <p className="mt-6 sm:mt-8 lg:mt-12 text-[16px] sm:text-[18px] lg:text-[24px] leading-[1.7] sm:leading-[1.8] text-white/65">
             {event.description}
           </p>
 
-          <div className="mt-14 space-y-8">
+          <div className="mt-8 sm:mt-10 lg:mt-14 space-y-6 sm:space-y-8">
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 sm:gap-6">
 
-              <span className="text-primary text-xl">
+              <span className="text-primary text-lg sm:text-xl">
                 📍
               </span>
 
@@ -223,7 +314,7 @@ tab==="past"
                   Venue
                 </p>
 
-                <p className="text-white text-xl">
+                <p className="text-white text-base sm:text-xl">
                   {event.venue}
                 </p>
 
@@ -231,9 +322,9 @@ tab==="past"
 
             </div>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 sm:gap-6">
 
-              <span className="text-primary text-xl">
+              <span className="text-primary text-lg sm:text-xl">
                 📅
               </span>
 
@@ -243,7 +334,7 @@ tab==="past"
                   Date
                 </p>
 
-                <p className="text-white text-xl">
+                <p className="text-white text-base sm:text-xl">
                   {event.date}
                 </p>
 
@@ -255,7 +346,7 @@ tab==="past"
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-4 mt-16 text-primary text-[22px] font-medium group"
+            className="inline-flex items-center gap-4 mt-10 sm:mt-12 lg:mt-16 text-primary text-[18px] sm:text-[20px] lg:text-[22px] font-medium group"
           >
 
             View Event
@@ -276,9 +367,9 @@ tab==="past"
 
 </motion.div>
 
-</div>
 
-:
+
+) : (
 
 <div>
 
@@ -288,150 +379,59 @@ tab==="past"
   animate={{ opacity: 1, y: 0 }}
   exit={{ opacity: 0, y: -30 }}
   transition={{ duration: 0.5 }}
-  className="space-y-40"
+  className="max-w-[900px] mx-auto text-center py-16 sm:py-24 lg:py-32 px-2"
 >
 
-  {upcomingEvents.map((event, index) => (
+  <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold">
+    UPCOMING EXPERIENCES
+  </p>
 
-    <div
-      key={event.title}
-      className={`grid lg:grid-cols-[1fr_1fr] gap-24 items-center ${
-        index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-      }`}
-    >
+  <h2 className="font-serif text-[34px] sm:text-[48px] lg:text-[60px] leading-[1.05] text-white mt-8">
+    We're creating something
+    <br />
+    worth waiting for.
+  </h2>
 
-      {/* IMAGE */}
+  <p className="mt-6 sm:mt-8 text-[16px] sm:text-[18px] lg:text-[22px] leading-8 sm:leading-9 lg:leading-10 text-white/65 max-w-3xl mx-auto">
+    Every Ragam experience begins with research,
+    collaboration and thoughtful planning.
+    Our first public experiences will be announced soon.
+  </p>
 
-      <ScrollReveal direction={index % 2 === 0 ? "left" : "right"}>
-
-        <div className="relative">
-
-          <img
-            src={event.image}
-            alt={event.title}
-            className="w-full max-w-[720px] aspect-square object-cover rounded-[34px] shadow-2xl"
-          />
-
-          <div className="absolute bottom-8 left-8 bg-primary text-black px-6 py-4 rounded-2xl">
-
-            <p className="text-sm uppercase tracking-[0.3em] font-semibold">
-              Upcoming
-            </p>
-
-          </div>
-
-        </div>
-
-      </ScrollReveal>
-
-      {/* CONTENT */}
-
-      <ScrollReveal direction={index % 2 === 0 ? "right" : "left"}>
-
-        <div className="max-w-[650px]">
-
-          <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
-            UPCOMING EVENT
-          </p>
-
-          <h2 className="font-serif text-[72px] leading-[0.92] tracking-[-0.05em] text-white">
-            {event.title}
-          </h2>
-
-          <p className="mt-12 text-[24px] leading-[1.8] text-white/65">
-            {event.description}
-          </p>
-
-          <div className="mt-14 space-y-8">
-
-            <div className="flex items-center gap-6">
-
-              <span className="text-primary text-xl">📅</span>
-
-              <div>
-
-                <p className="uppercase tracking-[0.3em] text-xs text-white/40">
-                  Event Date
-                </p>
-
-                <p className="text-xl text-white">
-                  {event.date}
-                </p>
-
-              </div>
-
-            </div>
-
-            <div className="flex items-center gap-6">
-
-              <span className="text-primary text-xl">📍</span>
-
-              <div>
-
-                <p className="uppercase tracking-[0.3em] text-xs text-white/40">
-                  Venue
-                </p>
-
-                <p className="text-xl text-white">
-                  {event.venue}
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div className="mt-16 flex gap-6">
-
-            <Link
-              href="/contact"
-              className="px-10 py-4 rounded-full bg-primary text-black font-semibold hover:scale-105 transition"
-            >
-              Register Interest
-            </Link>
-
-            <button
-              className="px-10 py-4 rounded-full border border-white/10 text-white hover:border-primary transition"
-            >
-              Learn More
-            </button>
-
-          </div>
-
-        </div>
-
-      </ScrollReveal>
-
-    </div>
-
-  ))}
+  <Link
+    href="https://instagram.com/ragam.co"
+    target="_blank"
+    className="inline-flex items-center gap-3 mt-14 text-primary text-xl font-medium hover:gap-5 transition-all"
+  >
+    Follow our journey
+    <span>↗</span>
+  </Link>
 
 </motion.div>
 
 </div>
 
-}
+)}
 
 </AnimatePresence>
 
 </section>
 {/* Footer */}
-      <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
+      <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-16 bg-[#12100F]">
 
-  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
+  <div className="w-full max-w-[1700px] mx-auto px-2 sm:px-4 lg:px-24">
 
-    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
+    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] lg:gap-24">
 
       {/* Left */}
       <div>
 
-        <h2 className="font-serif text-5xl text-white">
+        <h2 className="font-serif text-4xl sm:text-5xl text-white">
           Ragam
           <span className="text-primary text-3xl"> &amp; co.</span>
         </h2>
 
-        <p className="mt-8 text-white/65 text-xl leading-10 max-w-lg">
+        <p className="mt-8 text-white/65 text-base sm:text-lg lg:text-xl leading-8 sm:leading-10 max-w-lg">
           Growth intelligence for Telugu music —
           for the artists, organizers and labels
           carrying the sound forward.
@@ -439,7 +439,7 @@ tab==="past"
 
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-6 sm:px-10 py-4 sm:py-5 font-semibold hover:scale-105 transition"
         >
           Get My Music Analysis
           <span>↗</span>
@@ -602,13 +602,13 @@ tab==="past"
 
     {/* Bottom */}
 
-    <div className="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center">
+    <div className="border-t border-white/10 mt-16 sm:mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
 
-      <p className="text-white/40">
+      <p className="text-white/40 text-center md:text-left text-sm sm:text-base">
         © 2026 Ragam &amp; Co. All rights reserved.
       </p>
 
-      <div className="flex gap-10 mt-6 md:mt-0 text-white/40">
+      <div className="flex flex-wrap justify-center md:justify-end gap-6 sm:gap-10 mt-0 text-white/40 text-sm sm:text-base">
 
         <Link href="/privacy" className="hover:text-primary">
           Privacy

@@ -22,10 +22,10 @@ export function HeroSection({
   backgroundImage,
 }: HeroSectionProps) {
   return (
-    <div className="relative w-full min-h-screen px-6 md:px-10 lg:px-14 py-6">
+    <div className="relative w-full min-h-[90vh] lg:min-h-screen px-4 sm:px-6 md:px-10 lg:px-14 py-4 sm:py-6 overflow-x-hidden">
 
       {/* Hero Wrapper */}
-      <div className="relative h-[88vh] rounded-3xl overflow-hidden shadow-2xl">
+      <div className="relative h-[75vh] sm:h-[80vh] lg:h-[88vh] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
 
         {/* Background */}
         {backgroundImage ? (
@@ -44,7 +44,7 @@ export function HeroSection({
         <FloatingParticles />
 
         {/* Hero Content */}
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-5 sm:px-8">
 
           {/* Subtitle */}
           {subtitle && (
@@ -53,7 +53,7 @@ export function HeroSection({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <p className="text-base md:text-lg font-semibold uppercase tracking-[0.35em] text-primary">
+              <p className="text-[11px] sm:text-sm md:text-lg font-semibold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">
                 {subtitle}
               </p>
             </motion.div>
@@ -66,11 +66,11 @@ export function HeroSection({
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-serif text-center leading-[0.9] mt-6"
           >
-            <span className="block text-6xl md:text-8xl lg:text-[110px] font-semibold text-white">
+            <span className="block text-[40px] sm:text-[52px] md:text-[72px] lg:text-[110px] leading-[0.95] font-semibold text-white">
               Know your music.
             </span>
 
-            <span className="block mt-3 text-4xl md:text-6xl lg:text-7xl font-medium text-white">
+            <span className="block mt-2 sm:mt-3 text-[28px] sm:text-[36px] md:text-[52px] lg:text-7xl leading-[1] font-medium text-white">
               Grow your{" "}
               <span className="text-primary italic">
                 career.
@@ -84,7 +84,7 @@ export function HeroSection({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-8 max-w-3xl text-lg md:text-xl leading-relaxed text-white/80"
+              className="mt-6 sm:mt-8 max-w-3xl px-2 text-base sm:text-lg lg:text-xl leading-7 sm:leading-relaxed text-white/80"
             >
               {description}
             </motion.p>
@@ -100,7 +100,7 @@ export function HeroSection({
             >
               <Link
                 href={ctaLink}
-                className="inline-flex items-center rounded-xl bg-primary px-8 py-4 text-lg font-medium text-primary-foreground hover:opacity-90 transition"
+                className="inline-flex items-center rounded-full bg-primary px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-primary-foreground hover:opacity-90 transition"
               >
                 {ctaText}
               </Link>
@@ -111,7 +111,7 @@ export function HeroSection({
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+          className="absolute bottom-5 sm:bottom-8 left-1/2 -translate-x-1/2 z-10"
           animate={{ y: [0, 12, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

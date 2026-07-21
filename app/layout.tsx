@@ -5,6 +5,10 @@ import './globals.css'
 import { Navigation } from '@/components/navigation'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const geist = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist',
+})
 const cormorant = Cormorant_Garamond({ 
   subsets: ['latin'], 
   variable: '--font-serif',

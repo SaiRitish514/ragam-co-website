@@ -1,8 +1,8 @@
 'use client';
 
 import Link from "next/link";
+
 import { useState } from "react";
-import { motion } from "framer-motion";
 import {
   Users,
   MapPin,
@@ -58,9 +58,183 @@ const reports = [
 ];
 
 export default function WhatWeDo() {
-  const [activeCard, setActiveCard] = useState(0);
+  const [activeSection, setActiveSection] = useState(0);
+
+const reportSections = [
+  "Audience Overview",
+  "Fan Map",
+  "Career Score",
+  "Concert Potential",
+  "Revenue Opportunities",
+  "Recommended Festivals",
+  "Next Steps",
+];
   return (
     <main className="bg-[#171412] min-h-screen">
+      {/* FIVE STEP PROCESS */}
+
+<section className="max-w-[1400px] mx-auto px-8 lg:px-20 py-40">
+
+  <div className="text-center">
+
+    <p className="uppercase tracking-[0.35em] text-primary text-xs font-semibold">
+      OUR PROCESS
+    </p>
+
+    <h2 className="font-serif text-[70px] leading-[0.95] text-white mt-8">
+      A five-step process,
+      <br />
+      <span className="italic text-primary">
+        built like a studio session.
+      </span>
+    </h2>
+
+    <p className="text-white/60 text-lg max-w-3xl mx-auto mt-8 leading-8">
+      No dashboards. No fluff. A quiet, disciplined method that ends with
+      a plan you can execute.
+    </p>
+
+  </div>
+
+  <div className="mt-32 space-y-28">
+
+    {/* STEP 1 */}
+
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+
+      <div className="text-right pr-20">
+        <h3 className="font-serif text-[42px] text-white">
+          You tell us your goals.
+        </h3>
+
+        <p className="text-white/60 mt-4 leading-8">
+          A short intake — your music,
+          your city, ambitions and constraints.
+        </p>
+      </div>
+
+      <div className="mx-12">
+        <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
+          01
+        </div>
+      </div>
+
+      <div></div>
+
+    </div>
+
+    {/* STEP 2 */}
+
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+
+      <div></div>
+
+      <div className="mx-12">
+        <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
+          02
+        </div>
+      </div>
+
+      <div className="pl-20">
+        <h3 className="font-serif text-[42px] text-white">
+          We research your music,
+          audience, region and career.
+        </h3>
+
+        <p className="text-white/60 mt-4 leading-8">
+          Streaming data, social signals,
+          historical performance and scene context.
+        </p>
+      </div>
+
+    </div>
+
+    {/* STEP 3 */}
+
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+
+      <div className="text-right pr-20">
+
+        <h3 className="font-serif text-[42px] text-white">
+          We analyse opportunities,
+          income and collaborations.
+        </h3>
+
+        <p className="text-white/60 mt-4 leading-8">
+          Every path forward is priced,
+          weighted and pressure-tested.
+        </p>
+
+      </div>
+
+      <div className="mx-12">
+        <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
+          03
+        </div>
+      </div>
+
+      <div></div>
+
+    </div>
+
+    {/* STEP 4 */}
+
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+
+      <div></div>
+
+      <div className="mx-12">
+        <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
+          04
+        </div>
+      </div>
+
+      <div className="pl-20">
+
+        <h3 className="font-serif text-[42px] text-white">
+          You receive a complete
+          Growth Intelligence Report.
+        </h3>
+
+        <p className="text-white/60 mt-4 leading-8">
+          A single document with the map,
+          priorities and numbers behind them.
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* STEP 5 */}
+
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+
+      <div className="text-right pr-20">
+
+        <h3 className="font-serif text-[42px] text-white">
+          We help you execute it.
+        </h3>
+
+        <p className="text-white/60 mt-4 leading-8">
+          Introductions, applications,
+          pricing conversations and strategic guidance.
+        </p>
+
+      </div>
+
+      <div className="mx-12">
+        <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
+          05
+        </div>
+      </div>
+
+      <div></div>
+
+    </div>
+
+  </div>
+
+</section>
 
       <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
 
@@ -113,95 +287,33 @@ export default function WhatWeDo() {
 
     return (
 
-      <motion.div
-        key={index}
-        onMouseEnter={() => setActiveCard(index)}
-        whileHover={{
-          y: -8,
-          scale: 1.02,
-        }}
-        transition={{
-          duration: 0.35,
-          ease: "easeOut",
-        }}
-        className={`rounded-[36px] border p-10 cursor-pointer transition-all duration-500
-
-        ${
-          activeCard === index
-            ? "bg-[#171513] border-[#2A2520] shadow-2xl"
-            : "bg-[#F8F3EA] border-[#DDD4C7]"
-        }
-
-        `}
+      <div
+  key={index}
+        className="rounded-[36px] border border-[#2A2520] bg-[#171412] p-10"
       >
 
-        <motion.div
-          animate={{
-            rotate: activeCard === index ? 360 : 0,
-            scale: activeCard === index ? 1.08 : 1,
-          }}
-          transition={{
-            duration: .45,
-          }}
-          className={`w-16 h-16 rounded-full flex items-center justify-center
-
-          ${
-            activeCard === index
-              ? "bg-primary"
-              : "bg-[#F5EFE4]"
-          }
-
-          `}
-        >
+        <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#24201C]">
 
           <Icon
-            size={28}
-            className={`
+  size={28}
+  className="text-primary"
+/>
 
-            ${
-              activeCard === index
-                ? "text-black"
-                : "text-primary"
-            }
+        </div>
 
-            `}
-          />
-
-        </motion.div>
-
-        <h3
-          className={`font-serif text-[38px] mt-10 transition-colors duration-500
-
-          ${
-            activeCard === index
-              ? "text-white"
-              : "text-[#201B17]"
-          }
-
-          `}
-        >
+        <h3 className="font-serif text-[38px] mt-10 text-white">
 
           {item.title}
 
         </h3>
 
-        <p
-          className={`text-[22px] leading-[1.7] mt-6 transition-colors duration-500
-
-          ${
-            activeCard === index
-              ? "text-white/70"
-              : "text-[#514A44]"
-          }
-
-          `}
-        >
+        <p className="text-[22px] leading-[1.7] mt-6 text-white/60">
 
           {item.desc}
 
         </p>
 
-      </motion.div>
+      </div>
 
     
 
@@ -215,7 +327,7 @@ export default function WhatWeDo() {
       </section>
       {/* REPORT PREVIEW */}
 
-<section className="bg-[#171412] py-32 px-8 lg:px-20">
+      <section className="bg-[#171412] py-32 px-8 lg:px-20">
 
   <div className="max-w-[1700px] mx-auto">
 
@@ -224,179 +336,728 @@ export default function WhatWeDo() {
     </p>
 
     <h2 className="font-serif text-[86px] leading-[0.92] tracking-[-0.05em] text-white mt-8">
-
       What the report
       <br />
-
       <span className="italic text-primary">
         actually looks like.
       </span>
-
     </h2>
 
     <p className="text-white/70 text-[24px] leading-[1.7] max-w-[760px] mt-10">
-
       A confidential, artist-specific document.
       Below is a redacted preview from a recent brief.
-
     </p>
 
     <div className="grid lg:grid-cols-[0.32fr_0.68fr] gap-10 mt-20">
+      {/* LEFT SIDE */}
 
-      {/* LEFT */}
+<div>
 
-      <div>
+  <div className="rounded-[36px] border border-white/10 bg-[#231F1B] p-5">
 
-        <div className="rounded-[36px] border border-white/10 bg-[#231F1B] p-5">
+    <div className="space-y-2">
 
-          <button className="w-full bg-primary rounded-full px-6 py-5 flex justify-between items-center text-black text-lg">
+      {reportSections.map((section, index) => (
 
-            <span>
+        <button
+          key={index}
+          onClick={() => setActiveSection(index)}
+          className={`w-full rounded-full px-6 py-5 flex justify-between items-center transition-all duration-300
 
-              <span className="opacity-60 mr-3">
-                01
-              </span>
+          ${
+            activeSection === index
+              ? "bg-primary text-black"
+              : "text-white/70 hover:bg-white/5"
+          }`}
+        >
 
-              Audience Overview
+          <span>
+
+            <span className="opacity-60 mr-3">
+
+              {(index + 1).toString().padStart(2, "0")}
 
             </span>
 
-            <span>→</span>
+            {section}
 
-          </button>
+          </span>
 
-          <div className="h-[340px]" />
+          {activeSection === index && <span>→</span>}
 
-        </div>
+        </button>
 
-        <p className="text-white/40 text-sm mt-6">
-          🔒 Client details redacted for privacy.
-        </p>
-
-      </div>
-
-      {/* RIGHT */}
-
-      <div className="bg-[#F8F3EA] rounded-[42px] p-14">
-
-        <div className="flex justify-between text-[#7E756C] uppercase tracking-[0.2em] text-xs">
-
-          <span>Ragam Growth Intelligence Report</span>
-
-          <span>Page 01 / 47</span>
-
-        </div>
-
-        <div className="mt-10 flex items-center gap-4">
-
-          <div className="w-12 h-[1px] bg-primary"></div>
-
-          <p className="uppercase tracking-[0.3em] text-primary text-xs">
-
-            Audience Overview
-
-          </p>
-
-        </div>
-
-        <h3 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8">
-
-          Prepared for 
-
-        </h3>
-
-        {/* STATS */}
-
-        <div className="grid grid-cols-3 gap-6 mt-12">
-
-          <div className="border border-[#D7CCBE] rounded-[26px] p-8">
-
-            <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
-
-              Monthly Listeners
-
-            </p>
-
-            <h4 className="font-serif text-[42px] mt-5 text-[#221F1B]">
-
-              42,180
-
-            </h4>
-
-          </div>
-
-          <div className="border border-[#D7CCBE] rounded-[26px] p-8">
-
-            <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
-
-              Avg. Age
-
-            </p>
-
-            <h4 className="font-serif text-[42px] mt-5 text-[#221F1B]">
-
-              24–34
-
-            </h4>
-
-          </div>
-
-          <div className="border border-[#D7CCBE] rounded-[26px] p-8">
-
-            <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
-
-              Repeat Rate
-
-            </p>
-
-            <h4 className="font-serif text-[42px] mt-5 text-[#221F1B]">
-
-              61%
-
-            </h4>
-
-          </div>
-
-        </div>
-
-        {/* GRAPH */}
-
-        <div className="mt-14">
-
-          <p className="uppercase tracking-[0.3em] text-[#7A7065] text-xs mb-10">
-
-            Listener Taste Graph
-
-          </p>
-
-          <div className="flex items-end gap-3 h-[170px]">
-
-            {[45,75,95,68,105,55,118,90,65,86,52,102].map((h,i)=>(
-
-              <div
-                key={i}
-                className="flex-1 rounded-t-[18px] bg-gradient-to-t from-[#221F1B] to-[#C9B06A]"
-                style={{height:`${h}%`}}
-              />
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </div>
+      ))}
 
     </div>
 
   </div>
 
+  <p className="text-white/40 text-sm mt-6">
+    🔒 Client details redacted for privacy.
+  </p>
+
+</div>
+
+{/* RIGHT SIDE */}
+
+<div>
+
+  {activeSection === 0 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 01 / 47</span>
+
+  </div>
+
+  {/* Section Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Audience Overview
+    </p>
+
+  </div>
+
+  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
+
+  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+</h2>
+
+  {/* Stats */}
+
+  <div className="grid grid-cols-3 gap-6 mt-12">
+
+    <div className="border border-[#D7CCBE] rounded-[26px] p-8">
+
+      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+        Monthly Listeners
+      </p>
+
+      <h4 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+        42,180
+      </h4>
+
+    </div>
+
+    <div className="border border-[#D7CCBE] rounded-[26px] p-8">
+
+      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+        Avg. Age
+      </p>
+
+      <h4 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+        24–34
+      </h4>
+
+    </div>
+
+    <div className="border border-[#D7CCBE] rounded-[26px] p-8">
+
+      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+        Repeat Rate
+      </p>
+
+      <h4 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+        61%
+      </h4>
+
+    </div>
+
+  </div>
+
+  {/* Graph */}
+
+  <div className="mt-14">
+
+    <p className="uppercase tracking-[0.3em] text-[#7A7065] text-xs mb-10">
+      Listener Taste Graph
+    </p>
+
+    <div className="flex items-end gap-3 h-[170px]">
+
+      {[45,75,95,68,105,55,118,90,65,86,52,102].map((h,i)=>(
+
+        <div
+          key={i}
+          className="flex-1 rounded-t-[18px] bg-gradient-to-t from-[#221F1B] to-[#C9B06A]"
+          style={{height:`${h}%`}}
+        />
+
+      ))}
+
+    </div>
+
+  </div>
+
+</div>
+
+)}
+{activeSection === 1 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 02 / 47</span>
+
+  </div>
+
+  {/* Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Fan Map
+    </p>
+
+  </div>
+
+  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
+
+  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+</h2>
+
+  {/* Map */}
+
+  <div className="relative mt-12 h-[430px] rounded-[30px] overflow-hidden border border-[#D7CCBE]">
+
+    {/* Grid */}
+
+    <div
+      className="absolute inset-0"
+      style={{
+        backgroundImage: `
+          linear-gradient(to right,#ddd 1px,transparent 1px),
+          linear-gradient(to bottom,#ddd 1px,transparent 1px)
+        `,
+        backgroundSize: "34px 34px",
+      }}
+    />
+
+    {/* Bubbles */}
+
+    <div className="absolute left-[18%] top-[34%] w-4 h-4 rounded-full bg-[#B38A45]" />
+    <div className="absolute left-[28%] top-[24%] w-3 h-3 rounded-full bg-[#B38A45]" />
+    <div className="absolute left-[34%] top-[56%] w-8 h-8 rounded-full bg-[#B38A45]" />
+    <div className="absolute left-[47%] top-[46%] w-10 h-10 rounded-full bg-[#B38A45]" />
+    <div className="absolute left-[58%] top-[52%] w-5 h-5 rounded-full bg-[#B38A45]" />
+    <div className="absolute left-[68%] top-[40%] w-6 h-6 rounded-full bg-[#B38A45]" />
+    <div className="absolute left-[76%] top-[60%] w-4 h-4 rounded-full bg-[#B38A45]" />
+
+    {/* Label */}
+
+    <div className="absolute bottom-5 left-5 rounded-full bg-white px-5 py-2 text-xs tracking-[0.25em] uppercase text-[#5B5248] shadow">
+      Andhra & Telangana
+    </div>
+
+  </div>
+
+  {/* Bottom Cards */}
+
+  <div className="grid grid-cols-3 gap-6 mt-8">
+
+    <div className="border border-[#D7CCBE] rounded-[24px] p-7">
+
+      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+        Top City
+      </p>
+
+      <h3 className="font-serif text-[38px] mt-5 text-[#221F1B]">
+        Hyderabad
+      </h3>
+
+    </div>
+
+    <div className="border border-[#D7CCBE] rounded-[24px] p-7">
+
+      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+        Rising City
+      </p>
+
+      <h3 className="font-serif text-[38px] mt-5 text-[#221F1B]">
+        Vizag
+      </h3>
+
+    </div>
+
+    <div className="border border-[#D7CCBE] rounded-[24px] p-7">
+
+      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+        Underserved
+      </p>
+
+      <h3 className="font-serif text-[38px] mt-5 text-[#221F1B]">
+        Warangal
+      </h3>
+
+    </div>
+
+  </div>
+
+</div>
+
+)}
+
+{activeSection === 2 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 03 / 47</span>
+
+  </div>
+
+  {/* Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Career Score
+    </p>
+
+  </div>
+
+  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
+
+  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+</h2>
+
+  <div className="grid grid-cols-[420px_1fr] gap-14 mt-12">
+
+    {/* Score Circle */}
+
+    <div className="border border-[#D8CCBE] rounded-[30px] p-12 flex flex-col items-center justify-center">
+
+      <div className="relative w-56 h-56">
+
+        <svg className="w-56 h-56 -rotate-90">
+
+          <circle
+            cx="112"
+            cy="112"
+            r="80"
+            stroke="#DDD7CE"
+            strokeWidth="12"
+            fill="none"
+          />
+
+          <circle
+            cx="112"
+            cy="112"
+            r="80"
+            stroke="#B38A45"
+            strokeWidth="12"
+            fill="none"
+            strokeDasharray="503"
+            strokeDashoffset="140"
+            strokeLinecap="round"
+          />
+
+        </svg>
+
+        <div className="absolute inset-0 flex items-center justify-center">
+
+          <span className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+            72
+          </span>
+
+        </div>
+
+      </div>
+
+      <p className="uppercase tracking-[0.3em] text-[#7E756C] text-xs mt-8">
+        Career Score
+      </p>
+
+    </div>
+
+    {/* Progress Bars */}
+
+    <div className="space-y-8 flex flex-col justify-center">
+
+      {[
+        ["Craft & Catalogue",84],
+        ["Audience Momentum",71],
+        ["Industry Access",58],
+        ["Revenue Readiness",66],
+      ].map(([label,value],i)=>(
+
+        <div key={i}>
+
+          <div className="flex justify-between mb-2">
+
+            <span className="text-[#221F1B] text-xl">
+              {label}
+            </span>
+
+            <span className="text-[#6D645B]">
+              {value}
+            </span>
+
+          </div>
+
+          <div className="h-2 rounded-full bg-[#DDD7CE]">
+
+            <div
+              className="h-2 rounded-full bg-[#B38A45]"
+              style={{width:`${value}%`}}
+            />
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</div>
+
+)}
+
+
+{activeSection === 3 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 04 / 47</span>
+
+  </div>
+
+  {/* Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Concert Potential
+    </p>
+
+  </div>
+
+  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
+
+  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+</h2>
+
+  <div className="mt-14 space-y-5">
+
+    {[
+      ["Hyderabad","300-cap listening room","HIGH FIT"],
+      ["Vijayawada","Riverfront amphitheatre","MEDIUM FIT"],
+      ["Bengaluru","Telugu diaspora club night","HIGH FIT"],
+      ["Visakhapatnam","College festival circuit","MEDIUM FIT"],
+    ].map(([city,place,status],i)=>(
+
+      <div
+        key={i}
+        className="border border-[#D8CCBE] rounded-[26px] px-8 py-7 flex items-center justify-between"
+      >
+
+        <div>
+
+          <h3 className="font-serif text-[36px] text-[#221F1B]">
+            {city}
+          </h3>
+
+          <p className="text-[#756D63] mt-2">
+            {place}
+          </p>
+
+        </div>
+
+        <span
+          className={`px-6 py-3 rounded-full text-xs tracking-[0.25em]
+
+          ${
+            status==="HIGH FIT"
+              ? "bg-[#1D1916] text-[#D8BE7A]"
+              : "bg-[#F2EEE6] text-[#6B6257]"
+          }`}
+        >
+
+          {status}
+
+        </span>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
+
+)}
+
+
+{activeSection === 4 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 05 / 47</span>
+
+  </div>
+
+  {/* Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Revenue Opportunities
+    </p>
+
+  </div>
+
+  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
+
+  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+</h2>
+
+  <div className="grid grid-cols-2 gap-6 mt-14">
+
+    {[
+      ["SYNC LICENSING","₹1.2–2.4L / quarter"],
+      ["TICKETED LISTENING ROOMS","₹80k–1.5L / show"],
+      ["BRAND-LED IP COLLABORATION","₹3–6L / project"],
+      ["PUBLISHING CATALOGUE CLEAN-UP","One-time uplift"],
+    ].map(([title,value],i)=>(
+
+      <div
+        key={i}
+        className="border border-[#D8CCBE] rounded-[26px] p-8"
+      >
+
+        <p className="uppercase tracking-[0.25em] text-[12px] text-[#B38A45]">
+
+          {title}
+
+        </p>
+
+        <h3 className="font-serif text-[40px] mt-6 text-[#221F1B]">
+
+          {value}
+
+        </h3>
+
+        <div className="mt-8 h-4 rounded-full bg-[#2A2623] blur-[1px]" />
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
+
+)}
+
+{activeSection === 5 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 06 / 47</span>
+
+  </div>
+
+  {/* Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Recommended Festivals
+    </p>
+
+  </div>
+
+ <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
+
+  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+</h2>
+
+  <div className="mt-14 overflow-hidden rounded-[28px] border border-[#D8CCBE]">
+
+    {[
+      ["Magnetic Fields","Nov · Alsisar","Curator intro available"],
+      ["Ziro Festival","Sep · Arunachal","Application window Feb"],
+      ["Krishnaveni Nights","Feb · Vijayawada","Direct booking"],
+      ["NH7 Weekender","Dec · Pune","Programmer contact"],
+    ].map(([festival,date,status],i)=>(
+
+      <div
+        key={i}
+        className="flex items-center justify-between px-8 py-8 border-b last:border-b-0 border-[#D8CCBE]"
+      >
+
+        <div>
+
+          <h3 className="font-serif text-[34px] text-[#221F1B]">
+            {festival}
+          </h3>
+
+          <p className="text-[#756D63] mt-2">
+            {date}
+          </p>
+
+        </div>
+
+        <span className="text-[#B38A45] text-sm">
+          {status}
+        </span>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
+
+)}
+
+{activeSection === 6 && (
+
+<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+
+  {/* Header */}
+
+  <div className="flex justify-between uppercase tracking-[0.2em] text-xs text-[#7E756C]">
+
+    <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
+
+    <span>PAGE 07 / 47</span>
+
+  </div>
+
+  {/* Title */}
+
+  <div className="mt-10 flex items-center gap-4">
+
+    <div className="w-12 h-[1px] bg-primary"></div>
+
+    <p className="uppercase tracking-[0.3em] text-primary text-xs">
+      Next Steps
+    </p>
+
+  </div>
+
+  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8">
+    Your 90-Day Roadmap
+  </h2>
+
+  <div className="mt-14 space-y-6">
+
+    {[
+      ["Week 1","Audit streaming profiles and update artist branding"],
+      ["Week 2","Prepare EPK and press kit for festivals"],
+      ["Week 4","Announce one live performance in Hyderabad"],
+      ["Month 2","Release one collaboration with a regional artist"],
+      ["Month 3","Apply to 5 festivals and launch merchandise"],
+    ].map(([time,task],i)=>(
+
+      <div
+        key={i}
+        className="flex items-start gap-6 border border-[#D8CCBE] rounded-[24px] p-7"
+      >
+
+        <div className="w-14 h-14 rounded-full bg-[#221F1B] text-[#C8A968] flex items-center justify-center font-semibold">
+
+          {i+1}
+
+        </div>
+
+        <div>
+
+          <p className="uppercase tracking-[0.25em] text-[11px] text-[#8A8177]">
+            {time}
+          </p>
+
+          <h3 className="font-serif text-[34px] text-[#221F1B] mt-2">
+            {task}
+          </h3>
+
+        </div>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
+
+)}
+</div>   {/* RIGHT SIDE */}
+
+</div>   {/* GRID */}
+
+</div>   {/* CONTAINER */}
+
 </section>
-   <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
+     
 
-  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
 
-    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
+
+   <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-5 sm:px-6 md:px-10 lg:px-16 bg-[#12100F]">
+
+  <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-10 md:gap-16 lg:gap-24">
 
       {/* Left */}
       <div>
@@ -411,9 +1072,8 @@ export default function WhatWeDo() {
           for the artists, organizers and labels
           carrying the sound forward.
         </p>
-
         <Link
-          href="/#request-analysis"
+          href="#request-analysis"
           className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
         >
           Get My Music Analysis
@@ -433,25 +1093,23 @@ export default function WhatWeDo() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artists" className="hover:text-primary">
-              Artists
-            </Link>
+            <Link href="/who-we-help/artist">Artists</Link>
+              
+            
           </li>
 
           <li>
-            <Link href="/organizers" className="hover:text-primary">
-              Organizers
-            </Link>
+            <Link href="/who-we-help/organizers">Organizers</Link>
           </li>
 
           <li>
-            <Link href="/labels" className="hover:text-primary">
+            <Link href="/who-we-help/labels" className="hover:text-primary">
               Labels
             </Link>
           </li>
 
           <li>
-            <Link href="/venues" className="hover:text-primary">
+            <Link href="/who-we-help/venues" className="hover:text-primary">
               Venues
             </Link>
           </li>
@@ -471,13 +1129,13 @@ export default function WhatWeDo() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/how-it-works" className="hover:text-primary">
+            <Link href="/what-we-do" className="hover:text-primary">
               How it works
             </Link>
           </li>
 
           <li>
-            <Link href="/what-you-receive" className="hover:text-primary">
+            <Link href="/who-we-help" className="hover:text-primary">
               What you receive
             </Link>
           </li>
@@ -548,23 +1206,38 @@ export default function WhatWeDo() {
 
           <li>
             <a
-              href="mailto:hello@ragam.co"
+              href="mailto:sairitishthirunagari@gmail.com"
               className="hover:text-primary"
             >
-              hello@ragam.co
+              ragam@gmail.com
             </a>
           </li>
 
           <li>Hyderabad, India</li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-          </li>
+          
+  <li>
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://www.instagram.com/telugumusic.strategy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "_blank"
+      );
+    }}
+    className="hover:text-primary"
+  >
+    Instagram
+  </button>
+</li>
+<li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
+            <a
+    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-primary"
+  >
               LinkedIn
             </a>
           </li>
@@ -600,8 +1273,7 @@ export default function WhatWeDo() {
       </div>
 
     </div>
-
-  </div>
+    </div>
 
 </footer>
     </main>

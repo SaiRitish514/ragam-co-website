@@ -126,11 +126,11 @@ export default function ArtistPage() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
+      <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-5 sm:px-6 md:px-10 lg:px-16 bg-[#12100F]">
 
-  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
+  <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
 
-    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-10 md:gap-16 lg:gap-24">
 
       {/* Left */}
       <div>
@@ -147,7 +147,7 @@ export default function ArtistPage() {
         </p>
 
         <Link
-          href="/#request-analysis"
+          href="#request-analysis"
           className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
         >
           Get My Music Analysis
@@ -167,25 +167,23 @@ export default function ArtistPage() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artists" className="hover:text-primary">
-              Artists
-            </Link>
+            <Link href="/who-we-help/artist">Artists</Link>
+              
+            
           </li>
 
           <li>
-            <Link href="/organizers" className="hover:text-primary">
-              Organizers
-            </Link>
+            <Link href="/who-we-help/organizers">Organizers</Link>
           </li>
 
           <li>
-            <Link href="/labels" className="hover:text-primary">
+            <Link href="/who-we-help/labels" className="hover:text-primary">
               Labels
             </Link>
           </li>
 
           <li>
-            <Link href="/venues" className="hover:text-primary">
+            <Link href="/who-we-help/venues" className="hover:text-primary">
               Venues
             </Link>
           </li>
@@ -205,13 +203,13 @@ export default function ArtistPage() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/how-it-works" className="hover:text-primary">
+            <Link href="/what-we-do" className="hover:text-primary">
               How it works
             </Link>
           </li>
 
           <li>
-            <Link href="/what-you-receive" className="hover:text-primary">
+            <Link href="/who-we-help" className="hover:text-primary">
               What you receive
             </Link>
           </li>
@@ -282,23 +280,38 @@ export default function ArtistPage() {
 
           <li>
             <a
-              href="mailto:hello@ragam.co"
+              href="mailto:sairitishthirunagari@gmail.com"
               className="hover:text-primary"
             >
-              hello@ragam.co
+              ragam@gmail.com
             </a>
           </li>
 
           <li>Hyderabad, India</li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-          </li>
+          
+  <li>
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://www.instagram.com/telugumusic.strategy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "_blank"
+      );
+    }}
+    className="hover:text-primary"
+  >
+    Instagram
+  </button>
+</li>
+<li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
+            <a
+    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-primary"
+  >
               LinkedIn
             </a>
           </li>

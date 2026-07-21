@@ -3,9 +3,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { usePathname } from "next/navigation";
 import { Menu, X } from 'lucide-react';
 
 export function Navigation() {
+  const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,7 +37,7 @@ export function Navigation() {
         transition={{ duration: 0.3 }}
         className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border"
       >
-        <div className="w-full px-8 lg:px-16 xl:px-20 py-5 flex items-center">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-5 flex items-center">
           {/* Premium Logo */}
           
   <span className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight text-foreground">
@@ -50,13 +52,30 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex flex-1 justify-center">
             <nav className="flex items-center gap-12 xl:gap-16">
-               <NavLink href="/">Home</NavLink>
-              <NavLink href="/what-we-do">What We Do</NavLink>
-              <NavLink href="/who-we-help">Who We Help</NavLink>
-              <NavLink href="/research">Research</NavLink>
-              <NavLink href="/experiences">Events</NavLink>
-              <NavLink href="/about">About</NavLink>
-            </nav>
+  <NavLink href="/" pathname={pathname}>
+    Home
+  </NavLink>
+
+  <NavLink href="/what-we-do" pathname={pathname}>
+    What We Do
+  </NavLink>
+
+  <NavLink href="/who-we-help" pathname={pathname}>
+    Who We Help
+  </NavLink>
+
+  <NavLink href="/research" pathname={pathname}>
+    Research
+  </NavLink>
+
+  <NavLink href="/experiences" pathname={pathname}>
+    Events
+  </NavLink>
+
+  <NavLink href="/about" pathname={pathname}>
+    About
+  </NavLink>
+</nav>
           </div>
 
           {/* Right CTA */}
@@ -130,14 +149,33 @@ export function Navigation() {
   );
 }
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function NavLink({
+  href,
+  children,
+  pathname,
+}: {
+  href: string;
+  children: React.ReactNode;
+  pathname: string;
+}) {
+  const active = pathname === href;
+
   return (
     <Link
       href={href}
-      className="relative text-sm font-medium text-foreground/80 hover:text-foreground transition group"
+      className={`relative text-sm font-medium transition ${
+        active
+          ? "text-white"
+          : "text-white/70 hover:text-white"
+      }`}
     >
       {children}
-      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
+
+      <span
+        className={`absolute -bottom-2 left-0 h-[2px] bg-primary transition-all duration-300 ${
+          active ? "w-full" : "w-0"
+        }`}
+      />
     </Link>
   );
 }

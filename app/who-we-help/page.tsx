@@ -45,12 +45,12 @@ const audienceData = [
 ];
 
 export default function WhoWeHelp() {
-  const [active, setActive] = useState(3);
+  const [active, setActive] = useState(0);
 
   return (
     <main className="bg-[#11100f] min-h-screen">
 
-      <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-32">
+      <section className="max-w-[1700px] mx-auto px-5 sm:px-8 md:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
 
         <div className="grid lg:grid-cols-[0.72fr_1.28fr] gap-20">
 
@@ -93,47 +93,33 @@ export default function WhoWeHelp() {
 
                 
 
-  <div className="grid grid-cols-3 gap-6">
+<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
 
   {audienceData.map((item, index) => (
 
     <Link href={item.href} key={item.title} className="block">
 
       <motion.div
-        whileHover={{ y: -6 }}
-        transition={{ duration: 0.25 }}
-        onMouseEnter={() => setActive(index)}
-        className={`rounded-[34px] border cursor-pointer transition-all duration-300 p-8 h-[180px] flex flex-col justify-between ${
-          active === index
-            ? 'bg-[#181614] border-[#181614] text-white shadow-2xl'
-            : 'bg-[#F6F1E7] border-[#E7DDCF] text-[#1a1816] hover:bg-white'
-        }`}
-      >
+  whileHover={{ y: -6 }}
+  transition={{ duration: 0.25 }}
+  onMouseEnter={() => setActive(index)}
+  className="group rounded-[34px] border border-[#E7DDCF] bg-[#F6F1E7] text-[#1a1816] hover:bg-[#181614] hover:border-[#181614] hover:text-white cursor-pointer transition-all duration-300 p-5 sm:p-8 h-[180px] sm:h-[220px] flex flex-col justify-between"
+>
         <div>
-          <p
-            className={`uppercase tracking-[0.3em] text-xs ${
-              active === index
-                ? 'text-primary'
-                : 'text-[#9a8f82]'
-            }`}
-          >
-            FOR THE
-          </p>
+          <p className="uppercase tracking-[0.3em] text-[10px] sm:text-xs text-[#9a8f82] group-hover:text-primary transition-colors">
+  FOR THE
+</p>
 
-          <h3 className="font-serif text-[48px] mt-5">
+          <h3 className="font-serif text-[32px] sm:text-[48px] mt-5">
             {item.title}
           </h3>
         </div>
 
-        <div
-          className={`text-3xl ${
-            active === index
-              ? 'text-primary'
-              : 'text-[#8f8578]'
-          }`}
-        >
-          ↗
-        </div>
+        <div className="flex justify-start">
+  <span className="text-2xl sm:text-3xl text-[#8f8578] group-hover:text-primary transition-colors">
+    ↗
+  </span>
+</div>
 
       </motion.div>
 
@@ -153,7 +139,7 @@ export default function WhoWeHelp() {
               className="mt-8 rounded-[36px] bg-[#F6F1E7] border border-[#E7DDCF] p-12"
             >
 
-              <p className="font-serif text-[52px] leading-[1.2] tracking-[-0.03em] text-[#211d19]">
+              <p className="font-serif text-[24px] sm:text-[36px] md:text-[52px] leading-[1.2] tracking-[-0.03em] text-[#211d19]">
 
                 {audienceData[active].description}
 
@@ -166,11 +152,11 @@ export default function WhoWeHelp() {
         </div>
 
       </section>
-      <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
+<footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-5 sm:px-6 md:px-10 lg:px-16 bg-[#12100F]">
 
-  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
+  <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
 
-    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-10 md:gap-16 lg:gap-24">
 
       {/* Left */}
       <div>
@@ -207,25 +193,23 @@ export default function WhoWeHelp() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artists" className="hover:text-primary">
-              Artists
-            </Link>
+            <Link href="/who-we-help/artist">Artists</Link>
+              
+            
           </li>
 
           <li>
-            <Link href="/organizers" className="hover:text-primary">
-              Organizers
-            </Link>
+            <Link href="/who-we-help/organizers">Organizers</Link>
           </li>
 
           <li>
-            <Link href="/labels" className="hover:text-primary">
+            <Link href="/who-we-help/labels" className="hover:text-primary">
               Labels
             </Link>
           </li>
 
           <li>
-            <Link href="/venues" className="hover:text-primary">
+            <Link href="/who-we-help/venues" className="hover:text-primary">
               Venues
             </Link>
           </li>
@@ -245,13 +229,13 @@ export default function WhoWeHelp() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/how-it-works" className="hover:text-primary">
+            <Link href="/what-we-do" className="hover:text-primary">
               How it works
             </Link>
           </li>
 
           <li>
-            <Link href="/what-you-receive" className="hover:text-primary">
+            <Link href="/who-we-help" className="hover:text-primary">
               What you receive
             </Link>
           </li>
@@ -322,23 +306,38 @@ export default function WhoWeHelp() {
 
           <li>
             <a
-              href="mailto:hello@ragam.co"
+              href="mailto:sairitishthirunagari@gmail.com"
               className="hover:text-primary"
             >
-              hello@ragam.co
+              ragam@gmail.com
             </a>
           </li>
 
           <li>Hyderabad, India</li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-          </li>
+          
+  <li>
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://www.instagram.com/telugumusic.strategy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "_blank"
+      );
+    }}
+    className="hover:text-primary"
+  >
+    Instagram
+  </button>
+</li>
+<li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
+            <a
+    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-primary"
+  >
               LinkedIn
             </a>
           </li>

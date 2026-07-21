@@ -12,49 +12,45 @@ const people = [
       "Leads Ragam's vision, research and long-term strategy for the Telugu music ecosystem. Focused on audience intelligence, artist growth, industry innovation and building sustainable opportunities for creators.",
   },
   {
-    image: "/images/person2.jpg",
+    image: "/images/sai2.jpeg",
     name: "Sai Ritish Tirunagari",
     role: "Product Design & Digital Experience Lead",
     description:
       "Oversees Ragam's website, digital products and user experience. Leads interface design, creative direction and product development to create intuitive, engaging experiences that help artists, organisers, labels and music lovers connect with the Telugu music ecosystem.",
   },
   {
-    image: "/images/abhi.jpeg",
-    name: "Abigna Yalakala",
-    role: "Research & Community Lead",
-    description:
-      "Leads ecosystem research, artist discovery and community engagement. Works closely with musicians, organisers and audiences to understand emerging trends and opportunities across Telugu music.",
-  },
+  image: "/images/abhi.jpeg",
+  name: "Abigna Yalakala",
+  role: "Research & Community Lead",
+  description:
+    "Leads ecosystem research, artist discovery and community engagement. Works closely with musicians, organisers and audiences to understand emerging trends and opportunities across Telugu music.\n\nContributes to industry studies, field research and community initiatives that help strengthen connections across the Telugu music ecosystem. Supports the development of insights that guide Ragam's research, strategy and long-term initiatives.",
+},
   {
-    image: "/images/siddhu.jpeg",
-    name: "Siddharth",
-    role: "Product & Technology Lead",
-    description:
-      "Builds the digital experiences behind Ragam. Focuses on product development, technology, data systems and creating tools that make music intelligence accessible and actionable.",
-  },
+  image: "/images/siddhu.jpeg",
+  name: "Siddharth",
+  role: "Ecosystem & Strategic Partnerships Lead",
+  description:
+    "Builds strategic relationships across the Telugu music ecosystem by connecting artists, organisers, labels, venues, brands, educational institutions and cultural organisations. Leads strategic partnerships, industry collaborations and ecosystem initiatives that create lasting opportunities, strengthen industry connections and contribute to the long-term growth of Telugu music.\n\nWorks closely with stakeholders to identify emerging opportunities, foster meaningful collaborations and help transform Ragam's vision into impactful initiatives across the music community.",
+},
 ];
 
 export default function AboutPage() {
   return (
     <main className="bg-[#11100f] min-h-screen">
 
-      <section className="max-w-[1700px] mx-auto px-8 lg:px-20 py-28">
+      <section className="max-w-[1700px] mx-auto px-5 sm:px-8 md:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
+        <div className="max-w-[1200px] mx-auto flex flex-col items-center text-center">
 
-        <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold">
-          ABOUT RAGAM
-        </p>
+  <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold">
+    ABOUT RAGAM
+  </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white mt-8">
-          Meet the people
-          <br />
-          behind Ragam.
-        </h1>
+  <p className="mt-10 max-w-[1100px] mx-auto text-[22px] leading-[1.8] text-white/60">
+    A small team with one shared mission: to make Telugu music more discoverable,
+    sustainable and meaningful for everyone who creates and experiences it.
+  </p>
 
-        <p className="text-white/60 text-[22px] leading-9 max-w-[700px] mt-10">
-          Strategy, research and culture brought together by people who
-          understand the music industry.
-        </p>
-
+</div>
         {/* Cards */}
 
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-24">
@@ -71,7 +67,7 @@ export default function AboutPage() {
                 <img
   src={person.image}
   alt={person.name}
-  className={`w-full h-[340px] object-cover ${person.imageClass || "object-center"} group-hover:scale-105 transition duration-500`}
+  className={`w-full h-[260px] sm:h-[300px] md:h-[340px] object-cover ${person.imageClass || "object-center"} group-hover:scale-105 transition duration-500`}
 />
 
               </div>
@@ -99,11 +95,11 @@ export default function AboutPage() {
         </div>
 
       </section>
-      <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
+      <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-5 sm:px-6 md:px-10 lg:px-16 bg-[#12100F]">
 
-  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
+  <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
 
-    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-10 md:gap-16 lg:gap-24">
 
       {/* Left */}
       <div>
@@ -140,7 +136,7 @@ export default function AboutPage() {
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artists" className="hover:text-primary">
+            <Link href="/artist" className="hover:text-primary">
               Artists
             </Link>
           </li>
@@ -197,7 +193,7 @@ export default function AboutPage() {
 
           <li>
             <Link href="/experiences" className="hover:text-primary">
-              Experiences
+              Events
             </Link>
           </li>
 

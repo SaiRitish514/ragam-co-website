@@ -124,7 +124,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         description=""
         ctaText=""
         ctaLink="#request-analysis"
-        backgroundImage="/images/hero.jpeg"
+        backgroundImage="/images/h3.jpeg"
       />
 
       {/* What Ragam Does Preview */}
@@ -134,54 +134,56 @@ const handleSubmit = async (e: React.FormEvent) => {
 Expand your audience."
   description="Ragam researches your music, audience, career stage, opportunities and market potential. We help artists, organizers and labels make better decisions using strategy, research and industry connections."
   ctaText="Get My Music Analysis"
-  ctaLink="/contact"
+  ctaLink="/#request-analysis"
   imageUrl="/images/music1.jpeg"
 />
 
       {/* Who We Help Preview */}
-      <section  id="request-analysis"
- className="py-28 px-6">
+  <section
+  id="request-analysis"
+  className="py-16 sm:py-20 lg:py-24 px-5 sm:px-8 md:px-10 lg:px-16 xl:px-20"
+>
 
-  <div className="max-w-[1500px] mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-24 items-center">
+  <div className="max-w-[1500px] mx-auto grid lg:grid-cols-[0.85fr_1fr] gap-10 md:gap-16 xl:gap-24 items-start">
 
     {/* LEFT */}
     <ScrollReveal direction="left">
-  <div className="max-w-[820px]">
+  <div className="max-w-[620px]">
 
     <p className="uppercase tracking-[0.38em] text-primary text-base font-semibold mb-8">
       BEGIN THE CONVERSATION
     </p>
 
     <h2 className="font-serif leading-[0.88] tracking-[-0.04em] text-white">
-      <span className="block text-[72px] lg:text-[104px] xl:text-[118px] font-normal">
+      <span className="block text-[42px] lg:text-[56px] xl:text-[64px] leading-[0.95] font-normal">
         Request your
       </span>
 
-      <span className="block text-primary italic mt-2 text-[72px] lg:text-[104px] xl:text-[118px] font-normal">
+      <span className="block text-primary italic mt-2 text-[54px] lg:text-[72px] xl:text-[82px] leading-[0.95] font-normal">
         Ragam analysis.
       </span>
     </h2>
 
-    <p className="mt-10 text-[28px] leading-[1.6] text-white/70 max-w-[760px] font-light">
+    <p className="mt-7 text-[17px] lg:text-[19px] leading-8 text-white/70 max-w-[540px]">
       Tell us about your music, event or organisation.
       We'll study your situation and recommend your next
       best steps — usually within a week.
     </p>
 
-    <div className="mt-14 space-y-7">
+    <div className="mt-10 space-y-5">
 
-      <div className="flex items-center gap-4 text-[22px] text-white/85">
-        <span className="text-primary text-2xl">✓</span>
+      <div className="flex items-center gap-3 text-[16px] lg:text-[17px] text-white/85">
+        <span className="text-primary text-xl">✓</span>
         <span>No obligation intake call.</span>
       </div>
 
-      <div className="flex items-center gap-4 text-[22px] text-white/85">
-        <span className="text-primary text-2xl">✓</span>
+      <div className="flex items-center gap-3 text-[16px] lg:text-[17px] text-white/85">
+        <span className="text-primary text-xl">✓</span>
         <span>Confidential — nothing is shared.</span>
       </div>
 
-      <div className="flex items-center gap-4 text-[22px] text-white/85">
-        <span className="text-primary text-2xl">✓</span>
+      <div className="flex items-center gap-3 text-[16px] lg:text-[17px] text-white/85">
+        <span className="text-primary text-xl">✓</span>
         <span>You keep the report either way.</span>
       </div>
 
@@ -195,7 +197,7 @@ Expand your audience."
 
       <form
   onSubmit={handleSubmit}
-  className="bg-[#211d19] border border-[#3b352d] rounded-[36px] p-10">
+  className="bg-[#211d19] border border-[#3b352d] rounded-[36px] p-8 lg:p-9">
 
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -212,7 +214,7 @@ Expand your audience."
   onChange={handleChange}
   placeholder="Your full name"
   required
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-4 outline-none text-white"
+  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
 />
           </div>
           <div>
@@ -227,7 +229,7 @@ Expand your audience."
       onChange={handleChange}
       required
       placeholder="Your email"
-      className="mt-3 w-full bg-[#171513] rounded-full px-6 py-4 outline-none text-white"
+      className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
     />
   </div>
           <div>
@@ -242,7 +244,7 @@ Expand your audience."
   onChange={handleChange}
   required
   placeholder="Artist, organizer..."
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-4 outline-none text-white"
+  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
 />
           </div>
           <div>
@@ -256,7 +258,7 @@ Expand your audience."
       value={formData.phone}
       onChange={handleChange}
       placeholder="+91 XXXXX XXXXX"
-      className="mt-3 w-full bg-[#171513] rounded-full px-6 py-4 outline-none text-white"
+      className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
     />
   </div>
           <div>
@@ -271,7 +273,7 @@ Expand your audience."
   onChange={handleChange}
   required
   placeholder="@username"
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-4 outline-none text-white"
+  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
 />
           </div>
 
@@ -285,8 +287,8 @@ Expand your audience."
   name="musicLink"
   value={formData.musicLink}
   onChange={handleChange}
-  placeholder="link"
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-4 outline-none text-white"
+  placeholder="optional"
+  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
 />
           </div>
 
@@ -307,7 +309,7 @@ Expand your audience."
   onChange={handleChange}
   required
   placeholder="Tell us about your goals..."
-  className="mt-3 w-full bg-[#171513] rounded-3xl px-6 py-5 outline-none text-white resize-none"
+  className="mt-3 w-full bg-[#171513] rounded-3xl px-6 py-4 outline-none text-white resize-none"
 />
 
         </div>
@@ -358,8 +360,8 @@ Expand your audience."
     <div className="space-y-12">
 
       <div>
-        <p className="text-2xl md:text-3xl font-serif text-white leading-relaxed">
-          Ready when you are.
+        <p className="text-xl text-white/80 leading-9">
+                Build Long term Strategy.
           <span className="text-white/60">
             {" "}Usually a reply within{" "}
           </span>
@@ -371,7 +373,7 @@ Expand your audience."
 
       <div className="border-l border-primary/30 pl-8">
         <p className="text-xl text-white/80 leading-9">
-          To understand exactly what we do and who we help,
+          To understand exactly what we do and How we help,
           explore the{" "}
           <Link
             href="/what-we-do"
@@ -428,8 +430,8 @@ Expand your audience."
       </div>
 
       <div className="pt-8">
-        <p className="text-lg uppercase tracking-[0.35em] text-primary">
-          Scroll Down ↓
+        <p className="text-lg font-medium uppercase tracking-[0.35em] text-primary">
+          Discover Ragam ↓
         </p>
       </div>
 
@@ -440,96 +442,112 @@ Expand your audience."
 
       {/* Opportunities Preview */}
       {/* Success Story */}
-<section className="py-28 px-6">
-  <div className="max-w-[1650px] mx-auto">
+<section className="py-28 lg:py-36 px-8 lg:px-16 xl:px-20">
+
+  <div className="max-w-[1500px] mx-auto">
 
     <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold mb-5">
       A RECENT CLIENT
     </p>
 
-    <h2 className="font-serif text-5xl lg:text-6xl text-white mb-16">
+    <h2 className="font-serif text-[52px] lg:text-[64px] leading-[1] text-white mb-20">
       What the work looks like,
       <br />
       in practice.
     </h2>
 
-    <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 xl:gap-10 items-center">
+  <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-16 xl:gap-20 items-center">
 
-      {/* Left Image */}
+      {/* LEFT */}
+
       <div>
         <img
-          src="/images/casestudy.jpeg"
+          src="/images/h1.jpeg"
           alt="Case Study"
-          className="w-full aspect-[4/5] object-cover rounded-[40px]"
+          className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[720px] object-cover rounded-[36px]"
         />
       </div>
 
-      {/* Right Content */}
-      <div>
+      {/* RIGHT */}
 
-        <p className="uppercase tracking-[0.35em] text-primary text-base font-semibold mb-8">
+      <div className="max-w-[620px]">
+
+        <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold mb-8">
           VOCALIST · HYDERABAD
         </p>
 
-        <h3 className="font-serif text-[72px] lg:text-[96px] xl:text-[108px] leading-[0.9] tracking-[-0.05em] text-white mb-10">
+        <h3 className="font-serif text-[46px] lg:text-[56px] xl:text-[64px] leading-[1] tracking-[-0.03em] text-white">
+
           From
           <span className="text-primary italic"> 8k </span>
+
           to
+
           <span className="text-primary italic"> 42k </span>
+
           monthly listeners,
+
           <br />
+
           <span className="italic text-primary">
             in eleven months.
           </span>
+
         </h3>
 
-        <p className="mt-8 text-lg leading-8 text-white/70">
+        <p className="mt-7 text-[18px] leading-8 text-white/70">
           We mapped her audience across four cities,
-          re-priced her live shows, introduced her
-          to festival curators and identified new
-          audience opportunities through research.
+          re-priced her live shows, introduced her to
+          festival curators and identified new audience
+          opportunities through research.
         </p>
 
-        {/* Stats */}
+        {/* STATS */}
 
         <div className="grid grid-cols-3 gap-4 mt-10">
 
-          <div className="border border-white/10 rounded-2xl p-5">
-            <p className="text-xs uppercase tracking-widest text-white/40">
+          <div className="border border-white/10 rounded-2xl p-5 bg-[#181614]">
+
+            <p className="text-[11px] uppercase tracking-[0.28em] text-white/40">
               LISTENERS
             </p>
 
-            <h4 className="text-3xl font-serif text-primary mt-3">
+            <h4 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
               +425%
             </h4>
+
           </div>
 
-          <div className="border border-white/10 rounded-2xl p-5">
-            <p className="text-xs uppercase tracking-widest text-white/40">
+          <div className="border border-white/10 rounded-2xl p-5 bg-[#181614]">
+
+            <p className="text-[11px] uppercase tracking-[0.28em] text-white/40">
               SHOW FEE
             </p>
 
-            <h4 className="text-3xl font-serif text-primary mt-3">
-              +3.2x
+            <h4 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+              +3.2×
             </h4>
+
           </div>
 
-          <div className="border border-white/10 rounded-2xl p-5">
-            <p className="text-xs uppercase tracking-widest text-white/40">
+          <div className="border border-white/10 rounded-2xl p-5 bg-[#181614]">
+
+            <p className="text-[11px] uppercase tracking-[0.28em] text-white/40">
               NEW ROOMS
             </p>
 
-            <h4 className="text-3xl font-serif text-primary mt-3">
+            <h4 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
               6
             </h4>
+
           </div>
 
         </div>
 
-        <blockquote className="mt-12 border-l-2 border-primary pl-6 italic text-white/60 text-lg leading-8">
-          "Ragam showed me opportunities I had been
-          missing for years. Every decision became
-          clearer after the analysis."
+        <blockquote className="mt-10 border-l-2 border-primary pl-5 italic text-white/60 text-[16px] leading-7">
+          "Ragam showed me opportunities I had been missing
+          for years. Every decision became clearer after the
+          analysis."
         </blockquote>
 
       </div>
@@ -537,6 +555,7 @@ Expand your audience."
     </div>
 
   </div>
+
 </section>
 
       {/* Experiences Preview */}
@@ -569,7 +588,7 @@ Expand your audience."
             href="/experiences"
             className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all group text-lg"
           >
-            Explore Experiences →
+            Explore Experiences 
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
@@ -578,11 +597,11 @@ Expand your audience."
       
 
       {/* Footer */}
-      <footer className="w-full border-t border-white/10 py-24 px-10 lg:px-16 bg-[#12100F]">
+      <footer className="w-full border-t border-white/10 py-16 sm:py-20 lg:py-24 px-5 sm:px-6 md:px-10 lg:px-16 bg-[#12100F]">
 
-  <div className="w-full max-w-[1700px] mx-auto px-16 lg:px-24">
+  <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
 
-    <div className="grid lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1fr] gap-10 md:gap-16 lg:gap-24">
 
       {/* Left */}
       <div>
@@ -619,25 +638,23 @@ Expand your audience."
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/artists" className="hover:text-primary">
-              Artists
-            </Link>
+            <Link href="/who-we-help/artist">Artists</Link>
+              
+            
           </li>
 
           <li>
-            <Link href="/organizers" className="hover:text-primary">
-              Organizers
-            </Link>
+            <Link href="/who-we-help/organizers">Organizers</Link>
           </li>
 
           <li>
-            <Link href="/labels" className="hover:text-primary">
+            <Link href="/who-we-help/labels" className="hover:text-primary">
               Labels
             </Link>
           </li>
 
           <li>
-            <Link href="/venues" className="hover:text-primary">
+            <Link href="/who-we-help/venues" className="hover:text-primary">
               Venues
             </Link>
           </li>
@@ -657,13 +674,13 @@ Expand your audience."
         <ul className="space-y-5 text-white/70">
 
           <li>
-            <Link href="/how-it-works" className="hover:text-primary">
+            <Link href="/what-we-do" className="hover:text-primary">
               How it works
             </Link>
           </li>
 
           <li>
-            <Link href="/what-you-receive" className="hover:text-primary">
+            <Link href="/who-we-help" className="hover:text-primary">
               What you receive
             </Link>
           </li>
@@ -734,23 +751,38 @@ Expand your audience."
 
           <li>
             <a
-              href="mailto:hello@ragam.co"
+              href="mailto:sairitishthirunagari@gmail.com"
               className="hover:text-primary"
             >
-              hello@ragam.co
+              ragam@gmail.com
             </a>
           </li>
 
           <li>Hyderabad, India</li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-          </li>
+          
+  <li>
+  <button
+    type="button"
+    onClick={() => {
+      window.open(
+        "https://www.instagram.com/telugumusic.strategy/",
+        "_blank"
+      );
+    }}
+    className="hover:text-primary"
+  >
+    Instagram
+  </button>
+</li>
+<li>
 
-          <li>
-            <a href="#" className="hover:text-primary">
+            <a
+    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-primary"
+  >
               LinkedIn
             </a>
           </li>
