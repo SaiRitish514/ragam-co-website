@@ -16,13 +16,13 @@ export default function ArtistPage() {
 
     <ScrollReveal direction="left">
 
-      <div className="max-w-[620px]">
+      <div className="max-w-[500px]">
 
         <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
           RESEARCH
         </p>
 
-        <h1 className="font-serif text-[76px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[65px] leading-[0.90] tracking-[-0.04em] text-white">
           Research that helps
           <br />
           Telugu music make
@@ -30,12 +30,12 @@ export default function ArtistPage() {
           better decisions.
         </h1>
 
-        <p className="mt-12 text-[23px] leading-[1.8] text-white/70">
+        <p className="mt-12 text-[20px] leading-[1.6] text-white/70">
           Every recommendation we make is backed by research,
           industry observation and ecosystem intelligence.
         </p>
 
-        <p className="mt-8 text-[21px] leading-[1.8] text-white/60">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/60">
           From streaming behaviour to audience psychology,
           from music rights to concert economics—we study
           the questions shaping the future of Telugu music.
@@ -93,13 +93,13 @@ export default function ArtistPage() {
 
     <ScrollReveal direction="right">
 
-      <div className="max-w-[650px]">
+      <div className="max-w-[500px]">
 
-        <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+        <p className="uppercase tracking-[0.40em] text-primary text-xs font-semibold mb-8">
           RESEARCH 
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Telugu Music
           <br />
@@ -111,37 +111,37 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Understanding how regional music labels
           can grow beyond streaming.
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-14">
 
-          <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          <p className="uppercase tracking-[0.30em] text-primary text-xs mb-6">
             KEY FINDINGS
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-2 text-white/80">
 
               <span className="text-primary text-xl">✓</span>
 
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Revenue depends on ecosystem strength,
                 not just catalog size.
               </span>
 
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
 
               <span className="text-primary text-xl">✓</span>
 
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Fan communities outperform passive audiences.
               </span>
 
@@ -189,11 +189,11 @@ export default function ArtistPage() {
 
       <div className="max-w-[650px]">
 
-        <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+        <p className="uppercase tracking-[0.40em] text-primary text-xs font-semibold mb-8">
           RESEARCH
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Emotional
           <br />
@@ -205,19 +205,19 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Rethinking how people experience music.
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
-          <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          <p className="uppercase tracking-[0.30em] text-primary text-xs mb-6">
             RESEARCH INSIGHT
           </p>
 
-          <p className="text-[21px] leading-[1.9] text-white/60 mb-10">
+          <p className="text-[20px] leading-[1.7] text-white/60 mb-8">
 
             Research into listener psychology showing why
             people don't simply search for songs—they
@@ -225,27 +225,27 @@ export default function ArtistPage() {
 
           </p>
 
-          <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          <p className="uppercase tracking-[0.30em] text-primary text-xs mb-6">
             MAJOR FINDINGS
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
 
               <span className="text-primary text-xl">✓</span>
 
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Music consumption is emotion-driven.
               </span>
 
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
 
               <span className="text-primary text-xl">✓</span>
 
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Mood transitions matter more than recommendations.
               </span>
 
@@ -255,17 +255,17 @@ export default function ArtistPage() {
 
               <span className="text-primary text-xl">✓</span>
 
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Session-based listening increases engagement.
               </span>
 
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
 
               <span className="text-primary text-xl">✓</span>
 
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Future streaming experiences should adapt to emotions.
               </span>
 
@@ -288,7 +288,7 @@ export default function ArtistPage() {
         <img
           src="/images/esa.jpeg"
           alt="Emotional Session Architecture"
-          className="w-full max-w-[720px] aspect-square object-cover rounded-[36px] shadow-2xl"
+          className="w-full max-w-[650px] aspect-square object-cover rounded-[36px] shadow-2xl"
         />
 
       </div>
@@ -298,7 +298,7 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+<section className="max-w-[1500px] mx-auto px-10 lg:px-20 py-24">
 
   <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
 
@@ -328,7 +328,7 @@ export default function ArtistPage() {
           RESEARCH
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.95] tracking-[-0.04em] text-white">
 
           Telugu
           <br />
@@ -340,59 +340,59 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Understanding how Telugu listeners discover,
           share and stay connected with music.
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
           <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
             RESEARCH AREAS
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Discovery behaviour
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-6">
                 Regional listening patterns
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Fan communities
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Concert attendance
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Digital platforms
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Social media influence
               </span>
             </div>
@@ -408,7 +408,7 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+<section className="max-w-[1500px] mx-auto px-10 lg:px-18 py-22">
 
   <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
 
@@ -416,13 +416,13 @@ export default function ArtistPage() {
 
     <ScrollReveal direction="left">
 
-      <div className="max-w-[650px]">
+      <div className="max-w-[600px]">
 
-        <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+        <p className="uppercase tracking-[0.40em] text-primary text-xs font-semibold mb-8">
           RESEARCH
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Rights &
           <br />
@@ -434,52 +434,52 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.7] text-white/70">
 
           Research focused on rights management,
           royalty distribution and music ownership.
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
-          <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          <p className="uppercase tracking-[0.30em] text-primary text-xs mb-8">
             TOPICS
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Metadata accuracy
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Royalty tracking
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Rights transparency
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Publishing workflows
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Independent artist ownership
               </span>
             </div>
@@ -511,7 +511,7 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+<section className="max-w-[1500px] mx-auto px-10 lg:px-18 py-22">
 
   <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
 
@@ -535,13 +535,13 @@ export default function ArtistPage() {
 
     <ScrollReveal direction="right">
 
-      <div className="max-w-[650px]">
+      <div className="max-w-[600px]">
 
-        <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+        <p className="uppercase tracking-[0.40em] text-primary text-xs font-semibold mb-8">
           RESEARCH
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Independent
           <br />
@@ -553,52 +553,52 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Researching why talented artists struggle
           to build sustainable careers.
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
-          <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          <p className="uppercase tracking-[0.30em] text-primary text-xs mb-6">
             FINDINGS
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">✓</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Talent isn't the biggest problem.
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">✓</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Audience discovery is.
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">✓</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Community is undervalued.
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">✓</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Opportunities are fragmented.
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">✓</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Career planning is rarely strategic.
               </span>
             </div>
@@ -614,7 +614,7 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+<section className="max-w-[1500px] mx-auto px-10 lg:px-18 py-20">
 
   <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
 
@@ -622,13 +622,13 @@ export default function ArtistPage() {
 
     <ScrollReveal direction="left">
 
-      <div className="max-w-[650px]">
+      <div className="max-w-[600px]">
 
-        <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+        <p className="uppercase tracking-[0.40em] text-primary text-xs font-semibold mb-8">
           RESEARCH
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Live Music
           <br />
@@ -640,59 +640,59 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Understanding concerts, festivals and
           cultural experiences across Telugu states.
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
-          <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
+          <p className="uppercase tracking-[0.30em] text-primary text-xs mb-8">
             RESEARCH INCLUDES
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Audience behaviour
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Venue ecosystem
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Regional demand
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Ticket pricing
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Festival growth
               </span>
             </div>
 
-            <div className="flex gap-4 text-white/80">
+            <div className="flex gap-3 text-white/80">
               <span className="text-primary text-xl">•</span>
-              <span className="text-[21px] leading-8">
+              <span className="text-[20px] leading-8">
                 Event experience design
               </span>
             </div>
@@ -724,14 +724,14 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="py-28">
+<section className="py-25">
 
-  <div className="max-w-[1700px] mx-auto px-10 lg:px-20">
+  <div className="max-w-[1450px] mx-auto px-8 lg:px-15">
 
     <p className="uppercase tracking-[0.6em] text-primary text-sm font-semibold mb-8">
     RESEARCH
   </p>
-    <h1 className="font-serif text-[92px] lg:text-[120px] leading-[0.92] tracking-[-0.05em] text-white">
+    <h1 className="font-serif text-[70px] lg:text-[100px] leading-[0.80] tracking-[-0.04em] text-white">
 
       Industry
       <br />
@@ -747,9 +747,9 @@ export default function ArtistPage() {
   </div>
 
 </section>
-    <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+    <section className="max-w-[1700px] mx-auto px-10 lg:px-10 py-15">
 
-  <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
+  <div className="grid lg:grid-cols-[1fr_1fr] gap-16 items-center">
 
     {/* LEFT IMAGE */}
 
@@ -760,7 +760,7 @@ export default function ArtistPage() {
         <img
           src="/images/mangomusic.jpeg"
           alt="Mango Music Case Study"
-          className="w-full max-w-[720px] aspect-square object-cover rounded-[36px] shadow-2xl"
+          className="w-full max-w-[650px] aspect-square object-cover rounded-[30px] shadow-xl"
         />
 
       </div>
@@ -777,7 +777,7 @@ export default function ArtistPage() {
           INDUSTRY CASE STUDY
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Mango
           <br />
@@ -786,7 +786,7 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[24px] leading-[1.8] text-white/70">
 
           How original music can become a
           long-term growth engine beyond
@@ -794,7 +794,7 @@ export default function ArtistPage() {
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
           <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
             STATUS
@@ -833,16 +833,16 @@ export default function ArtistPage() {
           INDUSTRY CASE STUDY
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[65px] leading-[0.90] tracking-[-0.04em] text-white">
           Gaana
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[24px] leading-[1.8] text-white/70">
           Understanding emotion-first listening
           and session-based music consumption.
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
           <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
             STATUS
@@ -913,7 +913,7 @@ export default function ArtistPage() {
           INDUSTRY CASE STUDY
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.95] tracking-[-0.05em] text-white">
 
           Telugu Music
           <br />
@@ -925,7 +925,7 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Building a framework to understand labels
           through audience behaviour, revenue opportunities
@@ -933,7 +933,7 @@ export default function ArtistPage() {
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
           <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
             STATUS
@@ -972,7 +972,7 @@ export default function ArtistPage() {
           INDUSTRY CASE STUDY
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.95] tracking-[-0.05em] text-white">
 
           Music Industry
           <br />
@@ -984,7 +984,7 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[24px] leading-[1.8] text-white/70">
 
           Mapping collaborations, funding,
           grants, festivals and artist growth
@@ -992,7 +992,7 @@ export default function ArtistPage() {
 
         </p>
 
-        <div className="mt-16">
+        <div className="mt-8">
 
           <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
             STATUS
@@ -1035,13 +1035,13 @@ export default function ArtistPage() {
 </section>
 <section className="py-28">
 
-  <div className="max-w-[1700px] mx-auto px-10 lg:px-20">
+  <div className="max-w-[1450px] mx-auto px-10 lg:px-20">
 
     <p className="uppercase tracking-[0.45em] text-primary text-sm font-semibold mb-8">
       RESEARCH
     </p>
 
-    <h1 className="font-serif text-[92px] lg:text-[120px] leading-[0.92] tracking-[-0.05em] text-white">
+    <h1 className="font-serif text-[80px] lg:text-[100px] leading-[0.90] tracking-[-0.04em] text-white">
 
       What Our
       <br />
@@ -1057,9 +1057,9 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-28">
+<section className="max-w-[1100px] mx-auto px-5 lg:px-8 py-20">
 
-  <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+  <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
 
     {[
       { icon: "🎵", title: "Audience Behaviour" },
@@ -1078,14 +1078,14 @@ export default function ArtistPage() {
 
       <div
         key={item.title}
-        className="group bg-[#181614] border border-white/10 rounded-[28px] p-10 hover:border-primary/40 hover:bg-[#1F1B18] transition-all duration-300 cursor-pointer"
+        className="group bg-[#181614] border border-white/10 rounded-[28px] p-8 hover:border-primary/40 hover:bg-[#1F1B18] transition-all duration-300 cursor-pointer"
       >
 
-        <div className="text-5xl mb-8">
+        <div className="text-xl mb-5">
           {item.icon}
         </div>
 
-        <h3 className="font-serif text-[34px] leading-tight text-white group-hover:text-primary transition-colors duration-300">
+        <h3 className="font-serif text-[30px] leading-tight text-white group-hover:text-primary transition-colors duration-300">
           {item.title}
         </h3>
 
@@ -1098,12 +1098,12 @@ export default function ArtistPage() {
 </section>
 <section className="py-28">
 
-  <div className="max-w-[1700px] mx-auto px-10 lg:px-20">
+  <div className="max-w-[1400px] mx-auto px-8 lg:px-15">
 
     <p className="uppercase tracking-[0.6em] text-primary text-sm font-semibold mb-8">
     RESEARCH
   </p>
-    <h1 className="font-serif text-[92px] lg:text-[120px] leading-[0.92] tracking-[-0.05em] text-white">
+    <h1 className="font-serif text-[80px] lg:text-[100px] leading-[0.90] tracking-[-0.04em] text-white">
 
       Research
       <br />
@@ -1119,9 +1119,9 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+<section className="max-w-[1500px] mx-auto px-5 lg:px-15 py-10">
 
-  <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
+  <div className="grid lg:grid-cols-[1fr_1fr] gap-16 items-center">
 
     {/* LEFT CONTENT */}
 
@@ -1133,7 +1133,7 @@ export default function ArtistPage() {
           OUR PROCESS
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           How we
           <br />
@@ -1142,7 +1142,7 @@ export default function ArtistPage() {
 
         </h1>
 
-        <p className="mt-12 text-[24px] leading-[1.8] text-white/70">
+        <p className="mt-8 text-[20px] leading-[1.6] text-white/70">
 
           Every study combines qualitative interviews,
           industry observation, publicly available data,
@@ -1150,16 +1150,16 @@ export default function ArtistPage() {
 
         </p>
 
-        <div className="mt-16 border-l-2 border-primary pl-8 space-y-8">
+        <div className="mt-8 border-l-2 border-primary pl-8 space-y-8">
 
-          <p className="text-[22px] leading-[1.8] text-white/75">
+          <p className="text-[20px] leading-[1.8] text-white/75">
 
             We don't publish research
             to create reports.
 
           </p>
 
-          <p className="text-[22px] leading-[1.8] text-white">
+          <p className="text-[20px] leading-[1.8] text-white">
 
             We publish research to help the
             <span className="text-primary font-medium">
@@ -1196,12 +1196,12 @@ export default function ArtistPage() {
 </section>
 <section className="py-28">
 
-  <div className="max-w-[1700px] mx-auto px-10 lg:px-20">
+  <div className="max-w-[1500px] mx-auto px-10 lg:px-20">
 
     <p className="uppercase tracking-[0.6em] text-primary text-sm font-semibold mb-8">
     RESEARCH
   </p>
-    <h1 className="font-serif text-[92px] lg:text-[120px] leading-[0.92] tracking-[-0.05em] text-white">
+    <h1 className="font-serif text-[80px] lg:text-[100px] leading-[0.92] tracking-[-0.04em] text-white">
 
       Research
       <br />
@@ -1217,7 +1217,7 @@ export default function ArtistPage() {
   </div>
 
 </section>
-<section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+<section className="max-w-[1700px] mx-auto px-7 lg:px-25 py-10">
 
   <div className="grid lg:grid-cols-[1fr_1fr] gap-24 items-center">
 
@@ -1243,11 +1243,11 @@ export default function ArtistPage() {
 
       <div className="max-w-[650px]">
 
-        <p className="uppercase tracking-[0.45em] text-primary text-xs font-semibold mb-8">
+        <p className="uppercase tracking-[0.40em] text-primary text-xs font-semibold mb-8">
           RESEARCH IMPACT
         </p>
 
-        <h1 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white">
+        <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Research Areas
           <br />
@@ -1256,15 +1256,15 @@ export default function ArtistPage() {
 
         </h1>
 
-        <div className="mt-16 space-y-12">
+        <div className="mt-8 space-y-12">
 
           <div className="border-b border-white/10 pb-8">
 
-            <h2 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+            <h2 className="font-geist text-[25px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-2">
               12+
             </h2>
 
-            <p className="mt-2 text-[24px] text-white/70">
+            <p className="mt-2 text-[20px] text-white/70">
               Industry Frameworks Developed
             </p>
 
@@ -1272,11 +1272,11 @@ export default function ArtistPage() {
 
           <div className="border-b border-white/10 pb-8">
 
-            <h2 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+            <h2 className="font-geist text-[25px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-2">
               5+
             </h2>
 
-            <p className="mt-2 text-[24px] text-white/70">
+            <p className="mt-2 text-[20px] text-white/70">
               Strategy Prototypes Built
             </p>
 
@@ -1284,11 +1284,11 @@ export default function ArtistPage() {
 
           <div>
 
-            <h2 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+            <h2 className="font-geist text-[25px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-2">
               8+
             </h2>
 
-            <p className="mt-2 text-[24px] text-white/70">
+            <p className="mt-2 text-[20px] text-white/70">
               Ecosystem Stakeholders Studied
             </p>
 
@@ -1323,7 +1323,7 @@ export default function ArtistPage() {
           LET'S BUILD TOGETHER
         </p>
 
-        <h2 className="font-serif text-[82px] lg:text-[110px] leading-[0.92] tracking-[-0.06em] text-white">
+        <h2 className="font-serif text-[60px] lg:text-[80px] leading-[0.90] tracking-[-0.04em] text-white">
 
           Need research
           <br />
@@ -1335,7 +1335,7 @@ export default function ArtistPage() {
 
         </h2>
 
-        <p className="mt-12 text-[25px] leading-[1.9] text-white/60">
+        <p className="mt-8 text-[20px] leading-[1.7] text-white/60">
 
           Whether you're a label, artist, organiser or platform,
           Ragam transforms industry knowledge into practical
@@ -1346,7 +1346,7 @@ export default function ArtistPage() {
 
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-4 mt-16 text-primary text-[22px] font-medium group"
+          className="inline-flex items-center gap-3 mt-8 text-primary text-[20px] font-medium group"
         >
 
           Request Research Consultation
@@ -1404,7 +1404,7 @@ export default function ArtistPage() {
 
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-4 py-3 font-semibold hover:scale-100 transition"
         >
           Get My Music Analysis
           <span>↗</span>

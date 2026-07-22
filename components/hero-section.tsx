@@ -22,8 +22,7 @@ export function HeroSection({
   backgroundImage,
 }: HeroSectionProps) {
   return (
-    <div className="relative w-full min-h-[90vh] lg:min-h-screen px-4 sm:px-6 md:px-10 lg:px-14 py-4 sm:py-6 overflow-x-hidden">
-
+    <div className="relative w-full min-h-[90vh] lg:min-h-screen py-4 sm:py-6 overflow-x-hidden">
       {/* Hero Wrapper */}
       <div className="relative h-[75vh] sm:h-[80vh] lg:h-[88vh] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
 
@@ -31,7 +30,7 @@ export function HeroSection({
         {backgroundImage ? (
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
+            style={{ backgroundImage: `url(${backgroundImage})`,filter: "blur(3px)", }}
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
@@ -115,13 +114,7 @@ export function HeroSection({
           animate={{ y: [0, 12, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <div className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-white/30 p-2">
-            <motion.div
-              className="h-2 w-1 rounded-full bg-white"
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </div>
+          
         </motion.div>
 
       </div>

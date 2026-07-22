@@ -54,7 +54,7 @@ const upcomingEvents = [
 ];
 export default function ExperiencesPage() {
 
-const [tab, setTab] = useState<"past" | "upcoming" | null>(null);
+const [tab, setTab] = useState<"past" | "upcoming">("past");
 return(
 
 <main className="bg-[#11100f] min-h-screen">
@@ -72,7 +72,7 @@ return(
           RAGAM EXPERIENCES
         </p>
 
-        <h1 className="font-serif text-[72px] lg:text-[90px] xl:text-[96px] leading-[0.92] tracking-[-0.05em] text-white mt-8">
+        <h1 className="font-serif text-[60px] lg:text-[85px] xl:text-[85px] leading-[0.90] tracking-[-0.04em] text-white mt-8">
 
           Events that bring
           <br />
@@ -100,7 +100,7 @@ return(
 
 onClick={()=>setTab("upcoming")}
 
-className={`px-10 py-5 rounded-full transition-all duration-300 text-lg
+className={`px-8 py-3 rounded-full transition-all duration-300 text-lg
 
 ${tab==="upcoming"
 
@@ -121,7 +121,7 @@ What's Coming Next
 
 onClick={()=>setTab("past")}
 
-className={`px-10 py-5 rounded-full transition-all duration-300 text-lg
+className={`px-8 py-3 rounded-full transition-all duration-300 text-lg
 
 ${tab==="past"
 
@@ -153,22 +153,22 @@ Past Events
           FOR ORGANISERS
         </p>
 
-        <h2 className="font-serif text-[54px] leading-[1.05] text-white mt-6">
+        <h2 className="font-serif text-[50px] leading-[1.05] text-white mt-1">
           Bring your next
           <br />
           event to life.
         </h2>
 
-        <div className="w-16 h-px bg-primary mt-8 mb-8" />
+        <div className="w-60 h-px bg-primary mt-8 mb-8" />
 
-        <p className="text-white/65 text-[20px] leading-9">
+        <p className="text-white/65 text-[20px] leading-7">
           Every great event starts with a clear idea.
           Ragam works with organisers to shape
           experiences that connect artists,
           audiences and culture.
         </p>
 
-        <div className="space-y-6 mt-10">
+        <div className="space-y-6 mt-7">
 
           {[
             "Artist discovery & curation",
@@ -177,7 +177,7 @@ Past Events
             "Experience design & promotion",
           ].map((item) => (
 
-            <div key={item} className="flex items-center gap-4">
+            <div key={item} className="flex items-center gap-3">
 
               <div className="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary">
                 ✓
@@ -195,12 +195,12 @@ Past Events
 
         <Link
           href="/#request-analysis"
-          className="mt-12 flex justify-center items-center rounded-full bg-primary text-black py-5 font-semibold text-lg"
+          className="mt-10 flex justify-center items-center rounded-full bg-primary text-black py-2 font-semibold text-lg"
         >
           Plan Your Event →
         </Link>
 
-        <p className="text-white/40 text-center mt-6">
+        <p className="text-white/40 text-center mt-4">
           Let's create meaningful experiences together.
         </p>
 
@@ -219,26 +219,7 @@ Past Events
 <AnimatePresence mode="wait">
 
 {
-
-tab === null ? (
-
-  <div className="py-36 flex flex-col items-center justify-center">
-
-    <p className="uppercase tracking-[0.4em] text-primary text-sm">
-      EXPLORE EVENTS
-    </p>
-
-    <h2 className="mt-6 font-serif text-5xl text-white">
-      Choose a timeline
-    </h2>
-
-    <p className="mt-6 text-white/60 text-xl max-w-2xl text-center">
-      Select whether you'd like to explore our past events
-      or discover upcoming experiences.
-    </p>
-
-  </div>
-  ) : tab === "past" ? (
+ tab === "past" ? (
 
 <motion.div
   key="past"
@@ -399,7 +380,7 @@ tab === null ? (
   </p>
 
   <Link
-    href="https://instagram.com/ragam.co"
+    href="https://www.instagram.com/telugumusic.strategy?igsh=MTJxcG5wY3U2b3NmcQ=="
     target="_blank"
     className="inline-flex items-center gap-3 mt-14 text-primary text-xl font-medium hover:gap-5 transition-all"
   >
@@ -438,7 +419,7 @@ tab === null ? (
         </p>
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-4 py-3 font-semibold hover:scale-100 transition"
         >
           Get My Music Analysis
           <span>↗</span>

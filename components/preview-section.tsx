@@ -38,8 +38,8 @@ export function PreviewSection({
 
             <h2 className="font-serif leading-[0.88] tracking-[-0.04em] text-white">
   <span className="block
-text-[42px]
-sm:text-[50px]
+text-[40px]
+sm:text-[48px]
 lg:text-[60px]
 xl:text-[68px]
 2xl:text-[74px]
@@ -56,11 +56,11 @@ lg:text-[24px] leading-[1.6] text-white/70 max-w-[820px] font-light">
 
             {children}
 
-            <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
 
   <Link
     href={ctaLink}
-    className="bg-primary text-black px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition"
+    className="bg-primary text-black px-5 py-2 rounded-full text-xl font-semibold hover:scale-105 transition"
   >
     {ctaText}
   </Link>
@@ -77,21 +77,21 @@ lg:text-[24px] leading-[1.6] text-white/70 max-w-[820px] font-light">
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-10 mt-14">
 
               <div>
-                <h3 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-white">300+</h3>
+                <h3 className="font-geist font-medium text-[40px] lg:text-[28px] font-bold tracking-[-0.02em] text-white">300+</h3>
                 <p className="text-xs uppercase tracking-widest text-white/60 mt-2">
                   Artists Studied
                 </p>
               </div>
 
               <div>
-                <h3 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-white">12</h3>
+                <h3 className="font-geist font-medium text-[40px] lg:text-[28px] font-bold tracking-[-0.02em] text-white">12</h3>
                 <p className="text-xs uppercase tracking-widest text-white/60 mt-2">
                   Cities Mapped
                 </p>
               </div>
 
               <div>
-                <h3 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-white">40k</h3>
+                <h3 className="font-geist font-medium text-[40px] lg:text-[28px] font-bold tracking-[-0.02em] text-white">40k</h3>
                 <p className="text-xs uppercase tracking-widest text-white/60 mt-2">
                   Listener Signals
                 </p>
@@ -112,49 +112,62 @@ lg:text-[24px] leading-[1.6] text-white/70 max-w-[820px] font-light">
               alt={title}
               className="
 w-full
-max-w-[640px]
+max-w-[600px]
 aspect-[4/5]
 object-cover
-rounded-[32px]
+rounded-[30px]
 ml-auto
 "
             />
 
             {/* Floating Card */}
-            <div className="absolute bottom-2 left-2 bg-[#181614]/95 backdrop-blur-xl border border-[#3b352d] rounded-[20px] p-5 w-[200px] shadow-2xl">
+ <div className="absolute -bottom-8 left-10
+  bg-[#181614]/95
+  backdrop-blur-xl
+  border border-[#3b352d]
+  rounded-[16px]
+  w-[180px]
+  px-4 py-3
+  shadow-xl">
 
-  <p className="text-primary uppercase tracking-[0.3em] text-xs">
-    TODAY AT RAGAM
-  </p>
-
-  <h3 className="text-white text-[42px] leading-none font-serif mt-2">
-    6:00 PM
-  </h3>
-
-  <p className="text-white mt-5 text-[22px] font-medium leading-tight">
-    Experience №03
-  </p>
-
-  <p className="text-white/70 mt-2 text-[15px] leading-6">
-    Trees to Protect Dreams
-  </p>
-
-  <div className="border-t border-white/10 mt-5 pt-4">
-    <p className="text-primary uppercase tracking-[0.3em] text-[11px]">
-      Status
+  <div>
+    <p className="text-primary uppercase tracking-[0.20em] text-[7px] leading-2">
+      TODAY AT
+      <br />
+      RAGAM
     </p>
 
-    <p className="text-white mt-2">
-      Planning
+    <h3 className="text-[#F2EEE8] text-[20px] leading-none font-serif font-medium mt-1">
+  6:00 <span className="text-[16px] text-[#D8D2C8]">pm</span>
+</h3>
+
+    <p className="text-white text-[10px] font-semibold leading-tight mt-1">
+      Experience №03
     </p>
+
+    <p className="text-white/70 text-[10px] leading-3 mt-1">
+      Trees to Protect
+      <br />
+      Dreams
+    </p>
+
+    <div className="border-t border-white/10 mt-2 pt-1">
+      <p className="text-primary uppercase tracking-[0.20em] text-[7px]">
+        Status
+      </p>
+
+      <p className="text-white text-[10px] mt-1">
+        Planning
+      </p>
+
+      <p className="text-white/45 text-[10px] mt-1">
+        Hyderabad
+      </p>
+    </div>
+
   </div>
 
-  <p className="text-white/50 mt-5 text-sm">
-    Hyderabad
-  </p>
-
 </div>
-
           </div>
 
         </ScrollReveal>

@@ -1,14 +1,39 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
 
 export default function ArtistPage() {
+   const router = useRouter();
   return (
     <main className="bg-[#11100f] min-h-screen">
 
       {/* Top spacing */}
       <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+        <button
+  onClick={() => router.back()}
+  className="inline-flex items-center gap-2 mb-10 text-primary hover:text-white transition"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M19 12H5" />
+    <path d="M12 19l-7-7 7-7" />
+  </svg>
+
+  <span className="uppercase tracking-[0.3em] text-xs">
+    Back
+  </span>
+</button>
 
         <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-28 items-center">
 
@@ -21,7 +46,7 @@ export default function ArtistPage() {
               <img
                 src="/images/venue.jpeg"
                 alt="Artist"
-                className="w-full h-[880px] object-cover rounded-[18px]"
+                className="w-full h-[700px] object-cover rounded-[18px]"
               />
 
               <div className="absolute top-6 left-6 flex justify-between w-[92%] text-white text-xs uppercase tracking-[0.35em]">
@@ -46,7 +71,7 @@ export default function ArtistPage() {
     VENUES
   </p>
 
-  <h1 className="font-serif text-[76px] leading-[0.95] tracking-[-0.05em] text-white">
+  <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white">
 
     Program culturally. Book
     <br />
@@ -55,7 +80,7 @@ export default function ArtistPage() {
 
   </h1>
 
-  <p className="mt-12 text-[23px] leading-[1.8] text-white/70">
+  <p className="mt-8 text-[23px] leading-[1.8] text-white/70">
 
     Attendance modelling, city-level music maps,
     and cultural calendars — so your stage
@@ -63,7 +88,7 @@ export default function ArtistPage() {
 
   </p>
 
-  <div className="mt-16">
+  <div className="mt-8">
 
     <p className="uppercase tracking-[0.35em] text-primary text-xs mb-8">
       COMMON CHALLENGES
@@ -140,7 +165,7 @@ export default function ArtistPage() {
 
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-4 py-3 font-semibold hover:scale-100 transition"
         >
           Get My Music Analysis
           <span>↗</span>

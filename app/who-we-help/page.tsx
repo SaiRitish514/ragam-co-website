@@ -10,7 +10,7 @@ const audienceData = [
     title: 'Artist',
     href: "/who-we-help/artist",
     description:
-      'Find collaborators, briefs and rooms shaped for your practice — and price your work honestly.',
+      'Understand your audience, grow your career, and reach the stages that matter.',
   },
   {
     title: 'Organizer',
@@ -62,7 +62,7 @@ export default function WhoWeHelp() {
               BUILT FOR THE ECOSYSTEM
             </p>
 
-            <h2 className="font-serif text-[72px] leading-[0.95] tracking-[-0.05em] text-white mt-8">
+            <h2 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white mt-8">
 
               We work with
               <br />
@@ -74,7 +74,7 @@ export default function WhoWeHelp() {
 
             </h2>
 
-            <p className="text-white/60 text-2xl leading-10 mt-10 max-w-md">
+            <p className="text-white/60 text-2xl leading-10 mt-8 max-w-md">
 
               One methodology,
               shaped to your seat
@@ -93,7 +93,7 @@ export default function WhoWeHelp() {
 
                 
 
-<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
+<div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5">
 
   {audienceData.map((item, index) => (
 
@@ -103,14 +103,14 @@ export default function WhoWeHelp() {
   whileHover={{ y: -6 }}
   transition={{ duration: 0.25 }}
   onMouseEnter={() => setActive(index)}
-  className="group rounded-[34px] border border-[#E7DDCF] bg-[#F6F1E7] text-[#1a1816] hover:bg-[#181614] hover:border-[#181614] hover:text-white cursor-pointer transition-all duration-300 p-5 sm:p-8 h-[180px] sm:h-[220px] flex flex-col justify-between"
+  className="group rounded-[30px] border border-[#E7DDCF] bg-[#F6F1E7] text-[#1a1816] hover:bg-[#181614] hover:border-[#181614] hover:text-white cursor-pointer transition-all duration-300 p-5 sm:p-8 h-[150px] sm:h-[180px] flex flex-col justify-between"
 >
         <div>
           <p className="uppercase tracking-[0.3em] text-[10px] sm:text-xs text-[#9a8f82] group-hover:text-primary transition-colors">
   FOR THE
 </p>
 
-          <h3 className="font-serif text-[32px] sm:text-[48px] mt-5">
+          <h3 className="font-serif text-[28px] sm:text-[30px] mt-5">
             {item.title}
           </h3>
         </div>
@@ -136,10 +136,10 @@ export default function WhoWeHelp() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35 }}
-              className="mt-8 rounded-[36px] bg-[#F6F1E7] border border-[#E7DDCF] p-12"
+              className="mt-6 rounded-[30px] bg-[#F6F1E7] border border-[#E7DDCF] p-12"
             >
 
-              <p className="font-serif text-[24px] sm:text-[36px] md:text-[52px] leading-[1.2] tracking-[-0.03em] text-[#211d19]">
+              <p className="font-serif text-[18px] sm:text-[30px] md:text-[45px] leading-[1.2] tracking-[-0.03em] text-[#211d19]">
 
                 {audienceData[active].description}
 
@@ -174,7 +174,7 @@ export default function WhoWeHelp() {
 
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-4 py-3 font-semibold hover:scale-100 transition"
         >
           Get My Music Analysis
           <span>↗</span>

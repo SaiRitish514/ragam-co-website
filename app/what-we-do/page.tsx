@@ -81,7 +81,7 @@ const reportSections = [
       OUR PROCESS
     </p>
 
-    <h2 className="font-serif text-[70px] leading-[0.95] text-white mt-8">
+    <h2 className="font-serif text-[60px] leading-[0.90] text-white mt-5">
       A five-step process,
       <br />
       <span className="italic text-primary">
@@ -96,29 +96,29 @@ const reportSections = [
 
   </div>
 
-  <div className="mt-32 space-y-28">
+  <div className="mt-20 space-y-10">
 
     {/* STEP 1 */}
-
+    
     <div className="grid grid-cols-[1fr_auto_1fr] items-center">
 
       <div className="text-right pr-20">
-        <h3 className="font-serif text-[42px] text-white">
+        <h3 className="font-serif text-[38px] text-white">
           You tell us your goals.
         </h3>
 
-        <p className="text-white/60 mt-4 leading-8">
+        <p className="text-white/60 mt-4 leading-5">
           A short intake — your music,
           your city, ambitions and constraints.
         </p>
       </div>
 
-      <div className="mx-12">
+      <div className="mx-8 relative z-10">
+         <div className="absolute left-1/2 top-[60px] -translate-x-1/2 w-px h-[110px] bg-[#C9A85A]/60"></div>
         <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
           01
         </div>
       </div>
-
       <div></div>
 
     </div>
@@ -129,19 +129,20 @@ const reportSections = [
 
       <div></div>
 
-      <div className="mx-12">
+      <div className="mx-8 relative z-10">
+        <div className="absolute left-1/2 top-[60px] -translate-x-1/2 w-px h-[120px] bg-[#C9A85A]/60"></div>
         <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
           02
         </div>
       </div>
 
       <div className="pl-20">
-        <h3 className="font-serif text-[42px] text-white">
+        <h3 className="font-serif text-[40px] text-white">
           We research your music,
           audience, region and career.
         </h3>
 
-        <p className="text-white/60 mt-4 leading-8">
+        <p className="text-white/60 mt-4 leading-5">
           Streaming data, social signals,
           historical performance and scene context.
         </p>
@@ -155,19 +156,20 @@ const reportSections = [
 
       <div className="text-right pr-20">
 
-        <h3 className="font-serif text-[42px] text-white">
+        <h3 className="font-serif text-[40px] text-white">
           We analyse opportunities,
           income and collaborations.
         </h3>
 
-        <p className="text-white/60 mt-4 leading-8">
+        <p className="text-white/60 mt-3 leading-5">
           Every path forward is priced,
           weighted and pressure-tested.
         </p>
 
       </div>
 
-      <div className="mx-12">
+      <div className="mx-8 relative z-10">
+        <div className="absolute left-1/2 top-[60px] -translate-x-1/2 w-px h-[120px] bg-[#C9A85A]/60"></div>
         <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
           03
         </div>
@@ -183,7 +185,8 @@ const reportSections = [
 
       <div></div>
 
-      <div className="mx-12">
+      <div className="mx-8 relative z-10">
+        <div className="absolute left-1/2 top-[60px] -translate-x-1/2 w-px h-[110px] bg-[#C9A85A]/60"></div>
         <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
           04
         </div>
@@ -191,12 +194,12 @@ const reportSections = [
 
       <div className="pl-20">
 
-        <h3 className="font-serif text-[42px] text-white">
+        <h3 className="font-serif text-[40px] text-white">
           You receive a complete
           Growth Intelligence Report.
         </h3>
 
-        <p className="text-white/60 mt-4 leading-8">
+        <p className="text-white/60 mt-4 leading-5">
           A single document with the map,
           priorities and numbers behind them.
         </p>
@@ -211,18 +214,18 @@ const reportSections = [
 
       <div className="text-right pr-20">
 
-        <h3 className="font-serif text-[42px] text-white">
+        <h3 className="font-serif text-[40px] text-white">
           We help you execute it.
         </h3>
 
-        <p className="text-white/60 mt-4 leading-8">
+        <p className="text-white/60 mt-4 leading-5">
           Introductions, applications,
           pricing conversations and strategic guidance.
         </p>
 
       </div>
 
-      <div className="mx-12">
+      <div className="mx-8 relative z-10">
         <div className="w-14 h-14 rounded-full border border-primary flex items-center justify-center text-primary font-semibold">
           05
         </div>
@@ -236,7 +239,7 @@ const reportSections = [
 
 </section>
 
-      <section className="max-w-[1700px] mx-auto px-10 lg:px-20 py-24">
+      <section className="max-w-[1600px] mx-auto px-10 lg:px-20 py-24">
 
         <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-16">
 
@@ -248,7 +251,7 @@ const reportSections = [
               WHAT YOU RECEIVE
             </p>
 
-            <h1 className="font-serif text-[78px] leading-[0.95] tracking-[-0.05em] text-[#B38A45] mt-8">
+            <h1 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-[#B38A45] mt-7">
 
               Eight answers,
               <br />
@@ -269,7 +272,7 @@ const reportSections = [
 
             <Link
               href="#"
-              className="inline-flex items-center gap-3 mt-16 text-[22px] text-[#201B17] hover:gap-5 transition-all"
+              className="inline-flex items-center gap-3 mt-16 text-[22px] text-[#B38A45] hover:gap-5 transition-all"
             >
               Preview a sample report
               →
@@ -279,7 +282,7 @@ const reportSections = [
 
           {/* RIGHT */}
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-5">
 
   {reports.map((item, index) => {
 
@@ -289,25 +292,25 @@ const reportSections = [
 
       <div
   key={index}
-        className="rounded-[36px] border border-[#2A2520] bg-[#171412] p-10"
+        className="rounded-[36px] border border-[#2A2520] bg-[#171412] p-8"
       >
 
-        <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#24201C]">
+        <div className="w-10 h-10 rounded-full flex items-center justify-center bg-[#24201C]">
 
           <Icon
-  size={28}
+  size={20}
   className="text-primary"
 />
 
         </div>
 
-        <h3 className="font-serif text-[38px] mt-10 text-white">
+        <h3 className="font-serif text-[38px] mt-8 text-white">
 
           {item.title}
 
         </h3>
 
-        <p className="text-[22px] leading-[1.7] mt-6 text-white/60">
+        <p className="text-[20px] leading-[1.5] mt-6 text-white/60">
 
           {item.desc}
 
@@ -327,15 +330,15 @@ const reportSections = [
       </section>
       {/* REPORT PREVIEW */}
 
-      <section className="bg-[#171412] py-32 px-8 lg:px-20">
+      <section className="bg-[#171412] py-25 px-8 lg:px-20">
 
   <div className="max-w-[1700px] mx-auto">
 
-    <p className="uppercase tracking-[0.35em] text-primary text-xs font-semibold">
+    <p className="uppercase tracking-[0.30em] text-primary text-xs font-semibold">
       RAGAM GROWTH INTELLIGENCE REPORT
     </p>
 
-    <h2 className="font-serif text-[86px] leading-[0.92] tracking-[-0.05em] text-white mt-8">
+    <h2 className="font-serif text-[60px] leading-[0.90] tracking-[-0.04em] text-white mt-6">
       What the report
       <br />
       <span className="italic text-primary">
@@ -343,17 +346,17 @@ const reportSections = [
       </span>
     </h2>
 
-    <p className="text-white/70 text-[24px] leading-[1.7] max-w-[760px] mt-10">
+    <p className="text-white/70 text-[20px] leading-[1.6] max-w-[760px] mt-8">
       A confidential, artist-specific document.
       Below is a redacted preview from a recent brief.
     </p>
 
-    <div className="grid lg:grid-cols-[0.32fr_0.68fr] gap-10 mt-20">
+    <div className="grid lg:grid-cols-[0.32fr_0.68fr] gap-8 mt-15">
       {/* LEFT SIDE */}
 
 <div>
 
-  <div className="rounded-[36px] border border-white/10 bg-[#231F1B] p-5">
+  <div className="rounded-[30px] border border-white/10 bg-[#231F1B] p-5">
 
     <div className="space-y-2">
 
@@ -362,7 +365,7 @@ const reportSections = [
         <button
           key={index}
           onClick={() => setActiveSection(index)}
-          className={`w-full rounded-full px-6 py-5 flex justify-between items-center transition-all duration-300
+          className={`w-full rounded-full px-4 py-5 flex justify-between items-center transition-all duration-300
 
           ${
             activeSection === index
@@ -393,7 +396,7 @@ const reportSections = [
 
   </div>
 
-  <p className="text-white/40 text-sm mt-6">
+  <p className="text-white/40 text-sm mt-4">
     🔒 Client details redacted for privacy.
   </p>
 
@@ -405,7 +408,7 @@ const reportSections = [
 
   {activeSection === 0 && (
 
-<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+<div className="bg-[#F8F3EA] rounded-[20px] p-15">
 
   {/* Header */}
 
@@ -413,13 +416,13 @@ const reportSections = [
 
     <span>RAGAM GROWTH INTELLIGENCE REPORT</span>
 
-    <span>PAGE 01 / 47</span>
+    <span>PAGE 01 / 7</span>
 
   </div>
 
   {/* Section Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-3">
 
     <div className="w-12 h-[1px] bg-primary"></div>
 
@@ -429,23 +432,29 @@ const reportSections = [
 
   </div>
 
-  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
   <span>Prepared for</span>
 
-  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
 </h2>
 
   {/* Stats */}
 
-  <div className="grid grid-cols-3 gap-6 mt-12">
+  <div className="grid grid-cols-3 gap-5 mt-5">
 
     <div className="border border-[#D7CCBE] rounded-[26px] p-8">
 
-      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+      <p className="uppercase tracking-[0.20em] text-[8px] text-[#847A6F]">
         Monthly Listeners
       </p>
 
-      <h4 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+      <h4 className="font-geist font-medium font-medium text-[30px] lg:text-[25px] font-bold tracking-[-0.02em] text-[#221F1B]">
         42,180
       </h4>
 
@@ -453,11 +462,11 @@ const reportSections = [
 
     <div className="border border-[#D7CCBE] rounded-[26px] p-8">
 
-      <p className="uppercase tracking-[0.25em] text-[11px] text-[#847A6F]">
+      <p className="uppercase tracking-[0.20em] text-[8px] text-[#847A6F]">
         Avg. Age
       </p>
 
-      <h4 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+      <h4 className="font-geist font-medium text-[30px] lg:text-[25px] font-bold tracking-[-0.02em] text-[#221F1B]">
         24–34
       </h4>
 
@@ -469,7 +478,7 @@ const reportSections = [
         Repeat Rate
       </p>
 
-      <h4 className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+      <h4 className="font-geist font-medium text-[30px] lg:text-[25px] font-bold tracking-[-0.02em] text-[#221F1B]">
         61%
       </h4>
 
@@ -520,7 +529,7 @@ const reportSections = [
 
   {/* Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-3">
 
     <div className="w-12 h-[1px] bg-primary"></div>
 
@@ -530,15 +539,21 @@ const reportSections = [
 
   </div>
 
-  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
   <span>Prepared for</span>
 
-  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
 </h2>
 
   {/* Map */}
 
-  <div className="relative mt-12 h-[430px] rounded-[30px] overflow-hidden border border-[#D7CCBE]">
+  <div className="relative mt-12 h-[150px] rounded-[30px] overflow-hidden border border-[#D7CCBE]">
 
     {/* Grid */}
 
@@ -633,7 +648,7 @@ const reportSections = [
 
   {/* Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-3">
 
     <div className="w-12 h-[1px] bg-primary"></div>
 
@@ -643,10 +658,16 @@ const reportSections = [
 
   </div>
 
-  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
   <span>Prepared for</span>
 
-  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
 </h2>
 
   <div className="grid grid-cols-[420px_1fr] gap-14 mt-12">
@@ -655,7 +676,7 @@ const reportSections = [
 
     <div className="border border-[#D8CCBE] rounded-[30px] p-12 flex flex-col items-center justify-center">
 
-      <div className="relative w-56 h-56">
+      <div className="relative w-50 h-50">
 
         <svg className="w-56 h-56 -rotate-90">
 
@@ -684,7 +705,7 @@ const reportSections = [
 
         <div className="absolute inset-0 flex items-center justify-center">
 
-          <span className="font-geist text-[45px] lg:text-[30px] font-bold tracking-[-0.02em] text-[#221F1B]">
+          <span className=" font-geist font-medium text-[30px] lg:text-[25px] font-bold tracking-[-0.02em] text-[#221F1B]">
             72
           </span>
 
@@ -700,7 +721,7 @@ const reportSections = [
 
     {/* Progress Bars */}
 
-    <div className="space-y-8 flex flex-col justify-center">
+    <div className="space-y-6 flex flex-col justify-center">
 
       {[
         ["Craft & Catalogue",84],
@@ -761,7 +782,7 @@ const reportSections = [
 
   {/* Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-3">
 
     <div className="w-12 h-[1px] bg-primary"></div>
 
@@ -771,13 +792,19 @@ const reportSections = [
 
   </div>
 
-  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
   <span>Prepared for</span>
 
-  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
 </h2>
 
-  <div className="mt-14 space-y-5">
+  <div className="mt-5 space-y-3">
 
     {[
       ["Hyderabad","300-cap listening room","HIGH FIT"],
@@ -793,7 +820,7 @@ const reportSections = [
 
         <div>
 
-          <h3 className="font-serif text-[36px] text-[#221F1B]">
+          <h3 className="font-serif text-[30px] text-[#221F1B]">
             {city}
           </h3>
 
@@ -844,7 +871,7 @@ const reportSections = [
 
   {/* Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-3">
 
     <div className="w-12 h-[1px] bg-primary"></div>
 
@@ -854,13 +881,19 @@ const reportSections = [
 
   </div>
 
-  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
   <span>Prepared for</span>
 
-  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
 </h2>
 
-  <div className="grid grid-cols-2 gap-6 mt-14">
+  <div className="  grid grid-cols-2 gap-4 mt-8">
 
     {[
       ["SYNC LICENSING","₹1.2–2.4L / quarter"],
@@ -880,7 +913,7 @@ const reportSections = [
 
         </p>
 
-        <h3 className="font-serif text-[40px] mt-6 text-[#221F1B]">
+        <h3 className="font-serif font-medium text-[40px] mt-6 text-[#221F1B]">
 
           {value}
 
@@ -914,7 +947,7 @@ const reportSections = [
 
   {/* Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-3">
 
     <div className="w-12 h-[1px] bg-primary"></div>
 
@@ -924,13 +957,20 @@ const reportSections = [
 
   </div>
 
- <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+ 
+<h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
   <span>Prepared for</span>
 
-  <span className="inline-block w-[280px] h-[22px] bg-[#221F1B] rounded-full"></span>
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
 </h2>
 
-  <div className="mt-14 overflow-hidden rounded-[28px] border border-[#D8CCBE]">
+  <div className="mt-10 overflow-hidden rounded-[28px] border border-[#D8CCBE]">
 
     {[
       ["Magnetic Fields","Nov · Alsisar","Curator intro available"],
@@ -972,7 +1012,7 @@ const reportSections = [
 
 {activeSection === 6 && (
 
-<div className="bg-[#F8F3EA] rounded-[42px] p-14">
+<div className="bg-[#F8F3EA] rounded-[40px] p-10">
 
   {/* Header */}
 
@@ -986,9 +1026,9 @@ const reportSections = [
 
   {/* Title */}
 
-  <div className="mt-10 flex items-center gap-4">
+  <div className="mt-8 flex items-center gap-4">
 
-    <div className="w-12 h-[1px] bg-primary"></div>
+    <div className="w-10 h-[1px] bg-primary"></div>
 
     <p className="uppercase tracking-[0.3em] text-primary text-xs">
       Next Steps
@@ -996,23 +1036,31 @@ const reportSections = [
 
   </div>
 
-  <h2 className="font-serif text-[60px] leading-none text-[#221F1B] mt-8">
-    Your 90-Day Roadmap
-  </h2>
+  <h2 className="font-serif text-[50px] leading-none text-[#221F1B] mt-8 flex items-center gap-5">
+  <span>Prepared for</span>
 
-  <div className="mt-14 space-y-6">
+  <span
+    className="inline-block w-[220px] h-[14px] rounded-full bg-[#221F1B]"
+    style={{
+      filter: "blur(3px)",
+      opacity: 0.95,
+    }}
+  />
+</h2>
+
+  <div className="mt-10 space-y-4">
 
     {[
-      ["Week 1","Audit streaming profiles and update artist branding"],
-      ["Week 2","Prepare EPK and press kit for festivals"],
-      ["Week 4","Announce one live performance in Hyderabad"],
-      ["Month 2","Release one collaboration with a regional artist"],
-      ["Month 3","Apply to 5 festivals and launch merchandise"],
+      ["Release single № 3 with regional press embargo — week of Mar 04."],
+      ["Open pre-sale for two Hyderabad listening-room nights."],
+      ["Submit application to Magnetic Fields curator programme."],
+      ["Meet with two sync agencies (introductions attached)."],
+      ["Consolidate publishing catalogue under single administrator."],
     ].map(([time,task],i)=>(
 
       <div
         key={i}
-        className="flex items-start gap-6 border border-[#D8CCBE] rounded-[24px] p-7"
+        className="flex items-center gap-6 border border-[#D8CCBE] rounded-[24px] px-8 py-5 min-h-[90px]"
       >
 
         <div className="w-14 h-14 rounded-full bg-[#221F1B] text-[#C8A968] flex items-center justify-center font-semibold">
@@ -1074,7 +1122,7 @@ const reportSections = [
         </p>
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-4 py-3 font-semibold hover:scale-100 transition"
         >
           Get My Music Analysis
           <span>↗</span>

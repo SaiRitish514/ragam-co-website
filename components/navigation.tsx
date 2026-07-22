@@ -3,11 +3,26 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { usePathname } from "next/navigation";
+import { useRouter,usePathname } from "next/navigation";
 import { Menu, X } from 'lucide-react';
 
 export function Navigation() {
+  const router = useRouter();
   const pathname = usePathname();
+  const handleAnalysisClick = () => {
+  if (pathname === "/") {
+    const section = document.getElementById("request-analysis");
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  } else {
+    router.push("/#request-analysis");
+  }
+};
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -69,7 +84,7 @@ export function Navigation() {
   </NavLink>
 
   <NavLink href="/experiences" pathname={pathname}>
-    Events
+    Experiences
   </NavLink>
 
   <NavLink href="/about" pathname={pathname}>
@@ -79,14 +94,12 @@ export function Navigation() {
           </div>
 
           {/* Right CTA */}
-          <div className="hidden md:flex">
-            <Link
-              href="/#request-analysis"
-              className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
-            >
-              Get My Music Analysis
-            </Link>
-          </div>
+          <button
+  onClick={handleAnalysisClick}
+  className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+>
+  Get My Music Analysis
+</button>
 
           {/* Mobile Menu Button */}
           <button
@@ -124,20 +137,20 @@ export function Navigation() {
               </MobileNavLink>
               
               <MobileNavLink href="/experiences" onClick={() => setIsMobileMenuOpen(false)}>
-                Events
+                Experiences
               </MobileNavLink>
               <MobileNavLink href="/about" onClick={() => setIsMobileMenuOpen(false)}>
                 About
               </MobileNavLink>
-              <div className="pt-8 border-t border-border">
-                <Link
-                  href="/contact"
-                  className="block w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition text-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Get My Music Analysis
-                </Link>
-              </div>
+              <button
+  onClick={() => {
+    setIsMobileMenuOpen(false);
+    handleAnalysisClick();
+  }}
+  className="block w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition text-center"
+>
+  Get My Music Analysis
+</button>
             </div>
           </motion.div>
         )}

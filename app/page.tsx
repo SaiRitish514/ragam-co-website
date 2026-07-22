@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useRouter, usePathname } from "next/navigation";
 import { HeroSection } from '@/components/hero-section';
 import { PreviewSection } from '@/components/preview-section';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
@@ -38,6 +39,7 @@ const opportunityCards = [
   { title: 'Label Partnerships', category: 'Collaboration' },
 ];
 export default function Page() {
+const pathname = usePathname();
   const [formData, setFormData] = useState({
   name: '',
   email: '',
@@ -197,7 +199,7 @@ Expand your audience."
 
       <form
   onSubmit={handleSubmit}
-  className="bg-[#211d19] border border-[#3b352d] rounded-[36px] p-8 lg:p-9">
+  className="bg-[#211d19] border border-[#3b352d] rounded-[25px] p-4 lg:p-6">
 
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -214,7 +216,7 @@ Expand your audience."
   onChange={handleChange}
   placeholder="Your full name"
   required
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
+  className="mt-3 w-full bg-[#171513] rounded-full px-5 py-3.5 outline-none text-white"
 />
           </div>
           <div>
@@ -229,7 +231,7 @@ Expand your audience."
       onChange={handleChange}
       required
       placeholder="Your email"
-      className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
+      className="mt-3 w-full bg-[#171513] rounded-full px-5 py-3.5 outline-none text-white"
     />
   </div>
           <div>
@@ -244,7 +246,7 @@ Expand your audience."
   onChange={handleChange}
   required
   placeholder="Artist, organizer..."
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
+  className="mt-3 w-full bg-[#171513] rounded-full px-5 py-3.5 outline-none text-white"
 />
           </div>
           <div>
@@ -258,7 +260,7 @@ Expand your audience."
       value={formData.phone}
       onChange={handleChange}
       placeholder="+91 XXXXX XXXXX"
-      className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
+      className="mt-3 w-full bg-[#171513] rounded-full px-5 py-3.5 outline-none text-white"
     />
   </div>
           <div>
@@ -273,13 +275,13 @@ Expand your audience."
   onChange={handleChange}
   required
   placeholder="@username"
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
+  className="mt-3 w-full bg-[#171513] rounded-full px-5 py-3.5 outline-none text-white"
 />
           </div>
 
           <div>
             <label className="text-xs uppercase tracking-widest text-primary">
-              Music Link
+              Music Link (optional)
             </label>
 
             <input
@@ -287,16 +289,16 @@ Expand your audience."
   name="musicLink"
   value={formData.musicLink}
   onChange={handleChange}
-  placeholder="optional"
-  className="mt-3 w-full bg-[#171513] rounded-full px-6 py-3.5 outline-none text-white"
+  placeholder="link"
+  className="mt-3 w-full bg-[#171513] rounded-full px-5 py-3.5 outline-none text-white"
 />
           </div>
 
         </div>
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
+        <div className="grid md:grid-cols-2 gap-5 mt-6">
 
 </div>
-        <div className="mt-6">
+        <div className="mt-4">
 
           <label className="text-xs uppercase tracking-widest text-primary">
             Goal
@@ -309,7 +311,7 @@ Expand your audience."
   onChange={handleChange}
   required
   placeholder="Tell us about your goals..."
-  className="mt-3 w-full bg-[#171513] rounded-3xl px-6 py-4 outline-none text-white resize-none"
+  className="mt-3 w-full bg-[#171513] rounded-3xl px-4 py-5 outline-none text-white resize-none"
 />
 
         </div>
@@ -331,7 +333,7 @@ Expand your audience."
           <button
   type="submit"
   disabled={isSubmitting}
-  className="bg-primary text-black rounded-full px-10 py-4 font-semibold"
+  className="bg-primary text-black rounded-full px-3 py-1 font-medium"
 >
   {isSubmitting ? "Submitting..." : "Request My Analysis ↗"}
 </button>
@@ -464,7 +466,7 @@ Expand your audience."
         <img
           src="/images/h1.jpeg"
           alt="Case Study"
-          className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[720px] object-cover rounded-[36px]"
+          className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] object-cover rounded-[34px]"
         />
       </div>
 
@@ -479,11 +481,11 @@ Expand your audience."
         <h3 className="font-serif text-[46px] lg:text-[56px] xl:text-[64px] leading-[1] tracking-[-0.03em] text-white">
 
           From
-          <span className="text-primary italic"> 8k </span>
+          <span className="font-serif text-primary text-[50px] leading-none"> 8k </span>
 
           to
 
-          <span className="text-primary italic"> 42k </span>
+          <span className="font-serif text-primary text-[50px] leading-none"> 42k </span>
 
           monthly listeners,
 
@@ -512,7 +514,7 @@ Expand your audience."
               LISTENERS
             </p>
 
-            <h4 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+            <h4 className="font-geist font-medium text-[20px] lg:text-[15px] font-bold tracking-[-0.03em] text-primary mt-3">
               +425%
             </h4>
 
@@ -524,7 +526,7 @@ Expand your audience."
               SHOW FEE
             </p>
 
-            <h4 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+            <h4 className="font-geist font-medium text-[20px] lg:text-[15px] font-bold tracking-[-0.03em] text-primary mt-3">
               +3.2×
             </h4>
 
@@ -536,7 +538,7 @@ Expand your audience."
               NEW ROOMS
             </p>
 
-            <h4 className="font-geist text-[30px] lg:text-[20px] font-bold tracking-[-0.03em] text-primary mt-3">
+            <h4 className="font-geist font-medium text-[20px] lg:text-[15px] font-bold tracking-[-0.03em] text-primary mt-3">
               6
             </h4>
 
@@ -574,11 +576,11 @@ Expand your audience."
           </div>
         </ScrollReveal>
 
-        <div className="relative aspect-video rounded-2xl overflow-hidden mb-12">
+        <div className="relative aspect-video rounded-xl overflow-hidden mb-5">
           <img
             src="/images/live-concert.png"
             alt="Live concert experience"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-[15px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
         </div>
@@ -618,8 +620,8 @@ Expand your audience."
         </p>
 
         <Link
-          href="#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          href="/#request-analysis"
+          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-4 py-3 font-semibold hover:scale-100 transition"
         >
           Get My Music Analysis
           <span>↗</span>

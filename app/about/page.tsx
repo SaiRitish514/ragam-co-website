@@ -27,7 +27,7 @@ const people = [
 },
   {
   image: "/images/siddhu.jpeg",
-  name: "Siddharth",
+  name: "Siddhartha Yalamanchili",
   role: "Ecosystem & Strategic Partnerships Lead",
   description:
     "Builds strategic relationships across the Telugu music ecosystem by connecting artists, organisers, labels, venues, brands, educational institutions and cultural organisations. Leads strategic partnerships, industry collaborations and ecosystem initiatives that create lasting opportunities, strengthen industry connections and contribute to the long-term growth of Telugu music.\n\nWorks closely with stakeholders to identify emerging opportunities, foster meaningful collaborations and help transform Ragam's vision into impactful initiatives across the music community.",
@@ -53,14 +53,14 @@ export default function AboutPage() {
 </div>
         {/* Cards */}
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-24">
+        <div className="columns-1 md:columns-2 xl:columns-4 gap-8 mt-24">
 
           {people.map((person) => (
 
             <div
-              key={person.name}
-              className="bg-[#1A1715] rounded-[28px] overflow-hidden border border-white/10 hover:border-primary/30 transition duration-300 group"
-            >
+  key={person.name}
+  className="mb-8 break-inside-avoid bg-[#1A1715] rounded-[28px] overflow-hidden border border-white/10 hover:border-primary/30 transition duration-300 group"
+>
 
               <div className="overflow-hidden">
 
