@@ -52,7 +52,7 @@ export function Navigation() {
         transition={{ duration: 0.3 }}
         className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border"
       >
-        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-5 flex items-center">
+        <div className="w-full px-4 sm:px-6 lg:px-16 xl:px-20 py-5 flex items-center justify-between">
           {/* Premium Logo */}
           
   <span className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight text-foreground">
@@ -142,15 +142,14 @@ export function Navigation() {
               <MobileNavLink href="/about" onClick={() => setIsMobileMenuOpen(false)}>
                 About
               </MobileNavLink>
-              <button
-  onClick={() => {
-    setIsMobileMenuOpen(false);
-    handleAnalysisClick();
-  }}
-  className="block w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition text-center"
->
-  Get My Music Analysis
-</button>
+              <div className="hidden lg:flex">
+  <button
+    onClick={handleAnalysisClick}
+    className="px-5 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+  >
+    Get My Music Analysis
+  </button>
+</div>
             </div>
           </motion.div>
         )}
