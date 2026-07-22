@@ -52,20 +52,20 @@ export function Navigation() {
         transition={{ duration: 0.3 }}
         className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border"
       >
-        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-5 flex items-center">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-5 flex items-center justify-between">
           {/* Premium Logo */}
-          
+          <div className="flex items-baseline shrink-0">
   <span className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight text-foreground">
     Ragam
   </span>
 
-  <span className="text-2xl lg:text-3xl font-serif text-primary">
+  <span className="ml-1 text-2xl lg:text-3xl font-serif text-primary">
     & Co.
   </span>
-
+</div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-1 justify-center">
+          <div className="hidden md:flex flex-1 justify-center">
             <nav className="flex items-center gap-12 xl:gap-16">
   <NavLink href="/" pathname={pathname}>
     Home
@@ -94,24 +94,27 @@ export function Navigation() {
           </div>
 
           {/* Right CTA */}
-          <button
-  onClick={handleAnalysisClick}
-  className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
->
-  Get My Music Analysis
-</button>
+          <div className="hidden md:block">
+  <button
+    onClick={handleAnalysisClick}
+    className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+  >
+    </button>
+    </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X size={24} className="text-foreground" />
-            ) : (
-              <Menu size={24} className="text-foreground" />
-            )}
-          </button>
+         {pathname !== "/" && (
+  <button
+    className="md:hidden"
+    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  >
+    {isMobileMenuOpen ? (
+      <X size={24} className="text-foreground" />
+    ) : (
+      <Menu size={24} className="text-foreground" />
+    )}
+  </button>
+)}
         </div>
 
         {/* Mobile Menu */}
