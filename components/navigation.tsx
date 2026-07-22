@@ -65,7 +65,7 @@ export function Navigation() {
 
 
           {/* Desktop Navigation */}
-          <div className="hidden xl:flex flex-1 justify-center">
+         <div className="flex xl:hidden items-center gap-5 ml-auto pr-3">
             <nav className="flex items-center gap-12 xl:gap-16">
   <NavLink href="/" pathname={pathname}>
     Home
@@ -114,14 +114,15 @@ export function Navigation() {
   </button>
 
   <button
-    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-  >
-    {isMobileMenuOpen ? (
-      <X size={26} className="text-foreground" />
-    ) : (
-      <Menu size={26} className="text-foreground" />
-    )}
-  </button>
+  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  className="p-1"
+>
+  {isMobileMenuOpen ? (
+    <X size={26} className="text-foreground" />
+  ) : (
+    <Menu size={26} className="text-foreground" />
+  )}
+</button>
 </div>
         </div>
 
