@@ -466,7 +466,7 @@ Expand your audience."
         <img
           src="/images/h1.jpeg"
           alt="Case Study"
-          className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] object-cover rounded-[34px]"
+          className="w-full aspect-[16/10] xl:aspect-auto xl:h-[600px] object-cover rounded-[34px]"
         />
       </div>
 

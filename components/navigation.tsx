@@ -98,7 +98,7 @@ export function Navigation() {
   <button
     onClick={handleAnalysisClick}
     className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
-  >
+  > analysis
     </button>
     </div>
 
