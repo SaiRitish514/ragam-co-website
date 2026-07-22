@@ -21,7 +21,7 @@ export default function MobileDesktopNotice() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/40 backdrop-blur-sm">
+    <div className="w-[90%] max-w-md rounded-2xl border border-white/10 bg-[#181614] p-6 shadow-2xl">
   <div className="w-[90%] max-w-md rounded-2xl border border-white/10 bg-[#181614]/95 backdrop-blur-xl p-6 shadow-2xl">
 
     <p className="text-white/80 text-center text-sm leading-6">
