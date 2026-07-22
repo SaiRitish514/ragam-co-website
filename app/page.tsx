@@ -126,7 +126,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         description=""
         ctaText=""
         ctaLink="#request-analysis"
-        backgroundImage="/images/h3.jpeg"
+        backgroundImage="/images/hero1.jpeg"
       />
 
       {/* What Ragam Does Preview */}

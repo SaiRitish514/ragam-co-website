@@ -12,7 +12,7 @@ const people = [
       "Leads Ragam's vision, research and long-term strategy for the Telugu music ecosystem. Focused on audience intelligence, artist growth, industry innovation and building sustainable opportunities for creators.",
   },
   {
-    image: "/images/sai2.jpeg",
+    image: "/images/sai4.jpeg",
     name: "Sai Ritish Tirunagari",
     role: "Product Design & Digital Experience Lead",
     description:
@@ -23,14 +23,14 @@ const people = [
   name: "Abigna Yalakala",
   role: "Research & Community Lead",
   description:
-    "Leads ecosystem research, artist discovery and community engagement. Works closely with musicians, organisers and audiences to understand emerging trends and opportunities across Telugu music.\n\nContributes to industry studies, field research and community initiatives that help strengthen connections across the Telugu music ecosystem. Supports the development of insights that guide Ragam's research, strategy and long-term initiatives.",
+    "Leads ecosystem research, artist discovery and community engagement. Works closely with musicians, organisers and audiences to identify emerging trends and opportunities across Telugu music. Contributes to industry research and community initiatives, helping shape the insights and strategies that drive Ragam's long-term vision.",
 },
   {
   image: "/images/siddhu.jpeg",
   name: "Siddhartha Yalamanchili",
   role: "Ecosystem & Strategic Partnerships Lead",
   description:
-    "Builds strategic relationships across the Telugu music ecosystem by connecting artists, organisers, labels, venues, brands, educational institutions and cultural organisations. Leads strategic partnerships, industry collaborations and ecosystem initiatives that create lasting opportunities, strengthen industry connections and contribute to the long-term growth of Telugu music.\n\nWorks closely with stakeholders to identify emerging opportunities, foster meaningful collaborations and help transform Ragam's vision into impactful initiatives across the music community.",
+    "Builds strategic relationships across the Telugu music ecosystem by connecting artists, organisers, labels and industry partners. Leads collaborations and partnership initiatives that create meaningful opportunities, strengthen industry connections and help advance Ragam's long-term vision.",
 },
 ];
 

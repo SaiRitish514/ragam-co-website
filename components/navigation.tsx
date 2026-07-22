@@ -103,18 +103,16 @@ export function Navigation() {
     </div>
 
           {/* Mobile Menu Button */}
-         {pathname !== "/" && (
-  <button
-    className="md:hidden"
-    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-  >
-    {isMobileMenuOpen ? (
-      <X size={24} className="text-foreground" />
-    ) : (
-      <Menu size={24} className="text-foreground" />
-    )}
-  </button>
-)}
+         <button
+  className="md:hidden"
+  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+>
+  {isMobileMenuOpen ? (
+    <X size={24} className="text-foreground" />
+  ) : (
+    <Menu size={24} className="text-foreground" />
+  )}
+</button>
         </div>
 
         {/* Mobile Menu */}

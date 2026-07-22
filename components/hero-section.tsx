@@ -30,7 +30,7 @@ export function HeroSection({
         {backgroundImage ? (
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${backgroundImage})`,filter: "blur(3px)", }}
+            style={{ backgroundImage: `url(${backgroundImage})` }}
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
