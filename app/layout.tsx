@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import MobileDesktopNotice from "@/components/mobile-desktop-notice";
 import { Geist, Geist_Mono, Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
 import { Navigation } from '@/components/navigation'
@@ -56,6 +57,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${cormorant.variable} ${geistMono.variable} dark bg-background`}>
       <body className="antialiased font-sans">
         <Navigation />
+        <MobileDesktopNotice />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
