@@ -65,7 +65,7 @@ export function Navigation() {
 
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-1 justify-center">
+          <div className="hidden xl:flex flex-1 justify-center">
             <nav className="flex items-center gap-12 xl:gap-16">
   <NavLink href="/" pathname={pathname}>
     Home
@@ -94,24 +94,35 @@ export function Navigation() {
           </div>
 
           {/* Right CTA */}
-          <button
-  onClick={handleAnalysisClick}
-  className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
->
-  Get My Music Analysis
-</button>
+          {/* Desktop CTA */}
+<div className="hidden xl:flex">
+  <button
+    onClick={handleAnalysisClick}
+    className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+  >
+    Get My Music Analysis
+  </button>
+</div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X size={24} className="text-foreground" />
-            ) : (
-              <Menu size={24} className="text-foreground" />
-            )}
-          </button>
+{/* Mobile / Tablet Right Side */}
+<div className="flex xl:hidden items-center gap-3 ml-auto">
+  <button
+    onClick={handleAnalysisClick}
+    className="px-3 py-2 bg-primary text-primary-foreground rounded-md text-[11px] font-medium whitespace-nowrap"
+  >
+    Analysis
+  </button>
+
+  <button
+    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  >
+    {isMobileMenuOpen ? (
+      <X size={26} className="text-foreground" />
+    ) : (
+      <Menu size={26} className="text-foreground" />
+    )}
+  </button>
+</div>
         </div>
 
         {/* Mobile Menu */}
@@ -142,14 +153,7 @@ export function Navigation() {
               <MobileNavLink href="/about" onClick={() => setIsMobileMenuOpen(false)}>
                 About
               </MobileNavLink>
-              <div className="hidden lg:flex">
-  <button
-    onClick={handleAnalysisClick}
-    className="px-5 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
-  >
-    Get My Music Analysis
-  </button>
-</div>
+              
             </div>
           </motion.div>
         )}
