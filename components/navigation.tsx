@@ -65,8 +65,8 @@ export function Navigation() {
 </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex flex-1 justify-center">
-            <nav className="flex items-center gap-12 xl:gap-16">
+          <div className="hidden md:flex flex-1 justify-center ml-24 xl:ml-36">
+            <nav className="flex items-center gap-10 xl:gap-14">
   <NavLink href="/" pathname={pathname}>
     Home
   </NavLink>
@@ -94,7 +94,7 @@ export function Navigation() {
           </div>
 
           {/* Right CTA */}
-          <div className="hidden md:block">
+          <div className="hidden md:block ml-16 xl:ml-24">
   <button
     onClick={handleAnalysisClick}
     className="px-8 py-2.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20"
