@@ -21,22 +21,24 @@ export default function MobileDesktopNotice() {
   if (!show) return null;
 
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[9999] w-[92%] max-w-sm rounded-2xl border border-white/10 bg-[#181614]/95 backdrop-blur-xl p-5 shadow-2xl">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/40 backdrop-blur-sm">
+  <div className="w-[90%] max-w-md rounded-2xl border border-white/10 bg-[#181614]/95 backdrop-blur-xl p-6 shadow-2xl">
 
-      <p className="text-white text-center text-sm leading-6">
-  For the best experience, view this website in{" "}
-  <span className="text-primary font-semibold">
-    Desktop Site
-  </span>.
-</p>
+    <p className="text-white/80 text-center text-sm leading-6">
+      For the best experience, please view this website in{" "}
+      <span className="text-primary font-semibold">
+        Desktop Site
+      </span>.
+    </p>
 
-      <button
-  onClick={close}
-  className="mt-4 w-full rounded-xl bg-primary py-3 text-sm font-semibold text-black transition hover:opacity-90"
->
-  Continue
-</button>
+    <button
+      onClick={close}
+      className="mt-6 w-full rounded-xl bg-primary py-3 text-sm font-semibold text-black hover:opacity-90 transition"
+    >
+      Continue
+    </button>
 
-    </div>
+  </div>
+</div>
   );
 }
