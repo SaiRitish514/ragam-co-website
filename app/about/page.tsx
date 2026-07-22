@@ -46,7 +46,7 @@ export default function AboutPage() {
   </p>
 
   <p className="mt-10 max-w-[1100px] mx-auto text-[22px] leading-[1.8] text-white/60">
-    A small team with one shared mission: to make Telugu music more discoverable,
+    A small team with one shared mission: To make Telugu music more discoverable,
     sustainable and meaningful for everyone who creates and experiences it.
   </p>
 
