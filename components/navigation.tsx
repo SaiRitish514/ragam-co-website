@@ -66,7 +66,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-1 justify-center ml-24 xl:ml-36">
-            <nav className="flex items-center gap-10 xl:gap-14">
+            <nav className="flex items-center gap-8 xl:gap-12">
   <NavLink href="/" pathname={pathname}>
     Home
   </NavLink>
