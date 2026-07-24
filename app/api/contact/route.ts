@@ -53,7 +53,7 @@ ${body.message}
     // Send email to Ragam team
     const teamEmailResponse = await resend.emails.send({
       from: 'Ragam <onboarding@resend.dev>',
-      to: process.env.RAGAM_EMAIL || 'team@ragamco.com',
+      to: process.env.RAGAM_EMAIL || 'hello.ragamandco@gmail.com',
       subject: `New Contact Form Submission - ${body.name}`,
       text: emailContent,
     });
