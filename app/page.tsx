@@ -265,7 +265,7 @@ Expand your audience."
   </div>
           <div>
             <label className="text-xs uppercase tracking-widest text-primary">
-              Instagram / Website
+              Instagram 
             </label>
 
             <input

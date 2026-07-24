@@ -4,8 +4,8 @@ interface ContactFormData {
   name: string;
   email: string;
   role: string;
+  phone?: string;
   instagram?: string;
-  website?: string;
   musicLink?: string;
   message: string;
 }
@@ -37,18 +37,36 @@ export async function POST(request: NextRequest) {
 
     // Format the email content
     const emailContent = `
-New Contact Form Submission from Ragam & Co.
+🎵 NEW MUSIC ANALYSIS REQUEST
 
-From: ${body.name}
-Email: ${body.email}
-Role: ${body.role}
-Website: ${body.website || 'Not provided'}
-Instagram: ${body.instagram || 'Not provided'}
-Music Link: ${body.musicLink || 'Not provided'}
+━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Message:
+👤 Name
+${body.name}
+
+📧 Email
+${body.email}
+
+🎭 Role
+${body.role}
+
+📞 Phone
+${body.phone || 'Not provided'}
+
+📸 Instagram 
+${body.instagram ||  'Not provided'}
+
+🎼 Music Link
+${body.musicLink || 'Not provided'}
+
+📝 Goal
+
 ${body.message}
-    `;
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Submitted from Ragam & Co.
+`;
 
     // Send email to Ragam team
     const teamEmailResponse = await resend.emails.send({
