@@ -321,7 +321,7 @@ export default function ArtistPage() {
     type="button"
     onClick={() => {
       window.open(
-        "https://www.instagram.com/telugumusic.strategy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "https://www.instagram.com/telugumusic.strategy/",
         "_blank"
       );
     }}
@@ -333,7 +333,7 @@ export default function ArtistPage() {
 <li>
 
             <a
-    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    href="https://www.linkedin.com/company/ragamandco/"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-primary"

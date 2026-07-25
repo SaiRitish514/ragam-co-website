@@ -126,7 +126,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         description=""
         ctaText=""
         ctaLink="#request-analysis"
-        backgroundImage="/images/hero1.jpeg"
+        backgroundImage="/images/home1.png"
       />
 
       {/* What Ragam Does Preview */}
@@ -780,7 +780,7 @@ Expand your audience."
 <li>
 
             <a
-    href="https://www.linkedin.com/in/vikruti-srija-648738285/"
+    href="https://www.linkedin.com/company/ragamandco/"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-primary"
