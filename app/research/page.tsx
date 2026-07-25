@@ -1536,10 +1536,11 @@ export default function ArtistPage() {
 
           <li>
             <a
-              href="mailto:sairitishthirunagari@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.ragamandco@gmail.com"
+              target="_blank"
               className="hover:text-primary"
             >
-              ragam@gmail.com
+              hello.ragamandco@gmail.com
             </a>
           </li>
 
@@ -1551,7 +1552,7 @@ export default function ArtistPage() {
     type="button"
     onClick={() => {
       window.open(
-        "https://www.instagram.com/telugumusic.strategy/",
+        "https://www.instagram.com/ragamandco/",
         "_blank"
       );
     }}

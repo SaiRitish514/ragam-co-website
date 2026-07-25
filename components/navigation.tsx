@@ -54,14 +54,12 @@ export function Navigation() {
       >
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-5 flex items-center justify-between">
           {/* Premium Logo */}
-          <div className="flex items-baseline shrink-0">
-  <span className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight text-foreground">
-    Ragam
-  </span>
-
-  <span className="ml-1 text-2xl lg:text-3xl font-serif text-primary">
-    & Co.
-  </span>
+          <div className="flex items-center shrink-0">
+  <img 
+    src="/images/logo5.png" 
+    alt="Ragam & Co." 
+    className="h-10 lg:h-12 w-auto object-contain"
+  />
 </div>
 
           {/* Desktop Navigation */}

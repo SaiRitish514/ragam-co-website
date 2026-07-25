@@ -131,7 +131,6 @@ const handleSubmit = async (e: React.FormEvent) => {
 
       {/* What Ragam Does Preview */}
       <PreviewSection
-  subtitle="WHAT WE DO"
   title="Refine your sound.
 Expand your audience."
   description="Ragam researches your music, audience, career stage, opportunities and market potential. We help artists, organizers and labels make better decisions using strategy, research and industry connections."
@@ -459,20 +458,7 @@ Expand your audience."
     </h2>
 
   <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-16 xl:gap-20 items-center">
-
-      {/* LEFT */}
-
-      <div>
-        <img
-          src="/images/h1.jpeg"
-          alt="Case Study"
-          className="w-full h-[280px] sm:h-[420px] md:h-[520px] xl:h-[600px] object-cover object-[center_15%] rounded-[34px]"
-        />
-      </div>
-
-      {/* RIGHT */}
-
-      <div className="max-w-[620px]">
+    <div className="max-w-[620px]">
 
         <p className="uppercase tracking-[0.35em] text-primary text-sm font-semibold mb-8">
           VOCALIST · HYDERABAD
@@ -498,10 +484,7 @@ Expand your audience."
         </h3>
 
         <p className="mt-7 text-[18px] leading-8 text-white/70">
-          We mapped her audience across four cities,
-          re-priced her live shows, introduced her to
-          festival curators and identified new audience
-          opportunities through research.
+          We mapped her audience across four cities, designed a data-driven live performance strategy, introduced her to festival curators, and identified new audience opportunities through research.
         </p>
 
         {/* STATS */}
@@ -527,7 +510,7 @@ Expand your audience."
             </p>
 
             <h4 className="font-geist font-medium text-[20px] lg:text-[15px] font-bold tracking-[-0.03em] text-primary mt-3">
-              +3.2×
+              No.of Shows
             </h4>
 
           </div>
@@ -553,6 +536,20 @@ Expand your audience."
         </blockquote>
 
       </div>
+
+      {/* LEFT */}
+
+      <div>
+        <img
+          src="/images/home2.jpeg"
+          alt="Case Study"
+          className="w-full h-[280px] sm:h-[420px] md:h-[520px] xl:h-[600px] object-cover object-[center_15%] rounded-[34px]"
+        />
+      </div>
+
+      {/* RIGHT */}
+
+      
 
     </div>
 
@@ -753,10 +750,11 @@ Expand your audience."
 
           <li>
             <a
-              href="mailto:sairitishthirunagari@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.ragamandco@gmail.com"
+              target="_blank"
               className="hover:text-primary"
             >
-              ragam@gmail.com
+              hello.ragamandco@gmail.com
             </a>
           </li>
 
@@ -768,7 +766,7 @@ Expand your audience."
     type="button"
     onClick={() => {
       window.open(
-        "https://www.instagram.com/telugumusic.strategy/",
+        "https://www.instagram.com/ragamandco/",
         "_blank"
       );
     }}
