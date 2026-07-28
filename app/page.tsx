@@ -484,7 +484,7 @@ Expand your audience."
         </h3>
 
         <p className="mt-7 text-[18px] leading-8 text-white/70">
-          We mapped her audience across four cities, designed a data-driven live performance strategy, introduced her to festival curators, and identified new audience opportunities through research.
+          We mapped her audience across four cities, recommended increasing the number of live shows, introduced her to festival curators, and identified new audience opportunities through research.
         </p>
 
         {/* STATS */}
