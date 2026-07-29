@@ -56,6 +56,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable} ${geistMono.variable} dark bg-background`}>
       <body className="antialiased font-sans">
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Ragam & Co.",
+      url: "https://ragam-co.vercel.app",
+      logo: "https://ragam-co.vercel.app/logo.png",
+      description:
+        "Ragam & Co. is a music research and strategy company focused on the Telugu music industry. We help artists, independent bands, music labels and brands grow through research, audience insights, strategy and meaningful music experiences.",
+      email: "hello.ragamandco@gmail.com",
+      sameAs: [
+        "https://www.instagram.com/ragamandco/",
+        "https://www.linkedin.com/company/ragamandco/"
+      ]
+    }),
+  }}
+/>
         <Navigation />
         <MobileDesktopNotice />
         {children}
