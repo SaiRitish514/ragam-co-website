@@ -12,11 +12,11 @@ const people = [
       "Leads Ragam's vision, research and long-term strategy for the Telugu music ecosystem. Focused on audience intelligence, artist growth, industry innovation and building sustainable opportunities for creators.",
   },
   {
-    image: "/images/sai4.jpeg",
+    image: "/images/ritish1.jpeg",
     name: "Sai Ritish Tirunagari",
-    role: "Product Design & Digital Experience Lead",
+    role: "Co-Founder, Product Design & Digital Experience Lead",
     description:
-      "Oversees Ragam's website, digital products and user experience. Leads interface design, creative direction and product development to create intuitive, engaging experiences that help artists, organisers, labels and music lovers connect with the Telugu music ecosystem.",
+      "Oversees Ragam's website, digital products, and user experience. Leads interface design, creative direction, and product development to create intuitive, engaging experiences that help artists, organisers, labels, and music lovers connect with the Telugu music ecosystem  and also contributes to the company's vision, product strategy, and long-term growth.",
   },
   {
   image: "/images/abhi.jpeg",
@@ -31,6 +31,13 @@ const people = [
   role: "Ecosystem & Strategic Partnerships Lead",
   description:
     "Builds strategic relationships across the Telugu music ecosystem by connecting artists, organisers, labels and industry partners. Leads collaborations and partnership initiatives that create meaningful opportunities, strengthen industry connections and help advance Ragam's long-term vision.",
+},
+{
+  image: "/images/praveen.jpeg",
+  name: "Praveen Kumar rangisetty ",
+  role: "Digital Marketing & Growth Lead",
+  description:
+    "Leads Ragam & Co.'s digital presence, content strategy, and audience growth initiatives. Develops data-driven marketing campaigns, social media strategy, brand communication, and performance analysis to connect artists, organisations, and audiences while expanding Ragam's impact across the Telugu music ecosystem.",
 },
 ];
 
@@ -53,7 +60,7 @@ export default function AboutPage() {
 </div>
         {/* Cards */}
 
-        <div className="columns-1 md:columns-2 xl:columns-4 gap-8 mt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-24">
 
           {people.map((person) => (
 
@@ -116,7 +123,7 @@ export default function AboutPage() {
         </p>
         <Link
           href="/#request-analysis"
-          className="inline-flex items-center gap-3 mt-10 bg-primary text-black rounded-full px-10 py-5 font-semibold hover:scale-105 transition"
+          className="inline-flex items-center gap-3 mt-8 bg-primary text-black rounded-full px-5 py-5 font-semibold hover:scale-105 transition"
         >
           Get My Music Analysis
           <span>↗</span>
