@@ -33,8 +33,8 @@ const people = [
     "Builds strategic relationships across the Telugu music ecosystem by connecting artists, organisers, labels and industry partners. Leads collaborations and partnership initiatives that create meaningful opportunities, strengthen industry connections and help advance Ragam's long-term vision.",
 },
 {
-  image: "/images/praveen.jpeg",
-  name: "Praveen Kumar rangisetty ",
+  image: "/images/praveen1.png",
+  name: "Praveen Kumar Rangisetty ",
   role: "Digital Marketing & Growth Lead",
   description:
     "Leads Ragam & Co.'s digital presence, content strategy, and audience growth initiatives. Develops data-driven marketing campaigns, social media strategy, brand communication, and performance analysis to connect artists, organisations, and audiences while expanding Ragam's impact across the Telugu music ecosystem.",
